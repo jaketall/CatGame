@@ -28,6 +28,7 @@
         <e p="Scripts" t="Include">
           <e p="Player2Controller.cs" t="Include" />
           <e p="PlayerControl.cs" t="Include" />
+          <e p="Powerup.cs" t="Include" />
         </e>
         <e p="Standard Assets" t="Include">
           <e p="2D" t="Include">
