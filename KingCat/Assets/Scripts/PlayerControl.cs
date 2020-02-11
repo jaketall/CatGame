@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -26,5 +27,13 @@ public class PlayerControl : MonoBehaviour
         // transform.Translate(Time.deltaTime * horizontal_input * Vector3.right * speed);
         // transform.Translate(Time.deltaTime * vertical_input * Vector3.forward * speed);
         
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("powerup"))
+        {
+            Destroy(other.gameObject);          
+        }
     }
 }
