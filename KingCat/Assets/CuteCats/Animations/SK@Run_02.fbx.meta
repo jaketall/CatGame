@@ -1,134 +1,363 @@
 fileFormatVersion: 2
 guid: b562e92aac26f9048bd8299af724c0a8
-timeCreated: 1502758976
-licenseType: Store
 ModelImporter:
-  serializedVersion: 19
-  fileIDToRecycleName:
-    100000: Cat_mesh
-    100002: L_B_Ankle1_J
-    100004: L_B_Ankle2_J
-    100006: L_B_Ball_J
-    100008: L_B_clavicle_J
-    100010: L_B_Hip_J
-    100012: L_B_Knee_J
-    100014: L_B_Toe_J
-    100016: L_Ear_J
-    100018: L_F_Ankle2_J
-    100020: L_F_Ankle_J
-    100022: L_F_Ball_J
-    100024: L_F_Clavicle_J
-    100026: L_F_Hip_J
-    100028: L_F_Knee_J
-    100030: L_F_Toe_J
-    100032: pelvis_J
-    100034: R_B_Ankle1_J
-    100036: R_B_Ankle2_J
-    100038: R_B_Ball_J
-    100040: R_B_clavicle_J
-    100042: R_B_Hip_J
-    100044: R_B_Knee_J
-    100046: R_B_Toe_J
-    100048: R_Ear_J
-    100050: R_F_Ankle2_J
-    100052: R_F_Ankle_J
-    100054: R_F_Ball_J
-    100056: R_F_Clavicle_J
-    100058: R_F_Hip_J
-    100060: R_F_Knee_J
-    100062: R_F_Toe_J
-    100064: root_J
-    100066: //RootNode
-    100068: Spline_02_J
-    100070: Spline_03_J
-    100072: Spline_04_J
-    100074: Tail_01_J
-    100076: Tail_02_J
-    100078: Tail_03_J
-    100080: Tail_04_J
-    100082: Tail_05_J
-    100084: Tail_06_J
-    400000: Cat_mesh
-    400002: L_B_Ankle1_J
-    400004: L_B_Ankle2_J
-    400006: L_B_Ball_J
-    400008: L_B_clavicle_J
-    400010: L_B_Hip_J
-    400012: L_B_Knee_J
-    400014: L_B_Toe_J
-    400016: L_Ear_J
-    400018: L_F_Ankle2_J
-    400020: L_F_Ankle_J
-    400022: L_F_Ball_J
-    400024: L_F_Clavicle_J
-    400026: L_F_Hip_J
-    400028: L_F_Knee_J
-    400030: L_F_Toe_J
-    400032: pelvis_J
-    400034: R_B_Ankle1_J
-    400036: R_B_Ankle2_J
-    400038: R_B_Ball_J
-    400040: R_B_clavicle_J
-    400042: R_B_Hip_J
-    400044: R_B_Knee_J
-    400046: R_B_Toe_J
-    400048: R_Ear_J
-    400050: R_F_Ankle2_J
-    400052: R_F_Ankle_J
-    400054: R_F_Ball_J
-    400056: R_F_Clavicle_J
-    400058: R_F_Hip_J
-    400060: R_F_Knee_J
-    400062: R_F_Toe_J
-    400064: root_J
-    400066: //RootNode
-    400068: Spline_02_J
-    400070: Spline_03_J
-    400072: Spline_04_J
-    400074: Tail_01_J
-    400076: Tail_02_J
-    400078: Tail_03_J
-    400080: Tail_04_J
-    400082: Tail_05_J
-    400084: Tail_06_J
-    4300000: Cat_mesh
-    7400000: Take 001
-    9500000: //RootNode
-    13700000: Cat_mesh
+  serializedVersion: 26
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Cat_mesh
+  - first:
+      1: 100002
+    second: L_B_Ankle1_J
+  - first:
+      1: 100004
+    second: L_B_Ankle2_J
+  - first:
+      1: 100006
+    second: L_B_Ball_J
+  - first:
+      1: 100008
+    second: L_B_clavicle_J
+  - first:
+      1: 100010
+    second: L_B_Hip_J
+  - first:
+      1: 100012
+    second: L_B_Knee_J
+  - first:
+      1: 100014
+    second: L_B_Toe_J
+  - first:
+      1: 100016
+    second: L_Ear_J
+  - first:
+      1: 100018
+    second: L_F_Ankle2_J
+  - first:
+      1: 100020
+    second: L_F_Ankle_J
+  - first:
+      1: 100022
+    second: L_F_Ball_J
+  - first:
+      1: 100024
+    second: L_F_Clavicle_J
+  - first:
+      1: 100026
+    second: L_F_Hip_J
+  - first:
+      1: 100028
+    second: L_F_Knee_J
+  - first:
+      1: 100030
+    second: L_F_Toe_J
+  - first:
+      1: 100032
+    second: pelvis_J
+  - first:
+      1: 100034
+    second: R_B_Ankle1_J
+  - first:
+      1: 100036
+    second: R_B_Ankle2_J
+  - first:
+      1: 100038
+    second: R_B_Ball_J
+  - first:
+      1: 100040
+    second: R_B_clavicle_J
+  - first:
+      1: 100042
+    second: R_B_Hip_J
+  - first:
+      1: 100044
+    second: R_B_Knee_J
+  - first:
+      1: 100046
+    second: R_B_Toe_J
+  - first:
+      1: 100048
+    second: R_Ear_J
+  - first:
+      1: 100050
+    second: R_F_Ankle2_J
+  - first:
+      1: 100052
+    second: R_F_Ankle_J
+  - first:
+      1: 100054
+    second: R_F_Ball_J
+  - first:
+      1: 100056
+    second: R_F_Clavicle_J
+  - first:
+      1: 100058
+    second: R_F_Hip_J
+  - first:
+      1: 100060
+    second: R_F_Knee_J
+  - first:
+      1: 100062
+    second: R_F_Toe_J
+  - first:
+      1: 100064
+    second: root_J
+  - first:
+      1: 100066
+    second: //RootNode
+  - first:
+      1: 100068
+    second: Spline_02_J
+  - first:
+      1: 100070
+    second: Spline_03_J
+  - first:
+      1: 100072
+    second: Spline_04_J
+  - first:
+      1: 100074
+    second: Tail_01_J
+  - first:
+      1: 100076
+    second: Tail_02_J
+  - first:
+      1: 100078
+    second: Tail_03_J
+  - first:
+      1: 100080
+    second: Tail_04_J
+  - first:
+      1: 100082
+    second: Tail_05_J
+  - first:
+      1: 100084
+    second: Tail_06_J
+  - first:
+      4: 400000
+    second: Cat_mesh
+  - first:
+      4: 400002
+    second: L_B_Ankle1_J
+  - first:
+      4: 400004
+    second: L_B_Ankle2_J
+  - first:
+      4: 400006
+    second: L_B_Ball_J
+  - first:
+      4: 400008
+    second: L_B_clavicle_J
+  - first:
+      4: 400010
+    second: L_B_Hip_J
+  - first:
+      4: 400012
+    second: L_B_Knee_J
+  - first:
+      4: 400014
+    second: L_B_Toe_J
+  - first:
+      4: 400016
+    second: L_Ear_J
+  - first:
+      4: 400018
+    second: L_F_Ankle2_J
+  - first:
+      4: 400020
+    second: L_F_Ankle_J
+  - first:
+      4: 400022
+    second: L_F_Ball_J
+  - first:
+      4: 400024
+    second: L_F_Clavicle_J
+  - first:
+      4: 400026
+    second: L_F_Hip_J
+  - first:
+      4: 400028
+    second: L_F_Knee_J
+  - first:
+      4: 400030
+    second: L_F_Toe_J
+  - first:
+      4: 400032
+    second: pelvis_J
+  - first:
+      4: 400034
+    second: R_B_Ankle1_J
+  - first:
+      4: 400036
+    second: R_B_Ankle2_J
+  - first:
+      4: 400038
+    second: R_B_Ball_J
+  - first:
+      4: 400040
+    second: R_B_clavicle_J
+  - first:
+      4: 400042
+    second: R_B_Hip_J
+  - first:
+      4: 400044
+    second: R_B_Knee_J
+  - first:
+      4: 400046
+    second: R_B_Toe_J
+  - first:
+      4: 400048
+    second: R_Ear_J
+  - first:
+      4: 400050
+    second: R_F_Ankle2_J
+  - first:
+      4: 400052
+    second: R_F_Ankle_J
+  - first:
+      4: 400054
+    second: R_F_Ball_J
+  - first:
+      4: 400056
+    second: R_F_Clavicle_J
+  - first:
+      4: 400058
+    second: R_F_Hip_J
+  - first:
+      4: 400060
+    second: R_F_Knee_J
+  - first:
+      4: 400062
+    second: R_F_Toe_J
+  - first:
+      4: 400064
+    second: root_J
+  - first:
+      4: 400066
+    second: //RootNode
+  - first:
+      4: 400068
+    second: Spline_02_J
+  - first:
+      4: 400070
+    second: Spline_03_J
+  - first:
+      4: 400072
+    second: Spline_04_J
+  - first:
+      4: 400074
+    second: Tail_01_J
+  - first:
+      4: 400076
+    second: Tail_02_J
+  - first:
+      4: 400078
+    second: Tail_03_J
+  - first:
+      4: 400080
+    second: Tail_04_J
+  - first:
+      4: 400082
+    second: Tail_05_J
+  - first:
+      4: 400084
+    second: Tail_06_J
+  - first:
+      43: 4300000
+    second: Cat_mesh
+  - first:
+      74: 7400000
+    second: Run_02
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Cat_mesh
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert2
+    second: {fileID: 2100000, guid: cd40e6e3a7d8b854e9b8e0f56535a267, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
-    resampleRotations: 1
+    resampleCurves: 1
     optimizeGameObjects: 0
-    motionNodeName: 
+    motionNodeName: Cat_mesh
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Run_02
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 1
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 10
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -138,9 +367,15 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -150,8 +385,11 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 10
     rootMotionBoneName: 
     hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
   humanoidOversampling: 1
