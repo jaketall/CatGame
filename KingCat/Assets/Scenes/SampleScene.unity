@@ -547,11 +547,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1eb6c8760c58d948a7e156123562700, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minHeight: 70
-  maxHeight: 140
-  numSteps: 10
-  deadzone: 0.1
-  zoomTime: 0.5
+  minHeight: 40
+  maxHeight: 150
+  percentZoomedOut: 20
   tagToFollow: Player
 --- !u!1 &1067969105 stripped
 GameObject:
