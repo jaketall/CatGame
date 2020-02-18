@@ -13,6 +13,1308 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 0001-01-01T00:00:00.000+00:00
-  initializedAtString: 0001-01-01T00:00:00.000+00:00
-  entries: []
+  lastUpdatedAtString: 2020-02-18T10:04:25.867-08:00
+  initializedAtString: 2020-02-18T10:03:07.683-08:00
+  entries:
+  - path: KingCat/Assets/Plugins.meta
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins.meta
+    projectPath: Assets/Plugins.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Assets/Plugins/GitHub.meta
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub.meta
+    projectPath: Assets/Plugins/GitHub.meta
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor.meta
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor.meta
+    projectPath: Assets/Plugins/GitHub/Editor.meta
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/AsyncBridge.Net35.dll
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/AsyncBridge.Net35.dll
+    projectPath: Assets/Plugins/GitHub/Editor/AsyncBridge.Net35.dll
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/AsyncBridge.Net35.dll.meta
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/AsyncBridge.Net35.dll.meta
+    projectPath: Assets/Plugins/GitHub/Editor/AsyncBridge.Net35.dll.meta
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/big-logo@2x.png
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/big-logo@2x.png
+    projectPath: Assets/Plugins/GitHub/Editor/big-logo@2x.png
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/big-logo@2x.png.meta
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/big-logo@2x.png.meta
+    projectPath: Assets/Plugins/GitHub/Editor/big-logo@2x.png.meta
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/credits.txt
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/credits.txt
+    projectPath: Assets/Plugins/GitHub/Editor/credits.txt
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/credits.txt.meta
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/credits.txt.meta
+    projectPath: Assets/Plugins/GitHub/Editor/credits.txt.meta
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/eula.txt
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/eula.txt
+    projectPath: Assets/Plugins/GitHub/Editor/eula.txt
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/eula.txt.meta
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/eula.txt.meta
+    projectPath: Assets/Plugins/GitHub/Editor/eula.txt.meta
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/ExtensionLoader.cs
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/ExtensionLoader.cs
+    projectPath: Assets/Plugins/GitHub/Editor/ExtensionLoader.cs
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/ExtensionLoader.cs.meta
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/ExtensionLoader.cs.meta
+    projectPath: Assets/Plugins/GitHub/Editor/ExtensionLoader.cs.meta
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/GitHub.Api.45.dll
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/GitHub.Api.45.dll
+    projectPath: Assets/Plugins/GitHub/Editor/GitHub.Api.45.dll
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/GitHub.Api.45.dll.meta
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/GitHub.Api.45.dll.meta
+    projectPath: Assets/Plugins/GitHub/Editor/GitHub.Api.45.dll.meta
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/GitHub.Api.dll
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/GitHub.Api.dll
+    projectPath: Assets/Plugins/GitHub/Editor/GitHub.Api.dll
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/GitHub.Api.dll.meta
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/GitHub.Api.dll.meta
+    projectPath: Assets/Plugins/GitHub/Editor/GitHub.Api.dll.meta
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/GitHub.Logging.dll
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/GitHub.Logging.dll
+    projectPath: Assets/Plugins/GitHub/Editor/GitHub.Logging.dll
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/GitHub.Logging.dll.meta
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/GitHub.Logging.dll.meta
+    projectPath: Assets/Plugins/GitHub/Editor/GitHub.Logging.dll.meta
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/GitHub.Unity.45.dll
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/GitHub.Unity.45.dll
+    projectPath: Assets/Plugins/GitHub/Editor/GitHub.Unity.45.dll
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/GitHub.Unity.45.dll.meta
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/GitHub.Unity.45.dll.meta
+    projectPath: Assets/Plugins/GitHub/Editor/GitHub.Unity.45.dll.meta
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/GitHub.Unity.dll
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/GitHub.Unity.dll
+    projectPath: Assets/Plugins/GitHub/Editor/GitHub.Unity.dll
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/GitHub.Unity.dll.meta
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/GitHub.Unity.dll.meta
+    projectPath: Assets/Plugins/GitHub/Editor/GitHub.Unity.dll.meta
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/GitHub.UnityShim.dll
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/GitHub.UnityShim.dll
+    projectPath: Assets/Plugins/GitHub/Editor/GitHub.UnityShim.dll
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/GitHub.UnityShim.dll.meta
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/GitHub.UnityShim.dll.meta
+    projectPath: Assets/Plugins/GitHub/Editor/GitHub.UnityShim.dll.meta
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/libsfw.bundle
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/libsfw.bundle
+    projectPath: Assets/Plugins/GitHub/Editor/libsfw.bundle
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/libsfw.bundle.meta
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/libsfw.bundle.meta
+    projectPath: Assets/Plugins/GitHub/Editor/libsfw.bundle.meta
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/libsfw.so
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/libsfw.so
+    projectPath: Assets/Plugins/GitHub/Editor/libsfw.so
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/libsfw.so.meta
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/libsfw.so.meta
+    projectPath: Assets/Plugins/GitHub/Editor/libsfw.so.meta
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/Mono.Posix.dll
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/Mono.Posix.dll
+    projectPath: Assets/Plugins/GitHub/Editor/Mono.Posix.dll
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/Mono.Posix.dll.meta
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/Mono.Posix.dll.meta
+    projectPath: Assets/Plugins/GitHub/Editor/Mono.Posix.dll.meta
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/QuickGuide.pdf
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/QuickGuide.pdf
+    projectPath: Assets/Plugins/GitHub/Editor/QuickGuide.pdf
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/QuickGuide.pdf.meta
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/QuickGuide.pdf.meta
+    projectPath: Assets/Plugins/GitHub/Editor/QuickGuide.pdf.meta
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/ReadOnlyCollectionsInterfaces.dll
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/ReadOnlyCollectionsInterfaces.dll
+    projectPath: Assets/Plugins/GitHub/Editor/ReadOnlyCollectionsInterfaces.dll
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/ReadOnlyCollectionsInterfaces.dll.meta
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/ReadOnlyCollectionsInterfaces.dll.meta
+    projectPath: Assets/Plugins/GitHub/Editor/ReadOnlyCollectionsInterfaces.dll.meta
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/sfw.net.dll
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/sfw.net.dll
+    projectPath: Assets/Plugins/GitHub/Editor/sfw.net.dll
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/sfw.net.dll.meta
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/sfw.net.dll.meta
+    projectPath: Assets/Plugins/GitHub/Editor/sfw.net.dll.meta
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/System.Threading.dll
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/System.Threading.dll
+    projectPath: Assets/Plugins/GitHub/Editor/System.Threading.dll
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/System.Threading.dll.meta
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/System.Threading.dll.meta
+    projectPath: Assets/Plugins/GitHub/Editor/System.Threading.dll.meta
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/UnityAPIWrapper.cs
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/UnityAPIWrapper.cs
+    projectPath: Assets/Plugins/GitHub/Editor/UnityAPIWrapper.cs
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/UnityAPIWrapper.cs.meta
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/UnityAPIWrapper.cs.meta
+    projectPath: Assets/Plugins/GitHub/Editor/UnityAPIWrapper.cs.meta
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/x64.meta
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/x64.meta
+    projectPath: Assets/Plugins/GitHub/Editor/x64.meta
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/x64/pthreadVC2.dll
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/x64/pthreadVC2.dll
+    projectPath: Assets/Plugins/GitHub/Editor/x64/pthreadVC2.dll
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/x64/pthreadVC2.dll.meta
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/x64/pthreadVC2.dll.meta
+    projectPath: Assets/Plugins/GitHub/Editor/x64/pthreadVC2.dll.meta
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/x64/sfw_x64.dll
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/x64/sfw_x64.dll
+    projectPath: Assets/Plugins/GitHub/Editor/x64/sfw_x64.dll
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/x64/sfw_x64.dll.meta
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/x64/sfw_x64.dll.meta
+    projectPath: Assets/Plugins/GitHub/Editor/x64/sfw_x64.dll.meta
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/x86.meta
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/x86.meta
+    projectPath: Assets/Plugins/GitHub/Editor/x86.meta
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/x86/pthreadVC2.dll
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/x86/pthreadVC2.dll
+    projectPath: Assets/Plugins/GitHub/Editor/x86/pthreadVC2.dll
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/x86/pthreadVC2.dll.meta
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/x86/pthreadVC2.dll.meta
+    projectPath: Assets/Plugins/GitHub/Editor/x86/pthreadVC2.dll.meta
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/x86/sfw_x86.dll
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/x86/sfw_x86.dll
+    projectPath: Assets/Plugins/GitHub/Editor/x86/sfw_x86.dll
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Assets/Plugins/GitHub/Editor/x86/sfw_x86.dll.meta
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Assets/Plugins/GitHub/Editor/x86/sfw_x86.dll.meta
+    projectPath: Assets/Plugins/GitHub/Editor/x86/sfw_x86.dll.meta
+    originalPath: 
+    indexStatus: 5
+    workTreeStatus: 0
+  - path: KingCat/Library/APIUpdater/project-dependencies.graph
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/APIUpdater/project-dependencies.graph
+    projectPath: Library/APIUpdater/project-dependencies.graph
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: KingCat/Library/assetDatabase3
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/assetDatabase3
+    projectPath: Library/assetDatabase3
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: KingCat/Library/CurrentMaximizeLayout.dwlt
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/CurrentMaximizeLayout.dwlt
+    projectPath: Library/CurrentMaximizeLayout.dwlt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: KingCat/Library/EditorInstance.json
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/EditorInstance.json
+    projectPath: Library/EditorInstance.json
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/gfu/cache/gitlocks.yaml
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/gfu/cache/gitlocks.yaml
+    projectPath: Library/gfu/cache/gitlocks.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: KingCat/Library/gfu/cache/gitstatusentries.yaml
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/gfu/cache/gitstatusentries.yaml
+    projectPath: Library/gfu/cache/gitstatusentries.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: KingCat/Library/gfu/cache/gittrackingstatus.yaml
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/gfu/cache/gittrackingstatus.yaml
+    projectPath: Library/gfu/cache/gittrackingstatus.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: KingCat/Library/gfu/cache/repoinfo.yaml
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/gfu/cache/repoinfo.yaml
+    projectPath: Library/gfu/cache/repoinfo.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: KingCat/Library/metadata/01/0188ec438976e5849b40a2c1ce5f20f9
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/01/0188ec438976e5849b40a2c1ce5f20f9
+    projectPath: Library/metadata/01/0188ec438976e5849b40a2c1ce5f20f9
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/01/0188ec438976e5849b40a2c1ce5f20f9.info
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/01/0188ec438976e5849b40a2c1ce5f20f9.info
+    projectPath: Library/metadata/01/0188ec438976e5849b40a2c1ce5f20f9.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/13/136dc24f151211d438acee17aff4e934
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/13/136dc24f151211d438acee17aff4e934
+    projectPath: Library/metadata/13/136dc24f151211d438acee17aff4e934
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/13/136dc24f151211d438acee17aff4e934.info
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/13/136dc24f151211d438acee17aff4e934.info
+    projectPath: Library/metadata/13/136dc24f151211d438acee17aff4e934.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/15/151a1d946b98deb4b98445400983ba92
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/15/151a1d946b98deb4b98445400983ba92
+    projectPath: Library/metadata/15/151a1d946b98deb4b98445400983ba92
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/15/151a1d946b98deb4b98445400983ba92.info
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/15/151a1d946b98deb4b98445400983ba92.info
+    projectPath: Library/metadata/15/151a1d946b98deb4b98445400983ba92.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/15/15ca2bebf173f2d4484686a03a45b56d
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/15/15ca2bebf173f2d4484686a03a45b56d
+    projectPath: Library/metadata/15/15ca2bebf173f2d4484686a03a45b56d
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/15/15ca2bebf173f2d4484686a03a45b56d.info
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/15/15ca2bebf173f2d4484686a03a45b56d.info
+    projectPath: Library/metadata/15/15ca2bebf173f2d4484686a03a45b56d.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/18/18e096a98c2704c40a818dd1214cd179
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/18/18e096a98c2704c40a818dd1214cd179
+    projectPath: Library/metadata/18/18e096a98c2704c40a818dd1214cd179
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/18/18e096a98c2704c40a818dd1214cd179.info
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/18/18e096a98c2704c40a818dd1214cd179.info
+    projectPath: Library/metadata/18/18e096a98c2704c40a818dd1214cd179.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/21/21206c65839f84d0e9ae14bc1fdc68db
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/21/21206c65839f84d0e9ae14bc1fdc68db
+    projectPath: Library/metadata/21/21206c65839f84d0e9ae14bc1fdc68db
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/21/21206c65839f84d0e9ae14bc1fdc68db.info
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/21/21206c65839f84d0e9ae14bc1fdc68db.info
+    projectPath: Library/metadata/21/21206c65839f84d0e9ae14bc1fdc68db.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/48/48c22d5d7479fcb49ab3be0cdd2ccec0
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/48/48c22d5d7479fcb49ab3be0cdd2ccec0
+    projectPath: Library/metadata/48/48c22d5d7479fcb49ab3be0cdd2ccec0
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/48/48c22d5d7479fcb49ab3be0cdd2ccec0.info
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/48/48c22d5d7479fcb49ab3be0cdd2ccec0.info
+    projectPath: Library/metadata/48/48c22d5d7479fcb49ab3be0cdd2ccec0.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/55/555cd6f54c03341b1970d950df1a5ee5
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/55/555cd6f54c03341b1970d950df1a5ee5
+    projectPath: Library/metadata/55/555cd6f54c03341b1970d950df1a5ee5
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/55/555cd6f54c03341b1970d950df1a5ee5.info
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/55/555cd6f54c03341b1970d950df1a5ee5.info
+    projectPath: Library/metadata/55/555cd6f54c03341b1970d950df1a5ee5.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/63/636d33ae594884e7d80b569f429d245d
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/63/636d33ae594884e7d80b569f429d245d
+    projectPath: Library/metadata/63/636d33ae594884e7d80b569f429d245d
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/63/636d33ae594884e7d80b569f429d245d.info
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/63/636d33ae594884e7d80b569f429d245d.info
+    projectPath: Library/metadata/63/636d33ae594884e7d80b569f429d245d.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/68/68c7e4565cde54155bb78d8e935f1dd4
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/68/68c7e4565cde54155bb78d8e935f1dd4
+    projectPath: Library/metadata/68/68c7e4565cde54155bb78d8e935f1dd4
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/68/68c7e4565cde54155bb78d8e935f1dd4.info
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/68/68c7e4565cde54155bb78d8e935f1dd4.info
+    projectPath: Library/metadata/68/68c7e4565cde54155bb78d8e935f1dd4.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/68/68c7e4565cde54155bb78d8e935f1ddb
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/68/68c7e4565cde54155bb78d8e935f1ddb
+    projectPath: Library/metadata/68/68c7e4565cde54155bb78d8e935f1ddb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/68/68c7e4565cde54155bb78d8e935f1ddb.info
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/68/68c7e4565cde54155bb78d8e935f1ddb.info
+    projectPath: Library/metadata/68/68c7e4565cde54155bb78d8e935f1ddb.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/72/720712be6e31c444f88f57bb85bf5fa5
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/72/720712be6e31c444f88f57bb85bf5fa5
+    projectPath: Library/metadata/72/720712be6e31c444f88f57bb85bf5fa5
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/72/720712be6e31c444f88f57bb85bf5fa5.info
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/72/720712be6e31c444f88f57bb85bf5fa5.info
+    projectPath: Library/metadata/72/720712be6e31c444f88f57bb85bf5fa5.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/79/790749ba7e4b18141953e39cb13f1b79
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/79/790749ba7e4b18141953e39cb13f1b79
+    projectPath: Library/metadata/79/790749ba7e4b18141953e39cb13f1b79
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/79/790749ba7e4b18141953e39cb13f1b79.info
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/79/790749ba7e4b18141953e39cb13f1b79.info
+    projectPath: Library/metadata/79/790749ba7e4b18141953e39cb13f1b79.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/86/863e1b9976c4e46d29bf83928b3a8ab2
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/86/863e1b9976c4e46d29bf83928b3a8ab2
+    projectPath: Library/metadata/86/863e1b9976c4e46d29bf83928b3a8ab2
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/86/863e1b9976c4e46d29bf83928b3a8ab2.info
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/86/863e1b9976c4e46d29bf83928b3a8ab2.info
+    projectPath: Library/metadata/86/863e1b9976c4e46d29bf83928b3a8ab2.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/86/868fbb4c41814baebc00f96e24ede2f8
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/86/868fbb4c41814baebc00f96e24ede2f8
+    projectPath: Library/metadata/86/868fbb4c41814baebc00f96e24ede2f8
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/86/868fbb4c41814baebc00f96e24ede2f8.info
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/86/868fbb4c41814baebc00f96e24ede2f8.info
+    projectPath: Library/metadata/86/868fbb4c41814baebc00f96e24ede2f8.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/99/99b48d4d4f6a66340ab06bd487d70a45
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/99/99b48d4d4f6a66340ab06bd487d70a45
+    projectPath: Library/metadata/99/99b48d4d4f6a66340ab06bd487d70a45
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/99/99b48d4d4f6a66340ab06bd487d70a45.info
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/99/99b48d4d4f6a66340ab06bd487d70a45.info
+    projectPath: Library/metadata/99/99b48d4d4f6a66340ab06bd487d70a45.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/a0/a0ded7adcc817ce489fec07977f16d13
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/a0/a0ded7adcc817ce489fec07977f16d13
+    projectPath: Library/metadata/a0/a0ded7adcc817ce489fec07977f16d13
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/a0/a0ded7adcc817ce489fec07977f16d13.info
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/a0/a0ded7adcc817ce489fec07977f16d13.info
+    projectPath: Library/metadata/a0/a0ded7adcc817ce489fec07977f16d13.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/a8/a83159a46d87d2a4f8cec651049b9231
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/a8/a83159a46d87d2a4f8cec651049b9231
+    projectPath: Library/metadata/a8/a83159a46d87d2a4f8cec651049b9231
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/a8/a83159a46d87d2a4f8cec651049b9231.info
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/a8/a83159a46d87d2a4f8cec651049b9231.info
+    projectPath: Library/metadata/a8/a83159a46d87d2a4f8cec651049b9231.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/c7/c743ae24ee231884887054d20ccdd0ab
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/c7/c743ae24ee231884887054d20ccdd0ab
+    projectPath: Library/metadata/c7/c743ae24ee231884887054d20ccdd0ab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/c7/c743ae24ee231884887054d20ccdd0ab.info
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/c7/c743ae24ee231884887054d20ccdd0ab.info
+    projectPath: Library/metadata/c7/c743ae24ee231884887054d20ccdd0ab.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/c7/c743ae24ee231884887054d20ccdd0ae
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/c7/c743ae24ee231884887054d20ccdd0ae
+    projectPath: Library/metadata/c7/c743ae24ee231884887054d20ccdd0ae
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/c7/c743ae24ee231884887054d20ccdd0ae.info
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/c7/c743ae24ee231884887054d20ccdd0ae.info
+    projectPath: Library/metadata/c7/c743ae24ee231884887054d20ccdd0ae.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/ca/cad92998c5182496e8b989b406d9f156
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/ca/cad92998c5182496e8b989b406d9f156
+    projectPath: Library/metadata/ca/cad92998c5182496e8b989b406d9f156
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/ca/cad92998c5182496e8b989b406d9f156.info
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/ca/cad92998c5182496e8b989b406d9f156.info
+    projectPath: Library/metadata/ca/cad92998c5182496e8b989b406d9f156.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/d5/d516f2a1bec6a9645a084ef8c9237132
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/d5/d516f2a1bec6a9645a084ef8c9237132
+    projectPath: Library/metadata/d5/d516f2a1bec6a9645a084ef8c9237132
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/d5/d516f2a1bec6a9645a084ef8c9237132.info
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/d5/d516f2a1bec6a9645a084ef8c9237132.info
+    projectPath: Library/metadata/d5/d516f2a1bec6a9645a084ef8c9237132.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/d6/d601ecb6855bb432bae2aa49d8fd82e8
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/d6/d601ecb6855bb432bae2aa49d8fd82e8
+    projectPath: Library/metadata/d6/d601ecb6855bb432bae2aa49d8fd82e8
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/d6/d601ecb6855bb432bae2aa49d8fd82e8.info
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/d6/d601ecb6855bb432bae2aa49d8fd82e8.info
+    projectPath: Library/metadata/d6/d601ecb6855bb432bae2aa49d8fd82e8.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/da/dae2ecee8a704dd59797e26554ff8606
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/da/dae2ecee8a704dd59797e26554ff8606
+    projectPath: Library/metadata/da/dae2ecee8a704dd59797e26554ff8606
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/da/dae2ecee8a704dd59797e26554ff8606.info
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/da/dae2ecee8a704dd59797e26554ff8606.info
+    projectPath: Library/metadata/da/dae2ecee8a704dd59797e26554ff8606.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/dd/ddb8611e748af425a82a497ac5a98c0c
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/dd/ddb8611e748af425a82a497ac5a98c0c
+    projectPath: Library/metadata/dd/ddb8611e748af425a82a497ac5a98c0c
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/dd/ddb8611e748af425a82a497ac5a98c0c.info
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/dd/ddb8611e748af425a82a497ac5a98c0c.info
+    projectPath: Library/metadata/dd/ddb8611e748af425a82a497ac5a98c0c.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/f8/f81094832d834c64d93b198cb16b6a3e
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/f8/f81094832d834c64d93b198cb16b6a3e
+    projectPath: Library/metadata/f8/f81094832d834c64d93b198cb16b6a3e
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/f8/f81094832d834c64d93b198cb16b6a3e.info
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/f8/f81094832d834c64d93b198cb16b6a3e.info
+    projectPath: Library/metadata/f8/f81094832d834c64d93b198cb16b6a3e.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/f9/f9fc9b08ecd899944adf9860b4abd6b6
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/f9/f9fc9b08ecd899944adf9860b4abd6b6
+    projectPath: Library/metadata/f9/f9fc9b08ecd899944adf9860b4abd6b6
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/f9/f9fc9b08ecd899944adf9860b4abd6b6.info
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/f9/f9fc9b08ecd899944adf9860b4abd6b6.info
+    projectPath: Library/metadata/f9/f9fc9b08ecd899944adf9860b4abd6b6.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/fe/fe5abeadcbe591e4fa9107fbc02f3998
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/fe/fe5abeadcbe591e4fa9107fbc02f3998
+    projectPath: Library/metadata/fe/fe5abeadcbe591e4fa9107fbc02f3998
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/metadata/fe/fe5abeadcbe591e4fa9107fbc02f3998.info
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/metadata/fe/fe5abeadcbe591e4fa9107fbc02f3998.info
+    projectPath: Library/metadata/fe/fe5abeadcbe591e4fa9107fbc02f3998.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: KingCat/Library/ScriptAssemblies/Assembly-CSharp.dll
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ScriptAssemblies/Assembly-CSharp.dll
+    projectPath: Library/ScriptAssemblies/Assembly-CSharp.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: KingCat/Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll
+    projectPath: Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: KingCat/Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+    projectPath: Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: KingCat/Library/ScriptAssemblies/BuiltinAssemblies.stamp
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ScriptAssemblies/BuiltinAssemblies.stamp
+    projectPath: Library/ScriptAssemblies/BuiltinAssemblies.stamp
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: KingCat/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+    projectPath: Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: KingCat/Library/ScriptAssemblies/Unity.Rider.Editor.dll
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ScriptAssemblies/Unity.Rider.Editor.dll
+    projectPath: Library/ScriptAssemblies/Unity.Rider.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: KingCat/Library/ScriptAssemblies/Unity.TextMeshPro.dll
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ScriptAssemblies/Unity.TextMeshPro.dll
+    projectPath: Library/ScriptAssemblies/Unity.TextMeshPro.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: KingCat/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+    projectPath: Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: KingCat/Library/ScriptAssemblies/Unity.Timeline.dll
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ScriptAssemblies/Unity.Timeline.dll
+    projectPath: Library/ScriptAssemblies/Unity.Timeline.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: KingCat/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+    projectPath: Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: KingCat/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
+    projectPath: Library/ScriptAssemblies/Unity.VSCode.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: KingCat/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+    projectPath: Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: KingCat/Library/ScriptAssemblies/UnityEditor.UI.dll
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ScriptAssemblies/UnityEditor.UI.dll
+    projectPath: Library/ScriptAssemblies/UnityEditor.UI.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: KingCat/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+    projectPath: Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: KingCat/Library/ScriptAssemblies/UnityEngine.UI.dll
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ScriptAssemblies/UnityEngine.UI.dll
+    projectPath: Library/ScriptAssemblies/UnityEngine.UI.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: KingCat/Library/ShaderCache/0/0457a60447f0cbf51ef700ec1e9695ff.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/0/0457a60447f0cbf51ef700ec1e9695ff.bin
+    projectPath: Library/ShaderCache/0/0457a60447f0cbf51ef700ec1e9695ff.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/0/0d741d17a3efc4d92bbe968087dade62.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/0/0d741d17a3efc4d92bbe968087dade62.bin
+    projectPath: Library/ShaderCache/0/0d741d17a3efc4d92bbe968087dade62.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/1/16f821937458a3a02971f1ba52c9b24e.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/1/16f821937458a3a02971f1ba52c9b24e.bin
+    projectPath: Library/ShaderCache/1/16f821937458a3a02971f1ba52c9b24e.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/1/187c7577e2d2036d4ef54445ff23b317.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/1/187c7577e2d2036d4ef54445ff23b317.bin
+    projectPath: Library/ShaderCache/1/187c7577e2d2036d4ef54445ff23b317.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/1/1c1db99da9d24043b5809cb222b15eaa.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/1/1c1db99da9d24043b5809cb222b15eaa.bin
+    projectPath: Library/ShaderCache/1/1c1db99da9d24043b5809cb222b15eaa.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/1/1d21cc6103ceac59efd8b7575d6188ea.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/1/1d21cc6103ceac59efd8b7575d6188ea.bin
+    projectPath: Library/ShaderCache/1/1d21cc6103ceac59efd8b7575d6188ea.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/2/214cd936badcfb97a7bf1f474b6f6022.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/2/214cd936badcfb97a7bf1f474b6f6022.bin
+    projectPath: Library/ShaderCache/2/214cd936badcfb97a7bf1f474b6f6022.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/2/23eb4051ed430a5bce4cf6bddda0066c.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/2/23eb4051ed430a5bce4cf6bddda0066c.bin
+    projectPath: Library/ShaderCache/2/23eb4051ed430a5bce4cf6bddda0066c.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/2/274ff9227fce257452cb2b46aada8ccf.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/2/274ff9227fce257452cb2b46aada8ccf.bin
+    projectPath: Library/ShaderCache/2/274ff9227fce257452cb2b46aada8ccf.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/2/27fb541e35b241048567594b8215f2e8.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/2/27fb541e35b241048567594b8215f2e8.bin
+    projectPath: Library/ShaderCache/2/27fb541e35b241048567594b8215f2e8.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/2/2c9969eda8636d61667693693491a594.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/2/2c9969eda8636d61667693693491a594.bin
+    projectPath: Library/ShaderCache/2/2c9969eda8636d61667693693491a594.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/3/310b3b9a6ceb6b897b4cbc0c902bf65b.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/3/310b3b9a6ceb6b897b4cbc0c902bf65b.bin
+    projectPath: Library/ShaderCache/3/310b3b9a6ceb6b897b4cbc0c902bf65b.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/3/33d4d78251dd5a7d6a9664295d9b602b.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/3/33d4d78251dd5a7d6a9664295d9b602b.bin
+    projectPath: Library/ShaderCache/3/33d4d78251dd5a7d6a9664295d9b602b.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/3/343ab4eb644413d1001cb378d543fc63.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/3/343ab4eb644413d1001cb378d543fc63.bin
+    projectPath: Library/ShaderCache/3/343ab4eb644413d1001cb378d543fc63.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/3/37003fe198b18db97e89eb68264f6d51.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/3/37003fe198b18db97e89eb68264f6d51.bin
+    projectPath: Library/ShaderCache/3/37003fe198b18db97e89eb68264f6d51.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/4/4148402c5eba4cc06f6b6299c35565ed.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/4/4148402c5eba4cc06f6b6299c35565ed.bin
+    projectPath: Library/ShaderCache/4/4148402c5eba4cc06f6b6299c35565ed.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/4/43d9d48d67892e33b1bdcf10797921b4.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/4/43d9d48d67892e33b1bdcf10797921b4.bin
+    projectPath: Library/ShaderCache/4/43d9d48d67892e33b1bdcf10797921b4.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/4/48a5379afc9309e0b374f17ca6c49536.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/4/48a5379afc9309e0b374f17ca6c49536.bin
+    projectPath: Library/ShaderCache/4/48a5379afc9309e0b374f17ca6c49536.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/5/503587935ba272b8ca2a7586fa5baba8.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/5/503587935ba272b8ca2a7586fa5baba8.bin
+    projectPath: Library/ShaderCache/5/503587935ba272b8ca2a7586fa5baba8.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/5/56264fe2ae24100da1c5bfffe95e643b.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/5/56264fe2ae24100da1c5bfffe95e643b.bin
+    projectPath: Library/ShaderCache/5/56264fe2ae24100da1c5bfffe95e643b.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/5/5a97b13e6e576f1180e68474763766bc.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/5/5a97b13e6e576f1180e68474763766bc.bin
+    projectPath: Library/ShaderCache/5/5a97b13e6e576f1180e68474763766bc.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/5/5d457f819fa993f5a53a4df4178db9fc.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/5/5d457f819fa993f5a53a4df4178db9fc.bin
+    projectPath: Library/ShaderCache/5/5d457f819fa993f5a53a4df4178db9fc.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/6/654a20d8d63a6f57aee7fe15bb51ca12.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/6/654a20d8d63a6f57aee7fe15bb51ca12.bin
+    projectPath: Library/ShaderCache/6/654a20d8d63a6f57aee7fe15bb51ca12.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/6/67db1aa44ed6c97491921534fb212ca5.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/6/67db1aa44ed6c97491921534fb212ca5.bin
+    projectPath: Library/ShaderCache/6/67db1aa44ed6c97491921534fb212ca5.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/6/69fead7712bb349e4c341bdf6d767244.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/6/69fead7712bb349e4c341bdf6d767244.bin
+    projectPath: Library/ShaderCache/6/69fead7712bb349e4c341bdf6d767244.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/7/78ae56f4b420d5c6316b70b8fa8e65d5.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/7/78ae56f4b420d5c6316b70b8fa8e65d5.bin
+    projectPath: Library/ShaderCache/7/78ae56f4b420d5c6316b70b8fa8e65d5.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/7/7fa50d2e4aee4f7c333f4283a69f5062.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/7/7fa50d2e4aee4f7c333f4283a69f5062.bin
+    projectPath: Library/ShaderCache/7/7fa50d2e4aee4f7c333f4283a69f5062.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/8/81c3332a923d0576aa92b3cbe9c3a2b8.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/8/81c3332a923d0576aa92b3cbe9c3a2b8.bin
+    projectPath: Library/ShaderCache/8/81c3332a923d0576aa92b3cbe9c3a2b8.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/8/84231ba32df653ba3be3731675dfefed.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/8/84231ba32df653ba3be3731675dfefed.bin
+    projectPath: Library/ShaderCache/8/84231ba32df653ba3be3731675dfefed.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/8/8710b4a01d3a40bc53a704fb7e9f60ea.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/8/8710b4a01d3a40bc53a704fb7e9f60ea.bin
+    projectPath: Library/ShaderCache/8/8710b4a01d3a40bc53a704fb7e9f60ea.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/8/8f3b56b5544387f18d98090e08939f87.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/8/8f3b56b5544387f18d98090e08939f87.bin
+    projectPath: Library/ShaderCache/8/8f3b56b5544387f18d98090e08939f87.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/9/92f51e04e71e15eec3661a0a87eb0f2c.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/9/92f51e04e71e15eec3661a0a87eb0f2c.bin
+    projectPath: Library/ShaderCache/9/92f51e04e71e15eec3661a0a87eb0f2c.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/9/96dd26e34eff8634d95c3fdd4a988c60.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/9/96dd26e34eff8634d95c3fdd4a988c60.bin
+    projectPath: Library/ShaderCache/9/96dd26e34eff8634d95c3fdd4a988c60.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/9/97c2e305f19d6f0ff966aa083aa36a55.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/9/97c2e305f19d6f0ff966aa083aa36a55.bin
+    projectPath: Library/ShaderCache/9/97c2e305f19d6f0ff966aa083aa36a55.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/9/9ba1eae7790e2d0a05574e0800afba4a.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/9/9ba1eae7790e2d0a05574e0800afba4a.bin
+    projectPath: Library/ShaderCache/9/9ba1eae7790e2d0a05574e0800afba4a.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/9/9e513f116258b0e7ce91aed41f7af110.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/9/9e513f116258b0e7ce91aed41f7af110.bin
+    projectPath: Library/ShaderCache/9/9e513f116258b0e7ce91aed41f7af110.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/a/a02d15a09183739d98fc7ab9611579a1.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/a/a02d15a09183739d98fc7ab9611579a1.bin
+    projectPath: Library/ShaderCache/a/a02d15a09183739d98fc7ab9611579a1.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/a/a065b95657d8553203c216110107c003.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/a/a065b95657d8553203c216110107c003.bin
+    projectPath: Library/ShaderCache/a/a065b95657d8553203c216110107c003.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/a/a81335fcfbc5e41f418d9274aa295922.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/a/a81335fcfbc5e41f418d9274aa295922.bin
+    projectPath: Library/ShaderCache/a/a81335fcfbc5e41f418d9274aa295922.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/a/aeca0ab6992120414adcabbcfea45703.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/a/aeca0ab6992120414adcabbcfea45703.bin
+    projectPath: Library/ShaderCache/a/aeca0ab6992120414adcabbcfea45703.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/b/b6a7a1fa022eb21d97de38d788831124.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/b/b6a7a1fa022eb21d97de38d788831124.bin
+    projectPath: Library/ShaderCache/b/b6a7a1fa022eb21d97de38d788831124.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/b/b7c952734a5abcd868a572675e9fa6fb.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/b/b7c952734a5abcd868a572675e9fa6fb.bin
+    projectPath: Library/ShaderCache/b/b7c952734a5abcd868a572675e9fa6fb.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/c/cf9395112053627f7d96cd2f5f890d0c.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/c/cf9395112053627f7d96cd2f5f890d0c.bin
+    projectPath: Library/ShaderCache/c/cf9395112053627f7d96cd2f5f890d0c.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/d/d0702b0293c71429466b11276d7d2a6f.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/d/d0702b0293c71429466b11276d7d2a6f.bin
+    projectPath: Library/ShaderCache/d/d0702b0293c71429466b11276d7d2a6f.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/d/d1e3035be03636438014c2a2392388eb.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/d/d1e3035be03636438014c2a2392388eb.bin
+    projectPath: Library/ShaderCache/d/d1e3035be03636438014c2a2392388eb.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/d/d6e6601dbcf063e599ad350e19992ec2.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/d/d6e6601dbcf063e599ad350e19992ec2.bin
+    projectPath: Library/ShaderCache/d/d6e6601dbcf063e599ad350e19992ec2.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/d/dbfca61fbfc513ba0436d22642febe31.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/d/dbfca61fbfc513ba0436d22642febe31.bin
+    projectPath: Library/ShaderCache/d/dbfca61fbfc513ba0436d22642febe31.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/e/e1f12728821534f8e3a51326f259d2b7.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/e/e1f12728821534f8e3a51326f259d2b7.bin
+    projectPath: Library/ShaderCache/e/e1f12728821534f8e3a51326f259d2b7.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/e/eb1d68909857955fe2b13fa7342bd402.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/e/eb1d68909857955fe2b13fa7342bd402.bin
+    projectPath: Library/ShaderCache/e/eb1d68909857955fe2b13fa7342bd402.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/f/f49959bbc5d5945e97ee82f44388d296.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/f/f49959bbc5d5945e97ee82f44388d296.bin
+    projectPath: Library/ShaderCache/f/f49959bbc5d5945e97ee82f44388d296.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/f/f89371d7050812dee07d9e509d3672c7.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/f/f89371d7050812dee07d9e509d3672c7.bin
+    projectPath: Library/ShaderCache/f/f89371d7050812dee07d9e509d3672c7.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/f/fcd1dc2fde60b53f97b4993b2e9b0f7f.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/f/fcd1dc2fde60b53f97b4993b2e9b0f7f.bin
+    projectPath: Library/ShaderCache/f/fcd1dc2fde60b53f97b4993b2e9b0f7f.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/ShaderCache/f/fe07587819306949803a65fcf14ff2f7.bin
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/ShaderCache/f/fe07587819306949803a65fcf14ff2f7.bin
+    projectPath: Library/ShaderCache/f/fe07587819306949803a65fcf14ff2f7.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Library/StateCache/Hierarchy/8792af-mainStage.json
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Library/StateCache/Hierarchy/8792af-mainStage.json
+    projectPath: Library/StateCache/Hierarchy/8792af-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: KingCat/Temp/__Backupscenes/0.backup
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Temp/__Backupscenes/0.backup
+    projectPath: Temp/__Backupscenes/0.backup
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Temp/ProcessJobs/b3ddf866c320de331f21607d134a894a.bakert
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Temp/ProcessJobs/b3ddf866c320de331f21607d134a894a.bakert
+    projectPath: Temp/ProcessJobs/b3ddf866c320de331f21607d134a894a.bakert
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Temp/UnityLockfile
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Temp/UnityLockfile
+    projectPath: Temp/UnityLockfile
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Temp/UnityTempFile-012b37b39a95f48929a1435f6e9f3b50
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Temp/UnityTempFile-012b37b39a95f48929a1435f6e9f3b50
+    projectPath: Temp/UnityTempFile-012b37b39a95f48929a1435f6e9f3b50
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Temp/UnityTempFile-0653ddee257f64794a084b80a3ce9bbb
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Temp/UnityTempFile-0653ddee257f64794a084b80a3ce9bbb
+    projectPath: Temp/UnityTempFile-0653ddee257f64794a084b80a3ce9bbb
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Temp/UnityTempFile-275632c23e8844170a1ee766f08e2e92
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Temp/UnityTempFile-275632c23e8844170a1ee766f08e2e92
+    projectPath: Temp/UnityTempFile-275632c23e8844170a1ee766f08e2e92
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Temp/UnityTempFile-29b483f63c36e4ced8ddbc059d4cfc0d
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Temp/UnityTempFile-29b483f63c36e4ced8ddbc059d4cfc0d
+    projectPath: Temp/UnityTempFile-29b483f63c36e4ced8ddbc059d4cfc0d
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Temp/UnityTempFile-51d8dab58e3bb4976beb31b194f5957d
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Temp/UnityTempFile-51d8dab58e3bb4976beb31b194f5957d
+    projectPath: Temp/UnityTempFile-51d8dab58e3bb4976beb31b194f5957d
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Temp/UnityTempFile-55e85bb8cc3dd40e19face4bcd2d118c
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Temp/UnityTempFile-55e85bb8cc3dd40e19face4bcd2d118c
+    projectPath: Temp/UnityTempFile-55e85bb8cc3dd40e19face4bcd2d118c
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Temp/UnityTempFile-5ae5be42016da463aa7446135f81c055
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Temp/UnityTempFile-5ae5be42016da463aa7446135f81c055
+    projectPath: Temp/UnityTempFile-5ae5be42016da463aa7446135f81c055
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Temp/UnityTempFile-5cd5542d207f149ce95605713c710787
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Temp/UnityTempFile-5cd5542d207f149ce95605713c710787
+    projectPath: Temp/UnityTempFile-5cd5542d207f149ce95605713c710787
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Temp/UnityTempFile-5fc4101484de14ce580cb46f210ba0ea
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Temp/UnityTempFile-5fc4101484de14ce580cb46f210ba0ea
+    projectPath: Temp/UnityTempFile-5fc4101484de14ce580cb46f210ba0ea
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Temp/UnityTempFile-773210f6a7a8b47e9b2baef4b0e38a9a
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Temp/UnityTempFile-773210f6a7a8b47e9b2baef4b0e38a9a
+    projectPath: Temp/UnityTempFile-773210f6a7a8b47e9b2baef4b0e38a9a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Temp/UnityTempFile-7869790317c34482486dd69c3ded2692
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Temp/UnityTempFile-7869790317c34482486dd69c3ded2692
+    projectPath: Temp/UnityTempFile-7869790317c34482486dd69c3ded2692
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Temp/UnityTempFile-7c0aa38663328406d993d93498e29a7a
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Temp/UnityTempFile-7c0aa38663328406d993d93498e29a7a
+    projectPath: Temp/UnityTempFile-7c0aa38663328406d993d93498e29a7a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Temp/UnityTempFile-7c9350152598b4e828fac273ee87a952
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Temp/UnityTempFile-7c9350152598b4e828fac273ee87a952
+    projectPath: Temp/UnityTempFile-7c9350152598b4e828fac273ee87a952
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Temp/UnityTempFile-811907b239f944f74884f842b96f2e52
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Temp/UnityTempFile-811907b239f944f74884f842b96f2e52
+    projectPath: Temp/UnityTempFile-811907b239f944f74884f842b96f2e52
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Temp/UnityTempFile-8343ed267765d4fb09f2c7adc8c990c3
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Temp/UnityTempFile-8343ed267765d4fb09f2c7adc8c990c3
+    projectPath: Temp/UnityTempFile-8343ed267765d4fb09f2c7adc8c990c3
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Temp/UnityTempFile-84039f73f7ecc4b0bbb40c2941506acd
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Temp/UnityTempFile-84039f73f7ecc4b0bbb40c2941506acd
+    projectPath: Temp/UnityTempFile-84039f73f7ecc4b0bbb40c2941506acd
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Temp/UnityTempFile-89c664e4af9a7425fae9149795c1a2eb
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Temp/UnityTempFile-89c664e4af9a7425fae9149795c1a2eb
+    projectPath: Temp/UnityTempFile-89c664e4af9a7425fae9149795c1a2eb
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Temp/UnityTempFile-901a1ce002cbc4ceb930a8f0fbaa9670
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Temp/UnityTempFile-901a1ce002cbc4ceb930a8f0fbaa9670
+    projectPath: Temp/UnityTempFile-901a1ce002cbc4ceb930a8f0fbaa9670
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Temp/UnityTempFile-90a35371767da40c0ae015d1c7a8075b
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Temp/UnityTempFile-90a35371767da40c0ae015d1c7a8075b
+    projectPath: Temp/UnityTempFile-90a35371767da40c0ae015d1c7a8075b
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Temp/UnityTempFile-a9116c4d953754bc4a70960803e86111
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Temp/UnityTempFile-a9116c4d953754bc4a70960803e86111
+    projectPath: Temp/UnityTempFile-a9116c4d953754bc4a70960803e86111
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Temp/UnityTempFile-c080a591f31134f6c89e49a2f739302b
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Temp/UnityTempFile-c080a591f31134f6c89e49a2f739302b
+    projectPath: Temp/UnityTempFile-c080a591f31134f6c89e49a2f739302b
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Temp/UnityTempFile-d263cd6cf81124a11843df7cbd552f4b
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Temp/UnityTempFile-d263cd6cf81124a11843df7cbd552f4b
+    projectPath: Temp/UnityTempFile-d263cd6cf81124a11843df7cbd552f4b
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Temp/UnityTempFile-d4b8dd069da9f4acc8c8c3c5711844f9
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Temp/UnityTempFile-d4b8dd069da9f4acc8c8c3c5711844f9
+    projectPath: Temp/UnityTempFile-d4b8dd069da9f4acc8c8c3c5711844f9
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Temp/UnityTempFile-d7c0ce6e38fff4f6c8f468f2af716234
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Temp/UnityTempFile-d7c0ce6e38fff4f6c8f468f2af716234
+    projectPath: Temp/UnityTempFile-d7c0ce6e38fff4f6c8f468f2af716234
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Temp/UnityTempFile-d8006261622b0436ca0daf281c6a1179
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Temp/UnityTempFile-d8006261622b0436ca0daf281c6a1179
+    projectPath: Temp/UnityTempFile-d8006261622b0436ca0daf281c6a1179
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Temp/UnityTempFile-d82a188fdf65141f89c4cf049602549f
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Temp/UnityTempFile-d82a188fdf65141f89c4cf049602549f
+    projectPath: Temp/UnityTempFile-d82a188fdf65141f89c4cf049602549f
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Temp/UnityTempFile-debf69c58711649c096545e34b70f314
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Temp/UnityTempFile-debf69c58711649c096545e34b70f314
+    projectPath: Temp/UnityTempFile-debf69c58711649c096545e34b70f314
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Temp/UnityTempFile-e9d47ce9ad1bf478c9560e118c368ccc
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Temp/UnityTempFile-e9d47ce9ad1bf478c9560e118c368ccc
+    projectPath: Temp/UnityTempFile-e9d47ce9ad1bf478c9560e118c368ccc
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Temp/UnityTempFile-faf1737fb1c4141018fff8730fbe0858
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Temp/UnityTempFile-faf1737fb1c4141018fff8730fbe0858
+    projectPath: Temp/UnityTempFile-faf1737fb1c4141018fff8730fbe0858
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: KingCat/Temp/UnityTempFile-fe0aa9216076846f0bbaab70b15dc1a0
+    fullPath: /Users/jaketallman/Desktop/Classes/year4/q2/game_design/CatGame/KingCat/Temp/UnityTempFile-fe0aa9216076846f0bbaab70b15dc1a0
+    projectPath: Temp/UnityTempFile-fe0aa9216076846f0bbaab70b15dc1a0
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
