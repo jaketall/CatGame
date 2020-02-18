@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2020-02-13T10:10:55.162-08:00
-  initializedAtString: 2020-02-13T10:10:55.162-08:00
+  lastUpdatedAtString: 2020-02-18T10:03:07.533-08:00
+  initializedAtString: 2020-02-18T10:03:07.533-08:00
   currentGitRemote:
     name: origin
     url: https://github.com/jaketall/CatGame.git
@@ -24,14 +24,14 @@ MonoBehaviour:
     function: 0
     token: 
   currentGitBranch:
-    name: animation
-    tracking: origin/animation
+    name: master
+    tracking: origin/master
   currentConfigBranch:
-    name: animation
+    name: master
     remote:
       name: origin
       url: https://github.com/jaketall/CatGame.git
-    trackingBranch: animation
+    trackingBranch: master
   currentConfigRemote:
     name: origin
     url: https://github.com/jaketall/CatGame.git

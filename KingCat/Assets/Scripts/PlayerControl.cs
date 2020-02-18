@@ -11,6 +11,9 @@ public class PlayerControl : MonoBehaviour
     public float thrust; 
     private Rigidbody rb;
 
+    public string axis_v;
+    public string axis_h;
+    
     private Animator catAnim;
     private int runHash = Animator.StringToHash("Run");
     private int dashHash = Animator.StringToHash("Dash");
@@ -39,8 +42,8 @@ public class PlayerControl : MonoBehaviour
     private void FixedUpdate()
     {
         catAnim.SetBool(dashHash, false);
-        float horizontal_input = Input.GetAxis("Horizontal");
-        float vertical_input = Input.GetAxis("Vertical");
+        float horizontal_input = Input.GetAxis(axis_h);
+        float vertical_input = Input.GetAxis(axis_v);
         Vector3 newPos = new Vector3(horizontal_input, 0, vertical_input) * thrust;
 
         if (Input.GetKeyDown(KeyCode.Space))

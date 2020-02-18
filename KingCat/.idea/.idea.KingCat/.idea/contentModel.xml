@@ -6,6 +6,18 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="PowerUp" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="CustomizablePowerUp.cs" t="Include" />
+            <e p="PowerUpManager.cs" t="Include" />
+            <e p="PowerUpRotation.cs" t="Include" />
+            <e p="ScaleParticles.cs" t="Include" />
+            <e p="TakeablePowerUp.cs" t="Include" />
+            <e p="Utility" t="Include">
+              <e p="Singleton.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="SampleScenes" t="Include">
           <e p="Menu" t="Include">
             <e p="Scripts" t="Include">
@@ -29,6 +41,7 @@
           <e p="Player2Controller.cs" t="Include" />
           <e p="PlayerControl.cs" t="Include" />
           <e p="Powerup.cs" t="Include" />
+          <e p="ZoomHandler.cs" t="Include" />
         </e>
         <e p="Standard Assets" t="Include">
           <e p="2D" t="Include">
