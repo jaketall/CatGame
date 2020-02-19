@@ -33,7 +33,9 @@ public class ZoomHandler : MonoBehaviour
 		//update camera fovs
 		float aspect = this.gameObject.GetComponent<Camera>().aspect; 
 		fovVert = this.gameObject.GetComponent<Camera>().fieldOfView;
-		fovHoriz = fovVert * aspect;
+		//fovHoriz = fovVert * aspect;
+		//credit to user andeeeee :: https://forum.unity.com/threads/how-to-calculate-horizontal-field-of-view.16114/
+		fovHoriz = (float)(2 * Math.Atan(Mathf.Tan(fovVert * Mathf.Deg2Rad / 2) * aspect) * Mathf.Rad2Deg);
 
 	     	//center camera first
 		float minX, maxX, minZ, maxZ;
@@ -47,12 +49,28 @@ public class ZoomHandler : MonoBehaviour
 			minZ = Math.Min(minZ, targets[i].transform.position.z);
 			maxZ = Math.Max(maxZ, targets[i].transform.position.z);
 		}
+		//get cat distance from center of camera
 		float catRadX = (maxX-minX)/2;
 		float catRadZ = (maxZ-minZ)/2;
 		
 		//Formula for calc'ing appropriate zoom height (y):
 		//tan(fov) = x/y --> x = y*tan() --> y = x/tan(fov)
+		float zoomForX = catRadX*(1+percentZoomedOut/100)/Mathf.Tan(fovHoriz);
+		float zoomForZ = catRadZ*(1+percentZoomedOut/100)/Mathf.Tan(fovVert);
+
+		camTransform.position = Vector3.Slerp(
+				camTransform.position, //current position
+				new Vector3( //target position
+					catRadX+minX, //center between cats, X
+					Mathf.Clamp( //choose a zoom level
+						Math.Max(zoomForX, zoomForZ),
+						minHeight, 
+						maxHeight), 
+					catRadZ+minZ), //center between cats, Y
+				.1f); //percent complete with zoom
+		return;
 		
+		/*
 		if(catRadX/aspect > catRadZ) //cats are closer to horizontal edge
 		{
 
@@ -80,7 +98,8 @@ public class ZoomHandler : MonoBehaviour
 						catRadZ+minZ), //center between cats, Y
 					.1f); //percent complete with zoom
 		}
-		return;
+		*/
+		//return;
 
 		//welp it looks like the 'levels' were kind of totally unnecessary
 		/*
