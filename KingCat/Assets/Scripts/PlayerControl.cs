@@ -7,9 +7,16 @@ public class PlayerControl : MonoBehaviour
 {
     public float xClamp;
     public float yClamp;
-    public float dashForce;
-    public float thrust; 
+    public float thrust;
+
     private Rigidbody rb;
+
+    public bool hasCrown;
+    public GameObject crown;
+    public float crownDropForce = 100; //how far the crown goes when dropped
+    public float crownPickupDelay = 0.3f;
+    public bool canPickupCrown; //used in the "stun" function
+
 
     private Animator catAnim;
     private int runHash = Animator.StringToHash("Run");
@@ -17,37 +24,33 @@ public class PlayerControl : MonoBehaviour
     private int wasHitHash = Animator.StringToHash("Was_Hit");
 
     private bool isDashing;
+    public float dashForce;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         catAnim = GetComponent<Animator>();
+        canPickupCrown = true;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-        //rb.AddForce(thrust * horizontal_input * Vector3.right);
-        //rb.AddForce(thrust * vertical_input * Vector3.forward);
-        // transform.Translate(Time.deltaTime * horizontal_input * Vector3.right * speed);
-        // transform.Translate(Time.deltaTime * vertical_input * Vector3.forward * speed);
-
-
-    }
     private void FixedUpdate()
     {
         catAnim.SetBool(dashHash, false);
         float horizontal_input = Input.GetAxis("Horizontal");
         float vertical_input = Input.GetAxis("Vertical");
         Vector3 newPos = new Vector3(horizontal_input, 0, vertical_input) * thrust;
-
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            //used for testing, can remove when inputs are working
+            dropCrown(gameObject);
+        }
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (!isDashing)
             {
                 //dash
+                //later we can set a delay for dashing
                 catAnim.SetBool(dashHash, true);
                 isDashing = true;
                 StartCoroutine(Dash());
@@ -60,7 +63,6 @@ public class PlayerControl : MonoBehaviour
             {
                 catAnim.SetBool(runHash, true);
                 rb.MovePosition(transform.position + newPos);
-                //transform.rotation = Quaternion.LookRotation(newPos);
                 rb.MoveRotation(Quaternion.LookRotation(newPos));
             }
         }
@@ -83,11 +85,11 @@ public class PlayerControl : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("is dashing? " + isDashing);
             if (isDashing)
             {
                 collision.gameObject.GetComponent<Animator>().SetTrigger(
                     wasHitHash);
+                dropCrown(collision.gameObject);
             }
         }
     }
@@ -100,5 +102,31 @@ public class PlayerControl : MonoBehaviour
         rb.velocity = Vector3.zero;
         isDashing = false;
 
+    }
+    IEnumerator Stun()
+    {
+        //delay pickup, so you can't pick it right back up after being stunned
+        canPickupCrown = false;
+        yield return new WaitForSeconds(crownPickupDelay);
+        canPickupCrown = true;
+    }
+
+    private void dropCrown(GameObject player)
+    {
+        
+        if (player.GetComponent<PlayerControl>().hasCrown)
+        { 
+            StartCoroutine(Stun());
+            // set delay so player can't pick the crown right back up
+            crown.GetComponent<Rigidbody>().isKinematic = false;
+            crown.GetComponent<Rigidbody>().detectCollisions = true;
+            // turn rigidbody back on
+            crown.transform.SetParent(null);
+            crown.GetComponent<Rigidbody>().AddForce(-Vector3.forward *
+                                    crownDropForce, ForceMode.Impulse);
+            // drop the crown
+            CrownBehaviour.pickedUp = false;
+            player.GetComponent<PlayerControl>().hasCrown = false;
+        }
     }
 }
