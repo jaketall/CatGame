@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public class PowerUpManager : Singleton<PowerUpManager>
+public class PowerUpManager: Singleton<PowerUpManager>
 {
 	private PowerUpManager() {}
 
