@@ -1,13 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class PowerUpSpawner : MonoBehaviour
 {
     public GameObject powerUpPrefab;
     public string tagToFollow;
     private GameObject[] targets;
+
+    public float timeBetweenSpawns;
+    private float timeToSpawn=0;
     
+    
+    [Serializable]
+    public class Area
+    {
+        public string name;
+        public float minX;
+        public float maxX;
+        public float minZ;
+        public float maxZ;
+    }
+    public List<Area> areas;
+
     public Color mouseLightColor;
     public Color mouseTintColor;
     public Color mouseSparkleColor;
@@ -50,6 +66,7 @@ public class PowerUpSpawner : MonoBehaviour
     public float whistleShellSize;
     public float whistlePartSize;
 
+    private List<Func<Vector3, GameObject>> funcs;
 
     GameObject spawnPowerUp(Vector3 position, float partSize, float shellSize, Color lightColor, Color tintColor, Color sparkleColor)
     {
@@ -132,28 +149,66 @@ public class PowerUpSpawner : MonoBehaviour
         return spawnPowerUp(position, whistlePartSize, whistleShellSize, whistleLightColor, whistleTintColor, whistleSparkleColor);
     }
 
+    GameObject spawnRandomPowerUp(Vector3 position)
+    {
+        return funcs[UnityEngine.Random.Range(0, funcs.Count)](position);
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        float start = -50;
-        spawnMousePowerUp(new Vector3(start, 5, 0));
-        start += 5;
-        spawnWhistlePowerUp(new Vector3(start, 5, 0));
-        start += 5;
-        spawnClawPowerUp(new Vector3(start, 5, 0));
-        start += 5;
-        spawnLaserPowerUp(new Vector3(start, 5, 0));
-        start += 5;
-        spawnShieldPowerUp(new Vector3(start, 5, 0));
-        start += 5;
-        spawnShoesPowerUp(new Vector3(start, 5, 0));
-        start += 5;
-        spawnTargetPowerUp(new Vector3(start, 5, 0));
+        //float start = -50;
+        //spawnMousePowerUp(new Vector3(start, 5, 0));
+        //start += 5;
+        //spawnWhistlePowerUp(new Vector3(start, 5, 0));
+        //start += 5;
+        //spawnClawPowerUp(new Vector3(start, 5, 0));
+        //start += 5;
+        //spawnLaserPowerUp(new Vector3(start, 5, 0));
+        //start += 5;
+        //spawnShieldPowerUp(new Vector3(start, 5, 0));
+        //start += 5;
+        //spawnShoesPowerUp(new Vector3(start, 5, 0));
+        //start += 5;
+        //spawnTargetPowerUp(new Vector3(start, 5, 0));
+
+        funcs = new List<Func<Vector3, GameObject>>();
+        funcs.Add(spawnMousePowerUp);
+        funcs.Add(spawnMousePowerUp);
+        funcs.Add(spawnWhistlePowerUp);
+        funcs.Add(spawnClawPowerUp);
+        funcs.Add(spawnLaserPowerUp);
+        funcs.Add(spawnShieldPowerUp);
+        funcs.Add(spawnShoesPowerUp);
+        funcs.Add(spawnTargetPowerUp);
     }
 
     // Update is called once per frame
     void Update()
     {
+        timeToSpawn += Time.deltaTime;
+        if(timeToSpawn >= timeBetweenSpawns)
+        {
+            Vector3 position = new Vector3();
+
+            Area targetArea = areas[UnityEngine.Random.Range(0,areas.Count)];
+            Collider[] nearbyObjects;
+            while(true)
+            {
+                position.x = UnityEngine.Random.Range(targetArea.minX, targetArea.maxX);
+                position.y = 5;
+                position.z = UnityEngine.Random.Range(targetArea.minZ, targetArea.maxZ);
+
+                nearbyObjects = Physics.OverlapSphere(position, 10); //probably shouldn't harcode this radius...
+                //Debug.Log(nearbyObjects.Length);
+                //foreach (Collider c in nearbyObjects)
+                //    Debug.Log(c.gameObject.name);
+                if(nearbyObjects.Length == 1) //only touches 'Plane' (floor) -- not walls, players, obstacles, etc
+                    break;
+            }
+
+            spawnRandomPowerUp(position);
+            timeToSpawn = 0;
+        }
     }
 }
