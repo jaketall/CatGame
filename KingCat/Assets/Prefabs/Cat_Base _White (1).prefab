@@ -515,8 +515,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.4533615
-  m_Center: {x: 0, y: 0.37159893, z: 0}
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0.37, z: 0.16}
 --- !u!114 &6842866400355432102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -537,6 +537,7 @@ MonoBehaviour:
   crownDropForce: 100
   crownPickupDelay: 0.3
   canPickupCrown: 0
+  isStunned: 0
   dashForce: 500
   axis_v: Vertical
   axis_h: Horizontal

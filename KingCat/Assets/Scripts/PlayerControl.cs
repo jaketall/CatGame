@@ -38,14 +38,14 @@ public class PlayerControl : MonoBehaviour
         catAnim = GetComponent<Animator>();
         canPickupCrown = true;
         String[] joysticks = Input.GetJoystickNames();
+        Debug.Log("There are " + joysticks.Length + " controller(s) connected");
         for (int i = 0; i < joysticks.Length; i++){
-            Debug.Log(joysticks[i]);
+            Debug.Log("Joystick" +joysticks[i]);
         }
     }
 
     private void FixedUpdate()
-    {
-        catAnim.SetBool(dashHash, false);
+    { 
         float horizontal_input = Input.GetAxis(axis_h);
         float vertical_input = Input.GetAxis(axis_v);
         Vector3 newPos = new Vector3(horizontal_input, 0, vertical_input) * thrust;
