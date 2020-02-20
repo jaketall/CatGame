@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Fire
   - powerup
+  - Player1Bar
+  - Player2Bar
   layers:
   - Default
   - TransparentFX
