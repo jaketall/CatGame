@@ -24,6 +24,7 @@ public class PlayerControl : MonoBehaviour
     private int wasHitHash = Animator.StringToHash("Was_Hit");
 
     private bool isDashing;
+    public bool isStunned;
     public float dashForce;
 
     public string axis_v;
@@ -63,7 +64,7 @@ public class PlayerControl : MonoBehaviour
         else if (!newPos.Equals(Vector3.zero))
         {
             // run
-            if (!isDashing)
+            if (!isDashing && !isStunned)
             {
                 catAnim.SetBool(runHash, true);
                 rb.MovePosition(transform.position + newPos);
