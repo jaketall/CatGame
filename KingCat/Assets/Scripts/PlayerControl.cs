@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -37,6 +37,10 @@ public class PlayerControl : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         catAnim = GetComponent<Animator>();
         canPickupCrown = true;
+        String[] joysticks = Input.GetJoystickNames();
+        for (int i = 0; i < joysticks.Length; i++){
+            Debug.Log(joysticks[i]);
+        }
     }
 
     private void FixedUpdate()
