@@ -1,6 +1,4 @@
-Base path: '/home/kyle/Documents/Unity/2019.2.20f1/Editor/Data', plugins path '/home/kyle/Documents/Unity/2019.2.20f1/Editor/Data/PlaybackEngines'
+Base path: '/Applications/Unity/Hub/Editor/2019.2.3f1/Unity.app/Contents', plugins path '/Applications/Unity/Hub/Editor/2019.2.3f1/PlaybackEngines'
 Cmd: initializeCompiler
-Cmd: disassembleShader
-  api=15 insize=3830 outsize=3830 ok=1
 
 Quitting shader compiler process
