@@ -79,6 +79,7 @@ public class PlayerControl : MonoBehaviour
         {
             // not moving -> back to idle
             catAnim.SetBool(runHash, false);
+
         }
 
     }

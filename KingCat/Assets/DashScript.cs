@@ -21,6 +21,7 @@ public class DashScript : StateMachineBehaviour
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         animator.SetBool(dashHash, false);
+        
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
