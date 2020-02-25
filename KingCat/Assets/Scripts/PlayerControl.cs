@@ -30,6 +30,7 @@ public class PlayerControl : MonoBehaviour
     public string axis_v;
     public string axis_h;
     public string dash_str;
+    ParticleSystem particle;
 
     // Start is called before the first frame update
     void Start()
@@ -42,6 +43,7 @@ public class PlayerControl : MonoBehaviour
         for (int i = 0; i < joysticks.Length; i++){
             Debug.Log("Joystick" +joysticks[i]);
         }
+        particle = GetComponent<ParticleSystem>();
     }
 
     private void FixedUpdate()
@@ -60,9 +62,15 @@ public class PlayerControl : MonoBehaviour
             {
                 //dash
                 //later we can set a delay for dashing
+                Debug.Log(particle);
+                if(particle != null)
+                {
+                    particle.Play();
+                }
                 catAnim.SetBool(dashHash, true);
                 isDashing = true;
                 StartCoroutine(Dash());
+
             }
         }
         else if (!newPos.Equals(Vector3.zero))
