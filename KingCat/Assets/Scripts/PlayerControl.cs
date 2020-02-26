@@ -23,7 +23,7 @@ public class PlayerControl : MonoBehaviour
     private int dashHash = Animator.StringToHash("Dash");
     private int wasHitHash = Animator.StringToHash("Was_Hit");
 
-    private bool isDashing;
+    public bool isDashing;
     public bool isStunned;
     public float dashForce;
 
@@ -128,7 +128,7 @@ public class PlayerControl : MonoBehaviour
         player.GetComponent<PlayerControl>().canPickupCrown = true;
     }
 
-    private void dropCrown(GameObject player)
+    public void dropCrown(GameObject player)
     {
         Debug.Log("drop crown called. has crown" + player.GetComponent<PlayerControl>().hasCrown);
         if (player.GetComponent<PlayerControl>().hasCrown)
