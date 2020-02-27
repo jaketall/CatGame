@@ -11,7 +11,9 @@ public class PowerUpSpawner : MonoBehaviour
 
     public float timeBetweenSpawns;
     private float timeToSpawn=0;
-    
+
+    public int powerUpCount = 0;
+    public int maxPowerUpCount;
     
     [Serializable]
     public class Area
@@ -24,17 +26,17 @@ public class PowerUpSpawner : MonoBehaviour
     }
     public List<Area> areas;
 
-    public Color mouseLightColor;
-    public Color mouseTintColor;
-    public Color mouseSparkleColor;
-    public float mouseShellSize;
-    public float mousePartSize;
+    public Color speedBoostLightColor;
+    public Color speedBoostTintColor;
+    public Color speedBoostSparkleColor;
+    public float speedBoostShellSize;
+    public float speedBoostPartSize;
 
-    public Color clawLightColor;
-    public Color clawTintColor;
-    public Color clawSparkleColor;
-    public float clawShellSize;
-    public float clawPartSize;
+    public Color stunBoostLightColor;
+    public Color stunBoostTintColor;
+    public Color stunBoostSparkleColor;
+    public float stunBoostShellSize;
+    public float stunBoostPartSize;
 
     public Color laserLightColor;
     public Color laserTintColor;
@@ -42,23 +44,23 @@ public class PowerUpSpawner : MonoBehaviour
     public float laserShellSize;
     public float laserPartSize;
 
-    public Color shieldLightColor;
-    public Color shieldTintColor;
-    public Color shieldSparkleColor;
-    public float shieldShellSize;
-    public float shieldPartSize;
+    public Color stunImmunityLightColor;
+    public Color stunImmunityTintColor;
+    public Color stunImmunitySparkleColor;
+    public float stunImmunityShellSize;
+    public float stunImmunityPartSize;
 
-    public Color shoesLightColor;
-    public Color shoesTintColor;
-    public Color shoesSparkleColor;
-    public float shoesShellSize;
-    public float shoesPartSize;
+    public Color bootsLightColor;
+    public Color bootsTintColor;
+    public Color bootsSparkleColor;
+    public float bootsShellSize;
+    public float bootsPartSize;
 
-    public Color targetLightColor;
-    public Color targetTintColor;
-    public Color targetSparkleColor;
-    public float targetShellSize;
-    public float targetPartSize;
+    public Color hairballBoostLightColor;
+    public Color hairballBoostTintColor;
+    public Color hairballBoostSparkleColor;
+    public float hairballBoostShellSize;
+    public float hairballBoostPartSize;
 
     public Color whistleLightColor;
     public Color whistleTintColor;
@@ -68,11 +70,15 @@ public class PowerUpSpawner : MonoBehaviour
 
     private List<Func<Vector3, GameObject>> funcs;
 
-    GameObject spawnPowerUp(Vector3 position, float partSize, float shellSize, Color lightColor, Color tintColor, Color sparkleColor)
+    GameObject spawnPowerUp(Vector3 position, float partSize, float shellSize, Color lightColor, Color tintColor, Color sparkleColor, string type)
     {
+        powerUpCount++;
         GameObject powerUp = Instantiate(powerUpPrefab);
 		targets = GameObject.FindGameObjectsWithTag(tagToFollow);
-        powerUp.AddComponent<CollectMe>().targets=targets;
+        var collectMe = powerUp.AddComponent<CollectMe>();
+        collectMe.targets=targets;
+        collectMe.type=type;
+        collectMe.spawner = this;
 
         //update transform
         powerUp.transform.position = position;
@@ -120,37 +126,38 @@ public class PowerUpSpawner : MonoBehaviour
 
     
     //make functions for other scripts to call
-    GameObject spawnMousePowerUp(Vector3 position)
+    GameObject spawnSpeedBoostPowerUp(Vector3 position)
     {
-        return spawnPowerUp(position, mousePartSize, mouseShellSize, mouseLightColor, mouseTintColor, mouseSparkleColor);
+        return spawnPowerUp(position, speedBoostPartSize, speedBoostShellSize, speedBoostLightColor, speedBoostTintColor, speedBoostSparkleColor, "speedBoost");
     }
-    GameObject spawnClawPowerUp(Vector3 position)
+    GameObject spawnStunBoostPowerUp(Vector3 position)
     {
-        return spawnPowerUp(position, clawPartSize, clawShellSize, clawLightColor, clawTintColor, clawSparkleColor);
+        return spawnPowerUp(position, stunBoostPartSize, stunBoostShellSize, stunBoostLightColor, stunBoostTintColor, stunBoostSparkleColor, "stunBoost");
     }
     GameObject spawnLaserPowerUp(Vector3 position)
     {
-        return spawnPowerUp(position, laserPartSize, laserShellSize, laserLightColor, laserTintColor, laserSparkleColor);
+        return spawnPowerUp(position, laserPartSize, laserShellSize, laserLightColor, laserTintColor, laserSparkleColor, "laserPointer");
     }
-    GameObject spawnShieldPowerUp(Vector3 position)
+    GameObject spawnStunImmunityPowerUp(Vector3 position)
     {
-        return spawnPowerUp(position, shieldPartSize, shieldShellSize, shieldLightColor, shieldTintColor, shieldSparkleColor);
+        return spawnPowerUp(position, stunImmunityPartSize, stunImmunityShellSize, stunImmunityLightColor, stunImmunityTintColor, stunImmunitySparkleColor, "stunImmunity");
     }
-    GameObject spawnShoesPowerUp(Vector3 position)
+    GameObject spawnBootsPowerUp(Vector3 position)
     {
-        return spawnPowerUp(position, shoesPartSize, shoesShellSize, shoesLightColor, shoesTintColor, shoesSparkleColor);
+        return spawnPowerUp(position, bootsPartSize, bootsShellSize, bootsLightColor, bootsTintColor, bootsSparkleColor, "boots");
     }
-    GameObject spawnTargetPowerUp(Vector3 position)
+    GameObject spawnHairballBoostPowerUp(Vector3 position)
     {
-        return spawnPowerUp(position, targetPartSize, targetShellSize, targetLightColor, targetTintColor, targetSparkleColor);
+        return spawnPowerUp(position, hairballBoostPartSize, hairballBoostShellSize, hairballBoostLightColor, hairballBoostTintColor, hairballBoostSparkleColor,"hairballBoost");
     }
     GameObject spawnWhistlePowerUp(Vector3 position)
     {
-        return spawnPowerUp(position, whistlePartSize, whistleShellSize, whistleLightColor, whistleTintColor, whistleSparkleColor);
+        return spawnPowerUp(position, whistlePartSize, whistleShellSize, whistleLightColor, whistleTintColor, whistleSparkleColor, "whistle");
     }
 
     GameObject spawnRandomPowerUp(Vector3 position)
     {
+        return spawnSpeedBoostPowerUp(position);
         return funcs[UnityEngine.Random.Range(0, funcs.Count)](position);
     }
 
@@ -158,34 +165,37 @@ public class PowerUpSpawner : MonoBehaviour
     void Start()
     {
         //float start = -50;
-        //spawnMousePowerUp(new Vector3(start, 5, 0));
+        //spawnSpeedBoostPowerUp(new Vector3(start, 5, 0));
         //start += 5;
         //spawnWhistlePowerUp(new Vector3(start, 5, 0));
         //start += 5;
-        //spawnClawPowerUp(new Vector3(start, 5, 0));
+        //spawnStunBoostPowerUp(new Vector3(start, 5, 0));
         //start += 5;
         //spawnLaserPowerUp(new Vector3(start, 5, 0));
         //start += 5;
-        //spawnShieldPowerUp(new Vector3(start, 5, 0));
+        //spawnStunImmunityPowerUp(new Vector3(start, 5, 0));
         //start += 5;
-        //spawnShoesPowerUp(new Vector3(start, 5, 0));
+        //spawnBootsPowerUp(new Vector3(start, 5, 0));
         //start += 5;
-        //spawnTargetPowerUp(new Vector3(start, 5, 0));
+        //spawnHairballBoostPowerUp(new Vector3(start, 5, 0));
 
         funcs = new List<Func<Vector3, GameObject>>();
-        funcs.Add(spawnMousePowerUp);
-        funcs.Add(spawnMousePowerUp);
+        funcs.Add(spawnSpeedBoostPowerUp);
+        funcs.Add(spawnSpeedBoostPowerUp);
         funcs.Add(spawnWhistlePowerUp);
-        funcs.Add(spawnClawPowerUp);
+        funcs.Add(spawnStunBoostPowerUp);
         funcs.Add(spawnLaserPowerUp);
-        funcs.Add(spawnShieldPowerUp);
-        funcs.Add(spawnShoesPowerUp);
-        funcs.Add(spawnTargetPowerUp);
+        funcs.Add(spawnStunImmunityPowerUp);
+        funcs.Add(spawnBootsPowerUp);
+        funcs.Add(spawnHairballBoostPowerUp);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(powerUpCount >= maxPowerUpCount)
+            return;
+
         timeToSpawn += Time.deltaTime;
         if(timeToSpawn >= timeBetweenSpawns)
         {

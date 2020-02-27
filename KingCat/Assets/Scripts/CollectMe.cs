@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class CollectMe : MonoBehaviour
 {
+    //spawner sets these values
     public GameObject[] targets;
+    public string type;
+    public PowerUpSpawner spawner;
 
     // Start is called before the first frame update
     void Start()
@@ -38,6 +41,11 @@ public class CollectMe : MonoBehaviour
             }
         }
         if(closestPlayer != null)
+        {
+            //closestPlayer.GetComponent<PlayerControl>().powers.speedBoost = true;
+            closestPlayer.GetComponent<PlayerControl>().powers.setActive(type);
+            spawner.powerUpCount--;
             Destroy(this.gameObject);
+        }
     }
 }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.57481724, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -365,7 +365,7 @@ Transform:
   m_LocalScale: {x: 25, y: 15, z: 50}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &81027754
 PrefabInstance:
@@ -585,7 +585,7 @@ PrefabInstance:
     - target: {fileID: 5079099201601997551, guid: 2fdd5ebee86fb499383c5aee703852e9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 5079099201601997551, guid: 2fdd5ebee86fb499383c5aee703852e9,
         type: 3}
@@ -654,7 +654,7 @@ PrefabInstance:
     - target: {fileID: 5079099201601997551, guid: 2fdd5ebee86fb499383c5aee703852e9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 5079099201601997551, guid: 2fdd5ebee86fb499383c5aee703852e9,
         type: 3}
@@ -768,8 +768,14 @@ Transform:
   m_LocalScale: {x: 14, y: 10, z: 30}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &563662307 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7451906298191692728, guid: 0b80e853a40ea4afc81979fb67839eb6,
+    type: 3}
+  m_PrefabInstance: {fileID: 8227703853620788956}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &662328166
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -815,7 +821,7 @@ PrefabInstance:
     - target: {fileID: 5079099201601997551, guid: 2fdd5ebee86fb499383c5aee703852e9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 5079099201601997551, guid: 2fdd5ebee86fb499383c5aee703852e9,
         type: 3}
@@ -928,7 +934,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &762259149
 GameObject:
@@ -6084,7 +6090,7 @@ Transform:
   m_LocalScale: {x: 5, y: 10, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
@@ -6231,7 +6237,7 @@ PrefabInstance:
     - target: {fileID: 5079099201601997551, guid: 2fdd5ebee86fb499383c5aee703852e9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5079099201601997551, guid: 2fdd5ebee86fb499383c5aee703852e9,
         type: 3}
@@ -6487,7 +6493,7 @@ Transform:
   m_LocalScale: {x: 25, y: 25, z: 25}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1216339890 stripped
 GameObject:
@@ -6590,7 +6596,7 @@ RectTransform:
   - {fileID: 789840617}
   - {fileID: 1403390372}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6642,7 +6648,7 @@ PrefabInstance:
     - target: {fileID: 5079099201601997551, guid: 2fdd5ebee86fb499383c5aee703852e9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 5079099201601997551, guid: 2fdd5ebee86fb499383c5aee703852e9,
         type: 3}
@@ -6965,6 +6971,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 81027755}
+  - {fileID: 563662307}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6983,6 +6990,8 @@ MonoBehaviour:
   powerUpPrefab: {fileID: 81027756}
   tagToFollow: Player
   timeBetweenSpawns: 5
+  powerUpCount: 0
+  maxPowerUpCount: 5
   areas:
   - name: Outside
     minX: -156
@@ -7014,37 +7023,37 @@ MonoBehaviour:
     maxX: 72
     minZ: -122
     maxZ: -23
-  mouseLightColor: {r: 1, g: 1, b: 0, a: 0}
-  mouseTintColor: {r: 0, g: 0, b: 0, a: 0}
-  mouseSparkleColor: {r: 1, g: 1, b: 0, a: 0}
-  mouseShellSize: 5
-  mousePartSize: 10
-  clawLightColor: {r: 1, g: 0, b: 0, a: 0}
-  clawTintColor: {r: 0, g: 0, b: 0, a: 0}
-  clawSparkleColor: {r: 1, g: 0.30724925, b: 0, a: 0}
-  clawShellSize: 5
-  clawPartSize: 10
+  speedBoostLightColor: {r: 0.96933115, g: 1, b: 0, a: 0}
+  speedBoostTintColor: {r: 0, g: 0, b: 0, a: 0}
+  speedBoostSparkleColor: {r: 0.99765027, g: 1, b: 0, a: 0}
+  speedBoostShellSize: 5
+  speedBoostPartSize: 10
+  stunBoostLightColor: {r: 1, g: 0.07939433, b: 0, a: 0}
+  stunBoostTintColor: {r: 0, g: 0, b: 0, a: 0}
+  stunBoostSparkleColor: {r: 1, g: 0.4716981, b: 0.6120978, a: 0}
+  stunBoostShellSize: 5
+  stunBoostPartSize: 10
   laserLightColor: {r: 0, g: 1, b: 0, a: 0}
   laserTintColor: {r: 0, g: 0, b: 0, a: 0}
   laserSparkleColor: {r: 0, g: 1, b: 0.9701662, a: 0}
   laserShellSize: 5
   laserPartSize: 10
-  shieldLightColor: {r: 0.047864437, g: 0, b: 1, a: 0}
-  shieldTintColor: {r: 0, g: 0, b: 0, a: 0}
-  shieldSparkleColor: {r: 0, g: 0.9903536, b: 1, a: 0}
-  shieldShellSize: 5
-  shieldPartSize: 10
-  shoesLightColor: {r: 0.4339623, g: 0.22249147, b: 0.10849057, a: 0}
-  shoesTintColor: {r: 0, g: 0, b: 0, a: 0}
-  shoesSparkleColor: {r: 0.5754717, g: 0.27526608, b: 0.15201138, a: 0}
-  shoesShellSize: 5
-  shoesPartSize: 10
-  targetLightColor: {r: 1, g: 0, b: 0.8624263, a: 0}
-  targetTintColor: {r: 0, g: 0, b: 0, a: 0}
-  targetSparkleColor: {r: 1, g: 1, b: 1, a: 0}
-  targetShellSize: 5
-  targetPartSize: 10
-  whistleLightColor: {r: 0.509434, g: 0.509434, b: 0.509434, a: 0}
+  stunImmunityLightColor: {r: 0.018557072, g: 0, b: 1, a: 0}
+  stunImmunityTintColor: {r: 0, g: 0, b: 0, a: 0}
+  stunImmunitySparkleColor: {r: 0, g: 1, b: 0.9696944, a: 0}
+  stunImmunityShellSize: 5
+  stunImmunityPartSize: 10
+  bootsLightColor: {r: 0.41509432, g: 0.13345312, b: 0, a: 0}
+  bootsTintColor: {r: 0, g: 0, b: 0, a: 0}
+  bootsSparkleColor: {r: 0.6981132, g: 0.33405247, b: 0.10866857, a: 0}
+  bootsShellSize: 5
+  bootsPartSize: 10
+  hairballBoostLightColor: {r: 0, g: 0, b: 0, a: 0}
+  hairballBoostTintColor: {r: 0, g: 0, b: 0, a: 0}
+  hairballBoostSparkleColor: {r: 0, g: 0, b: 0, a: 0}
+  hairballBoostShellSize: 5
+  hairballBoostPartSize: 10
+  whistleLightColor: {r: 0.3301887, g: 0.3270737, b: 0.3270737, a: 0}
   whistleTintColor: {r: 0, g: 0, b: 0, a: 0}
   whistleSparkleColor: {r: 1, g: 1, b: 1, a: 0}
   whistleShellSize: 5
@@ -7230,7 +7239,7 @@ Transform:
   m_Children:
   - {fileID: 1406613461}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1655051839
 GameObject:
@@ -7296,7 +7305,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1683445588
 GameObject:
@@ -7388,7 +7397,7 @@ Transform:
   m_LocalScale: {x: 20, y: 10, z: 37}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1765963478
 PrefabInstance:
@@ -7555,7 +7564,7 @@ Transform:
   m_LocalScale: {x: 25, y: 10, z: 80}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1913552025
 GameObject:
@@ -7649,7 +7658,7 @@ Transform:
   m_LocalScale: {x: 50, y: 2, z: 50}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: -0.001, y: -0.08800001, z: -0.0050000004}
 --- !u!65 &1913552030
 BoxCollider:
@@ -7709,7 +7718,7 @@ PrefabInstance:
     - target: {fileID: 5079099201601997551, guid: 2fdd5ebee86fb499383c5aee703852e9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 5079099201601997551, guid: 2fdd5ebee86fb499383c5aee703852e9,
         type: 3}
@@ -7745,6 +7754,51 @@ PrefabInstance:
       propertyPath: crown
       value: 
       objectReference: {fileID: 1548610417}
+    - target: {fileID: 2692081659286411372, guid: 27487ec56aec04262abf768281fca487,
+        type: 3}
+      propertyPath: powerDurations.speedBoostDuration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2692081659286411372, guid: 27487ec56aec04262abf768281fca487,
+        type: 3}
+      propertyPath: powerDurations.stunBoostDuration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2692081659286411372, guid: 27487ec56aec04262abf768281fca487,
+        type: 3}
+      propertyPath: powerDurations.hairballBoostDuration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2692081659286411372, guid: 27487ec56aec04262abf768281fca487,
+        type: 3}
+      propertyPath: powerDurations.stunImmunityDuration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2692081659286411372, guid: 27487ec56aec04262abf768281fca487,
+        type: 3}
+      propertyPath: powerDurations.laserPointerDuration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2692081659286411372, guid: 27487ec56aec04262abf768281fca487,
+        type: 3}
+      propertyPath: powerDurations.bootsDuration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2692081659286411372, guid: 27487ec56aec04262abf768281fca487,
+        type: 3}
+      propertyPath: speedBoostPercent
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2692081659286411372, guid: 27487ec56aec04262abf768281fca487,
+        type: 3}
+      propertyPath: stunBoostPercent
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2692081659286411372, guid: 27487ec56aec04262abf768281fca487,
+        type: 3}
+      propertyPath: hairballBoostPercent
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 2692081660919986129, guid: 27487ec56aec04262abf768281fca487,
         type: 3}
       propertyPath: m_Name
@@ -7788,7 +7842,7 @@ PrefabInstance:
     - target: {fileID: 2692081660920223661, guid: 27487ec56aec04262abf768281fca487,
         type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2692081660920223661, guid: 27487ec56aec04262abf768281fca487,
         type: 3}
@@ -7852,7 +7906,7 @@ PrefabInstance:
     - target: {fileID: 947404163027992131, guid: 4af3c037e8aef4c5782670eab65b9426,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 947404163027992131, guid: 4af3c037e8aef4c5782670eab65b9426,
         type: 3}
@@ -7921,7 +7975,7 @@ PrefabInstance:
     - target: {fileID: 6842866399194925927, guid: dfba076753abb4d70b80b2d2f1a0c05a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6842866399194925927, guid: dfba076753abb4d70b80b2d2f1a0c05a,
         type: 3}
@@ -7958,6 +8012,56 @@ PrefabInstance:
       propertyPath: crown
       value: 
       objectReference: {fileID: 1548610417}
+    - target: {fileID: 6842866400355432102, guid: dfba076753abb4d70b80b2d2f1a0c05a,
+        type: 3}
+      propertyPath: powerDurations.speedBoostDuration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842866400355432102, guid: dfba076753abb4d70b80b2d2f1a0c05a,
+        type: 3}
+      propertyPath: powerDurations.stunBoostDuration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842866400355432102, guid: dfba076753abb4d70b80b2d2f1a0c05a,
+        type: 3}
+      propertyPath: powerDurations.hairballBoostDuration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842866400355432102, guid: dfba076753abb4d70b80b2d2f1a0c05a,
+        type: 3}
+      propertyPath: powerDurations.stunImmunityDuration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842866400355432102, guid: dfba076753abb4d70b80b2d2f1a0c05a,
+        type: 3}
+      propertyPath: powerDurations.laserPointerDuration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842866400355432102, guid: dfba076753abb4d70b80b2d2f1a0c05a,
+        type: 3}
+      propertyPath: powerDurations.bootsDuration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842866400355432102, guid: dfba076753abb4d70b80b2d2f1a0c05a,
+        type: 3}
+      propertyPath: hasCrown
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842866400355432102, guid: dfba076753abb4d70b80b2d2f1a0c05a,
+        type: 3}
+      propertyPath: speedBoostPercent
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842866400355432102, guid: dfba076753abb4d70b80b2d2f1a0c05a,
+        type: 3}
+      propertyPath: stunBoostPercent
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842866400355432102, guid: dfba076753abb4d70b80b2d2f1a0c05a,
+        type: 3}
+      propertyPath: hairballBoostPercent
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 6842866400355432103, guid: dfba076753abb4d70b80b2d2f1a0c05a,
         type: 3}
       propertyPath: m_Center.z
@@ -7971,7 +8075,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1435477554}
     m_Modifications:
     - target: {fileID: -8547350442983373550, guid: 0b80e853a40ea4afc81979fb67839eb6,
         type: 3}
@@ -7991,32 +8095,32 @@ PrefabInstance:
     - target: {fileID: 7451906298191692728, guid: 0b80e853a40ea4afc81979fb67839eb6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -88.305695
+      value: 0.96590424
       objectReference: {fileID: 0}
     - target: {fileID: 7451906298191692728, guid: 0b80e853a40ea4afc81979fb67839eb6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.7
+      value: -1.7177732
       objectReference: {fileID: 0}
     - target: {fileID: 7451906298191692728, guid: 0b80e853a40ea4afc81979fb67839eb6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.4
+      value: -3.9727812
       objectReference: {fileID: 0}
     - target: {fileID: 7451906298191692728, guid: 0b80e853a40ea4afc81979fb67839eb6,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7451906298191692728, guid: 0b80e853a40ea4afc81979fb67839eb6,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7451906298191692728, guid: 0b80e853a40ea4afc81979fb67839eb6,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7451906298191692728, guid: 0b80e853a40ea4afc81979fb67839eb6,
         type: 3}
@@ -8026,7 +8130,7 @@ PrefabInstance:
     - target: {fileID: 7451906298191692728, guid: 0b80e853a40ea4afc81979fb67839eb6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7451906298191692728, guid: 0b80e853a40ea4afc81979fb67839eb6,
         type: 3}
@@ -8090,7 +8194,7 @@ PrefabInstance:
     - target: {fileID: 8304700078963578215, guid: 2b8adb22479be49b8a161d4ea0b73f29,
         type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 8304700078963578215, guid: 2b8adb22479be49b8a161d4ea0b73f29,
         type: 3}
@@ -8117,5 +8221,50 @@ PrefabInstance:
       propertyPath: crown
       value: 
       objectReference: {fileID: 1548610417}
+    - target: {fileID: 8304700079537059446, guid: 2b8adb22479be49b8a161d4ea0b73f29,
+        type: 3}
+      propertyPath: powerDurations.speedBoostDuration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304700079537059446, guid: 2b8adb22479be49b8a161d4ea0b73f29,
+        type: 3}
+      propertyPath: powerDurations.stunBoostDuration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304700079537059446, guid: 2b8adb22479be49b8a161d4ea0b73f29,
+        type: 3}
+      propertyPath: powerDurations.hairballBoostDuration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304700079537059446, guid: 2b8adb22479be49b8a161d4ea0b73f29,
+        type: 3}
+      propertyPath: powerDurations.stunImmunityDuration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304700079537059446, guid: 2b8adb22479be49b8a161d4ea0b73f29,
+        type: 3}
+      propertyPath: powerDurations.laserPointerDuration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304700079537059446, guid: 2b8adb22479be49b8a161d4ea0b73f29,
+        type: 3}
+      propertyPath: powerDurations.bootsDuration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304700079537059446, guid: 2b8adb22479be49b8a161d4ea0b73f29,
+        type: 3}
+      propertyPath: speedBoostPercent
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304700079537059446, guid: 2b8adb22479be49b8a161d4ea0b73f29,
+        type: 3}
+      propertyPath: stunBoostPercent
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304700079537059446, guid: 2b8adb22479be49b8a161d4ea0b73f29,
+        type: 3}
+      propertyPath: hairballBoostPercent
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b8adb22479be49b8a161d4ea0b73f29, type: 3}
