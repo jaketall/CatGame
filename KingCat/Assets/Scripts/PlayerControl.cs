@@ -204,7 +204,8 @@ public class PlayerControl : MonoBehaviour
     public string axis_v;
     public string axis_h;
     public string dash_str;
-    ParticleSystem particle;
+    public ParticleSystem dashParticle;
+    public ParticleSystem stunnedParticle;
 
     // Start is called before the first frame update
     void Start()
@@ -218,7 +219,6 @@ public class PlayerControl : MonoBehaviour
         for (int i = 0; i < joysticks.Length; i++){
             Debug.Log("Joystick" +joysticks[i]);
         }
-        particle = GetComponent<ParticleSystem>();
     }
 
     private void FixedUpdate()
@@ -240,14 +240,13 @@ public class PlayerControl : MonoBehaviour
         }
         if (Input.GetButtonDown(dash_str))
         {
-            if (!isDashing)
+            if (!isDashing && !isStunned)
             {
                 //dash
                 //later we can set a delay for dashing
-                Debug.Log(particle);
-                if(particle != null)
+                if(dashParticle != null)
                 {
-                    particle.Play();
+                    dashParticle.Play(false);
                 }
                 catAnim.SetBool(dashHash, true);
                 isDashing = true;
@@ -285,15 +284,29 @@ public class PlayerControl : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (isDashing)
+            if (isDashing && isLookingAt(collision.gameObject))
             {
                 collision.gameObject.GetComponent<Animator>().SetTrigger(
                     wasHitHash);
+                Debug.Log("stunned particle is" + stunnedParticle);
+                collision.gameObject.GetComponent<PlayerControl>().stunnedParticle.Play();
                 dropCrown(collision.gameObject);
             }
         }
     }
+    private bool isLookingAt(GameObject player)
+    {
+        RaycastHit hit;
+        if (Physics.SphereCast(new Ray(transform.position, transform.TransformDirection(Vector3.forward)), 2.5f, out hit))
+        {
 
+            if(hit.transform.gameObject.tag == "Player")
+            {
+                return true;
+            }
+        }
+        return false;
+    }
     IEnumerator Dash()
     {
         yield return new WaitForSeconds(0.3f);
