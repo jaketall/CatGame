@@ -5,6 +5,7 @@ using UnityEngine;
 public class SoccerBallScript : MonoBehaviour
 {
     private Rigidbody rb;
+    public ParticleSystem fire;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,7 +14,20 @@ public class SoccerBallScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(GetComponent<Rigidbody>().velocity.magnitude);
+        if(rb.velocity.magnitude > 50)
+        {
+            if (!fire.isPlaying)
+            {
+                fire.Play();
+            }
+        }
+        else
+        {
+            if (fire.isPlaying)
+            {
+                fire.Stop();
+            }
+        }
     }
 
     private void OnCollisionEnter(Collision collision)

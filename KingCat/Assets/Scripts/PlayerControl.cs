@@ -259,6 +259,7 @@ public class PlayerControl : MonoBehaviour
             // run
             if (!isDashing && !isStunned)
             {
+                rb.velocity = Vector3.zero;
                 catAnim.SetBool(runHash, true);
                 rb.MovePosition(transform.position + newPos);
                 rb.MoveRotation(Quaternion.LookRotation(newPos));
