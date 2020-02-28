@@ -43,7 +43,7 @@ public class CollectMe : MonoBehaviour
         if(closestPlayer != null)
         {
             //closestPlayer.GetComponent<PlayerControl>().powers.speedBoost = true;
-            closestPlayer.GetComponent<PlayerControl>().powers.setActive(type);
+            closestPlayer.GetComponent<PowerController>().powers.setActive(type);
             spawner.powerUpCount--;
             Destroy(this.gameObject);
         }
