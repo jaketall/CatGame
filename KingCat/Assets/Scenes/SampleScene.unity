@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.57481724, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -16314,6 +16314,29 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &852246420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852246412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 600d9d6d53c47f96d8bcb66a6c0f99d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerDurations:
+    speedBoostDuration: 5
+    stunBoostDuration: 5
+    hairballBoostDuration: 5
+    stunImmunityDuration: 5
+    laserPointerDuration: 5
+    bootsDuration: 5
+  powerPercents:
+    speedBoostPercent: 100
+    stunBoostPercent: 100
+    hairballBoostPercent: 100
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -16672,6 +16695,29 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8304700079901722137}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1216339898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216339890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 600d9d6d53c47f96d8bcb66a6c0f99d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerDurations:
+    speedBoostDuration: 5
+    stunBoostDuration: 5
+    hairballBoostDuration: 5
+    stunImmunityDuration: 5
+    laserPointerDuration: 5
+    bootsDuration: 5
+  powerPercents:
+    speedBoostPercent: 100
+    stunBoostPercent: 100
+    hairballBoostPercent: 100
 --- !u!1 &1246245463
 GameObject:
   m_ObjectHideFlags: 0
@@ -27731,6 +27777,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d730e91a7f8c4dcc928eeedd8fecff3, type: 3}
+--- !u!1 &1804506132 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2692081660919986129, guid: 27487ec56aec04262abf768281fca487,
+    type: 3}
+  m_PrefabInstance: {fileID: 2692081659881870882}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1804506138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804506132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 600d9d6d53c47f96d8bcb66a6c0f99d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerDurations:
+    speedBoostDuration: 5
+    stunBoostDuration: 5
+    hairballBoostDuration: 5
+    stunImmunityDuration: 5
+    laserPointerDuration: 5
+    bootsDuration: 5
+  powerPercents:
+    speedBoostPercent: 100
+    stunBoostPercent: 100
+    hairballBoostPercent: 100
 --- !u!1001 &1877394249
 PrefabInstance:
   m_ObjectHideFlags: 0
