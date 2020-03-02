@@ -12,6 +12,9 @@ public class PlayerControl : MonoBehaviour
     private Rigidbody rb;
 
     public bool hasCrown;
+    public float currentScore = 0.0f;
+    public int roundsWon = 0;
+
     public GameObject crown;
     public float crownDropForce = 100; //how far the crown goes when dropped
     public float crownPickupDelay = 0.3f;
@@ -97,6 +100,10 @@ public class PlayerControl : MonoBehaviour
             catAnim.SetBool(runHash, false);
 
         }
+        if(hasCrown)
+        {
+            currentScore += Time.deltaTime;
+        }
 
     }
     private void OnTriggerEnter(Collider other)
@@ -170,6 +177,14 @@ public class PlayerControl : MonoBehaviour
             CrownBehaviour.pickedUp = false;
             player.GetComponent<PlayerControl>().hasCrown = false;
             
+        }
+    }
+
+    public void UpdateCurrentScore()
+    {
+        if (hasCrown)
+        {
+            currentScore += (int)Time.deltaTime * 1;
         }
     }
 }

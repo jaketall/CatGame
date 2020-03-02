@@ -156,7 +156,7 @@ public class PowerController : MonoBehaviour
     public Powers powers;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         powers = new Powers(powerDurations, powerPercents);
         
