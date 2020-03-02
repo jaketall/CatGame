@@ -9424,7 +9424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 685c4107364daa148b61e40bd34f1934, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cat: {fileID: 0}
+  cat: {fileID: 7319769038858148504, guid: 7e8a75c3f65c3439f808fe68fa40c3ed, type: 3}
   scoreBar: {fileID: 308387449}
   scoreText: {fileID: 1852718785}
   gameManager: {fileID: 1956585643}

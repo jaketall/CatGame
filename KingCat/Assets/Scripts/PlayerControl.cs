@@ -24,6 +24,7 @@ public class PlayerControl : MonoBehaviour
     private Animator catAnim;
     private int runHash = Animator.StringToHash("Run");
     private int dashHash = Animator.StringToHash("Dash");
+    private int swipeHash = Animator.StringToHash("Swipe");
     private int wasHitHash = Animator.StringToHash("Was_Hit");
 
     public bool isDashing;
@@ -96,8 +97,10 @@ public class PlayerControl : MonoBehaviour
         {
             if (!isSwiping && !isStunned)
             {
+                catAnim.SetBool(swipeHash, true);
                 catAudio.PlayOneShot(swipeSound, 1.0f);
                 isSwiping = true;
+                Debug.Log("Swipe Attack");
                 StartCoroutine(Swipe());
             }
         }
