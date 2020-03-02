@@ -157,7 +157,6 @@ public class PowerUpSpawner : MonoBehaviour
 
     GameObject spawnRandomPowerUp(Vector3 position)
     {
-        return spawnSpeedBoostPowerUp(position);
         return funcs[UnityEngine.Random.Range(0, funcs.Count)](position);
     }
 

@@ -114,17 +114,36 @@ public class PlayerControl : MonoBehaviour
         }
     }
 
+    public void setStun(bool extraStun, float extraStunPercent)
+    {
+        if(powers.stunImmunity)
+            return;
+
+        Animator anim = this.gameObject.GetComponent<Animator>();
+        anim.SetTrigger(wasHitHash);
+
+        Debug.Log("stunned particle is" + stunnedParticle);
+        
+        anim.speed = 1; //set to default
+        if(extraStun)
+            anim.speed *= (1-extraStunPercent/100);
+
+        stunnedParticle.Play();
+        dropCrown(this.gameObject);
+    }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             if (isDashing && isLookingAt(collision.gameObject))
             {
-                collision.gameObject.GetComponent<Animator>().SetTrigger(
-                    wasHitHash);
-                Debug.Log("stunned particle is" + stunnedParticle);
-                collision.gameObject.GetComponent<PlayerControl>().stunnedParticle.Play();
-                dropCrown(collision.gameObject);
+                
+                collision.gameObject.GetComponent<PlayerControl>().setStun(powers.stunBoost, powers.stunBoostPercent);
+                //collision.gameObject.GetComponent<Animator>().SetTrigger(
+                //    wasHitHash);
+                //Debug.Log("stunned particle is" + stunnedParticle);
+                //collision.gameObject.GetComponent<PlayerControl>().stunnedParticle.Play();
+                //dropCrown(collision.gameObject);
             }
         }
     }
