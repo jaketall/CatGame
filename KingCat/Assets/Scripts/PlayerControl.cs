@@ -28,11 +28,18 @@ public class PlayerControl : MonoBehaviour
 
     public bool isDashing;
     public bool isStunned;
+    public bool isSwiping;
     public float dashForce;
+    
+    private AudioSource catAudio;
+    public AudioClip dashSound;
+    public AudioClip stunSound;
+    public AudioClip swipeSound;
 
     public string axis_v;
     public string axis_h;
     public string dash_str;
+    public string swipe_str;
     public ParticleSystem dashParticle;
     public ParticleSystem stunnedParticle;
 
@@ -50,6 +57,7 @@ public class PlayerControl : MonoBehaviour
         for (int i = 0; i < joysticks.Length; i++){
             Debug.Log("Joystick" +joysticks[i]);
         }
+        catAudio = GetComponent<AudioSource>();
     }
 
     private void FixedUpdate()
@@ -78,9 +86,19 @@ public class PlayerControl : MonoBehaviour
                     dashParticle.Play(false);
                 }
                 catAnim.SetBool(dashHash, true);
+                catAudio.PlayOneShot(dashSound, 1.0f);
                 isDashing = true;
                 StartCoroutine(Dash());
 
+            }
+        }
+        else if (Input.GetButtonDown(swipe_str))
+        {
+            if (!isSwiping && !isStunned)
+            {
+                catAudio.PlayOneShot(swipeSound, 1.0f);
+                isSwiping = true;
+                StartCoroutine(Swipe());
             }
         }
         else if (!newPos.Equals(Vector3.zero))
@@ -135,9 +153,9 @@ public class PlayerControl : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (isDashing && isLookingAt(collision.gameObject))
+            if ((isDashing && isLookingAt(collision.gameObject)) || (isSwiping && isLookingAt(collision.gameObject)))
             {
-                
+                catAudio.PlayOneShot(stunSound, 1.0f);
                 collision.gameObject.GetComponent<PlayerControl>().setStun(powers.stunBoost, powers.stunBoostPercent);
                 //collision.gameObject.GetComponent<Animator>().SetTrigger(
                 //    wasHitHash);
@@ -160,6 +178,13 @@ public class PlayerControl : MonoBehaviour
         }
         return false;
     }
+    
+    IEnumerator Swipe()
+    {
+        yield return new WaitForSeconds(0.3f);
+        isSwiping = false;
+    }
+    
     IEnumerator Dash()
     {
         yield return new WaitForSeconds(0.3f);
