@@ -10,12 +10,14 @@ public class ScoreBarUI : MonoBehaviour
     public Image scoreBar;
     public Text scoreText;
     public GameManager gameManager;
+    private Transform crownIcon;
 
     public float maxScore = 60;
 
     private void Start()
     {
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        crownIcon = transform.Find("Crown Icon");
         UpdateScoreBar();
     }
 
@@ -26,11 +28,19 @@ public class ScoreBarUI : MonoBehaviour
         if(ratio >= 1.0f)
         {
             ratio = 1.0f;
-            cat.GetComponent<PlayerControl>().roundsWon++;
+            //cat.GetComponent<PlayerControl>().roundsWon++;
             //end round
             cat.GetComponent<PlayerControl>().currentScore = 60;
         }
         scoreBar.rectTransform.localScale = new Vector3(ratio, 1, 1);
+        if(cat.GetComponent<PlayerControl>().hasCrown)
+        {
+            crownIcon.gameObject.SetActive(true);
+        }
+        else
+        {
+            crownIcon.gameObject.SetActive(false);
+        }
         scoreText.text = ((int)cat.GetComponent<PlayerControl>().currentScore).ToString();
     }
 

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerControl : MonoBehaviour
 {
@@ -60,6 +61,8 @@ public class PlayerControl : MonoBehaviour
         }
         catAudio = GetComponent<AudioSource>();
     }
+
+    
 
     private void FixedUpdate()
     {
@@ -121,10 +124,7 @@ public class PlayerControl : MonoBehaviour
             catAnim.SetBool(runHash, false);
 
         }
-        if(hasCrown)
-        {
-            currentScore += Time.deltaTime;
-        }
+        UpdateCurrentScore();
 
     }
     private void OnTriggerEnter(Collider other)
@@ -248,7 +248,11 @@ public class PlayerControl : MonoBehaviour
     {
         if (hasCrown)
         {
-            currentScore += (int)Time.deltaTime * 1;
+            currentScore += Time.deltaTime;
+            if(currentScore >= 60.0f)
+            {
+                GameManager.EndRound();
+            }
         }
     }
 }
