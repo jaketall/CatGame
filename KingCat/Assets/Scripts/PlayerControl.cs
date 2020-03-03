@@ -171,14 +171,31 @@ public class PlayerControl : MonoBehaviour
     private bool isLookingAt(GameObject player)
     {
         RaycastHit hit;
-        if (Physics.SphereCast(new Ray(transform.position, transform.TransformDirection(Vector3.forward)), 2.5f, out hit))
+        if (Physics.SphereCast(new Ray(transform.position, transform.TransformDirection(Vector3.forward)), 2f, out hit))
         {
 
-            if(hit.transform.gameObject.tag == "Player")
+            if (hit.transform.gameObject.tag == "Player")
             {
                 return true;
             }
         }
+        else if (Physics.SphereCast(new Ray(transform.position, transform.TransformDirection(new Vector3(0.2f, 0, 1))), 2f, out hit))
+        {
+
+            if (hit.transform.gameObject.tag == "Player")
+            {
+                return true;
+            }
+        }
+        else if (Physics.SphereCast(new Ray(transform.position, transform.TransformDirection(new Vector3(-0.2f, 0, 1))), 2f, out hit))
+        {
+
+            if (hit.transform.gameObject.tag == "Player")
+            {
+                return true;
+            }
+        }
+
         return false;
     }
     

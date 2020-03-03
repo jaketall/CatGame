@@ -212,7 +212,7 @@ public class PowerUpSpawner : MonoBehaviour
                 //Debug.Log(nearbyObjects.Length);
                 //foreach (Collider c in nearbyObjects)
                 //    Debug.Log(c.gameObject.name);
-                if(nearbyObjects.Length == 1) //only touches 'Plane' (floor) -- not walls, players, obstacles, etc
+                if(nearbyObjects.Length <= 1) //only touches 'Plane' (floor) -- not walls, players, obstacles, etc
                     break;
             }
 
