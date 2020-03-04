@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10111,6 +10111,66 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d8ea30d0c4ca43e0bdd38e557c9f247, type: 3}
+--- !u!1 &1613284961
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1613284963}
+  - component: {fileID: 1613284962}
+  m_Layer: 0
+  m_Name: InControl
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1613284962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613284961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7b5e8de77c5b4597ae7fbfb49a95e22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logDebugInfo: 1
+  invertYAxis: 0
+  useFixedUpdate: 0
+  dontDestroyOnLoad: 1
+  suspendInBackground: 0
+  enableICade: 0
+  enableXInput: 0
+  xInputOverrideUpdateRate: 0
+  xInputUpdateRate: 0
+  xInputOverrideBufferSize: 0
+  xInputBufferSize: 0
+  enableNativeInput: 0
+  nativeInputEnableXInput: 1
+  nativeInputPreventSleep: 0
+  nativeInputOverrideUpdateRate: 0
+  nativeInputUpdateRate: 0
+  customProfiles: []
+--- !u!4 &1613284963
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613284961}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 43
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1630020930
 GameObject:
   m_ObjectHideFlags: 0
@@ -11956,10 +12016,25 @@ PrefabInstance:
       propertyPath: crown
       value: 
       objectReference: {fileID: 1548610417}
+    - target: {fileID: 2692081659286411372, guid: 27487ec56aec04262abf768281fca487,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2692081659286411372, guid: 27487ec56aec04262abf768281fca487,
+        type: 3}
+      propertyPath: controllerIndex
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2692081660919986129, guid: 27487ec56aec04262abf768281fca487,
         type: 3}
       propertyPath: m_Name
       value: Cat_Base _Yellow
+      objectReference: {fileID: 0}
+    - target: {fileID: 2692081660919986129, guid: 27487ec56aec04262abf768281fca487,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2692081660920223661, guid: 27487ec56aec04262abf768281fca487,
         type: 3}
@@ -12312,6 +12387,11 @@ PrefabInstance:
       propertyPath: crown
       value: 
       objectReference: {fileID: 1548610417}
+    - target: {fileID: 8304700079537059446, guid: 2b8adb22479be49b8a161d4ea0b73f29,
+        type: 3}
+      propertyPath: controllerIndex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b8adb22479be49b8a161d4ea0b73f29, type: 3}
 --- !u!1 &8304700079921384765 stripped
@@ -12332,10 +12412,25 @@ PrefabInstance:
       propertyPath: crown
       value: 
       objectReference: {fileID: 1548610417}
+    - target: {fileID: 475922672586884626, guid: 205a5d1506c474b21875cf4df8322892,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 475922672586884626, guid: 205a5d1506c474b21875cf4df8322892,
+        type: 3}
+      propertyPath: controllerIndex
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 475922673157990863, guid: 205a5d1506c474b21875cf4df8322892,
         type: 3}
       propertyPath: m_Name
       value: Cat_Base_Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 475922673157990863, guid: 205a5d1506c474b21875cf4df8322892,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 475922673158202627, guid: 205a5d1506c474b21875cf4df8322892,
         type: 3}
