@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using InControl;
 
 public class PlayerControl : MonoBehaviour
 {
@@ -32,7 +33,7 @@ public class PlayerControl : MonoBehaviour
     public bool isStunned;
     public bool isSwiping;
     public float dashForce;
-    
+
     private AudioSource catAudio;
     public AudioClip dashSound;
     public AudioClip stunSound;
@@ -44,8 +45,16 @@ public class PlayerControl : MonoBehaviour
     public string swipe_str;
     public ParticleSystem dashParticle;
     public ParticleSystem stunnedParticle;
-
+    public InputDevice joystick;
+    public int controllerIndex;
     public PowerController.Powers powers;
+
+    public KeyCode up;
+    public KeyCode down;
+    public KeyCode right;
+    public KeyCode left;
+    public KeyCode dashKey;
+    public KeyCode swipeKey;
 
     // Start is called before the first frame update
     void Start()
@@ -56,21 +65,55 @@ public class PlayerControl : MonoBehaviour
         canPickupCrown = true;
         String[] joysticks = Input.GetJoystickNames();
         Debug.Log("There are " + joysticks.Length + " controller(s) connected");
-        for (int i = 0; i < joysticks.Length; i++){
-            Debug.Log("Joystick" +joysticks[i]);
+        for (int i = 0; i < joysticks.Length; i++)
+        {
+            Debug.Log("Joystick " + joysticks[i]);
         }
         catAudio = GetComponent<AudioSource>();
+        assignKeyCodes();
     }
 
-    
+
 
     private void FixedUpdate()
     {
-        float horizontal_input = Input.GetAxis(axis_h);
-        float vertical_input = Input.GetAxis(axis_v);
+        if (controllerIndex <= InputManager.Devices.Count - 1)
+        {
+            joystick = InputManager.Devices[controllerIndex];
+        }
+        else
+        {
+            joystick = null;
+        }
+        float horizontal_input = 0;
+        float vertical_input = 0;
+        if (joystick == null)
+        {
+            if (Input.GetKey(up))
+            {
+                vertical_input = 1;
+            }
+            else if (Input.GetKey(down))
+            {
+                vertical_input = -1;
+            }
+            if (Input.GetKey(left))
+            {
+                horizontal_input = -1;
+            }
+            else if (Input.GetKey(right))
+            {
+                horizontal_input = 1;
+            }
+        }
+        else
+        {
+            horizontal_input = joystick.LeftStickX;
+            vertical_input = joystick.LeftStickY;
+        }
         Vector3 newPos;
-        if(powers.speedBoost)
-            newPos = new Vector3(horizontal_input, 0, vertical_input) * thrust * (1+powers.speedBoostPercent/100);
+        if (powers.speedBoost)
+            newPos = new Vector3(horizontal_input, 0, vertical_input) * thrust * (1 + powers.speedBoostPercent / 100);
         else
             newPos = new Vector3(horizontal_input, 0, vertical_input) * thrust;
 
@@ -79,16 +122,19 @@ public class PlayerControl : MonoBehaviour
             //used for testing, can remove when inputs are working
             dropCrown(gameObject);
         }
-        if (Input.GetButtonDown(dash_str))
+        if (Input.GetKeyDown(dashKey) || ((joystick != null) &&
+                    joystick.Action1.WasPressed))
         {
+
             if (!isDashing && !isStunned)
             {
                 //dash
                 //later we can set a delay for dashing
-                if(dashParticle != null)
+                if (dashParticle != null)
                 {
                     dashParticle.Play(false);
                 }
+
                 catAnim.SetBool(dashHash, true);
                 catAudio.PlayOneShot(dashSound, 1.0f);
                 isDashing = true;
@@ -96,7 +142,8 @@ public class PlayerControl : MonoBehaviour
 
             }
         }
-        else if (Input.GetButtonDown(swipe_str))
+        else if (Input.GetKeyDown(swipeKey) || ((joystick != null) &&
+                            joystick.Action1.WasPressed))
         {
             if (!isSwiping && !isStunned)
             {
@@ -131,23 +178,23 @@ public class PlayerControl : MonoBehaviour
     {
         if (other.gameObject.CompareTag("powerup"))
         {
-            Destroy(other.gameObject);          
+            Destroy(other.gameObject);
         }
     }
 
     public void setStun(bool extraStun, float extraStunPercent)
     {
-        if(powers.stunImmunity)
+        if (powers.stunImmunity)
             return;
 
         Animator anim = this.gameObject.GetComponent<Animator>();
         anim.SetTrigger(wasHitHash);
 
         Debug.Log("stunned particle is" + stunnedParticle);
-        
+
         anim.speed = 1; //set to default
-        if(extraStun)
-            anim.speed *= (1-extraStunPercent/100);
+        if (extraStun)
+            anim.speed *= (1 - extraStunPercent / 100);
 
         stunnedParticle.Play();
         dropCrown(this.gameObject);
@@ -158,6 +205,9 @@ public class PlayerControl : MonoBehaviour
         {
             if ((isDashing && isLookingAt(collision.gameObject)) || (isSwiping && isLookingAt(collision.gameObject)))
             {
+                /*InputDevice controller = collision.gameObject.GetComponent<PlayerControl>().joystick;
+                if (controller != null)
+                    controller.Vibrate(100f);*/
                 catAudio.PlayOneShot(stunSound, 1.0f);
                 collision.gameObject.GetComponent<PlayerControl>().setStun(powers.stunBoost, powers.stunBoostPercent);
                 //collision.gameObject.GetComponent<Animator>().SetTrigger(
@@ -198,13 +248,13 @@ public class PlayerControl : MonoBehaviour
 
         return false;
     }
-    
+
     IEnumerator Swipe()
     {
         yield return new WaitForSeconds(0.3f);
         isSwiping = false;
     }
-    
+
     IEnumerator Dash()
     {
         yield return new WaitForSeconds(0.3f);
@@ -219,6 +269,7 @@ public class PlayerControl : MonoBehaviour
         //delay pickup, so you can't pick it right back up after being stunned
         yield return new WaitForSeconds(crownPickupDelay);
         player.GetComponent<PlayerControl>().canPickupCrown = true;
+        //player.GetComponent<PlayerControl>().joystick.StopVibration();
     }
 
     public void dropCrown(GameObject player)
@@ -226,7 +277,7 @@ public class PlayerControl : MonoBehaviour
         Debug.Log("drop crown called. has crown" + player.GetComponent<PlayerControl>().hasCrown);
         if (player.GetComponent<PlayerControl>().hasCrown)
         {
-            
+
             // set delay so player can't pick the crown right back up
             crown.GetComponent<Rigidbody>().isKinematic = false;
             crown.GetComponent<Rigidbody>().detectCollisions = true;
@@ -240,7 +291,7 @@ public class PlayerControl : MonoBehaviour
             // drop the crown
             CrownBehaviour.pickedUp = false;
             player.GetComponent<PlayerControl>().hasCrown = false;
-            
+
         }
     }
 
@@ -249,10 +300,59 @@ public class PlayerControl : MonoBehaviour
         if (hasCrown)
         {
             currentScore += Time.deltaTime;
-            if(currentScore >= 60.0f)
+            if (currentScore >= 60.0f)
             {
                 GameManager.EndRound();
             }
         }
     }
+
+    private void assignKeyCodes()
+    {
+        switch (controllerIndex)
+        {
+            case 0:
+                up = KeyCode.W;
+                down = KeyCode.S;
+                left = KeyCode.A;
+                right = KeyCode.D;
+                dashKey = KeyCode.Q;
+                swipeKey = KeyCode.E;
+                break;
+            case 1:
+                up = KeyCode.T;
+                down = KeyCode.G;
+                left = KeyCode.F;
+                right = KeyCode.H;
+                dashKey = KeyCode.R;
+                swipeKey = KeyCode.Y;
+                break;
+            case 2:
+                up = KeyCode.I;
+                down = KeyCode.K;
+                left = KeyCode.J;
+                right = KeyCode.L;
+                dashKey = KeyCode.U;
+                swipeKey = KeyCode.O;
+                break;
+            case 3:
+                up = KeyCode.UpArrow;
+                down = KeyCode.DownArrow;
+                left = KeyCode.LeftArrow;
+                right = KeyCode.RightArrow;
+                dashKey = KeyCode.RightCommand;
+                swipeKey = KeyCode.RightShift;
+                break;
+            default:
+                up = KeyCode.W;
+                down = KeyCode.S;
+                left = KeyCode.A;
+                right = KeyCode.D;
+                dashKey = KeyCode.Q;
+                swipeKey = KeyCode.E;
+                break;
+        }
+    }
+
+
 }
