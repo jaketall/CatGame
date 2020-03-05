@@ -8,6 +8,7 @@ TagManager:
   - powerup
   - Player1Bar
   - Player2Bar
+  - DogHouse
   layers:
   - Default
   - TransparentFX

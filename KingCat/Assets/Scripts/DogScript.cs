@@ -18,16 +18,20 @@ public class DogScript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            goGetEmBoy = true;
+        }
         if (goGetEmBoy)
         {
             GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
             foreach (GameObject player in players)
             {
                 if (player.GetComponent<PlayerControl>().hasCrown)
-                {
+                { 
                     dog.SetDestination(player.transform.position);
                     return;
-                }
+                }   
             }
         }
         else
@@ -35,10 +39,12 @@ public class DogScript : MonoBehaviour
             dog.SetDestination(dogHousePosition);
         }
 
+
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") &&
+            collision.gameObject.GetComponent<PlayerControl>().hasCrown)
         {
             collision.gameObject.GetComponent<PlayerControl>().dropCrown(collision.gameObject);
             goGetEmBoy = false;
