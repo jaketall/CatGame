@@ -143,7 +143,7 @@ public class PlayerControl : MonoBehaviour
             }
         }
         else if (Input.GetKeyDown(swipeKey) || ((joystick != null) &&
-                            joystick.Action1.WasPressed))
+                            joystick.Action2.WasPressed))
         {
             if (!isSwiping && !isStunned)
             {
