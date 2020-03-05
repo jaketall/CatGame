@@ -56,6 +56,9 @@ public class PlayerControl : MonoBehaviour
     public KeyCode dashKey;
     public KeyCode swipeKey;
 
+    public int cat;
+    /* 0 for white, 1 for green, 2 for blue, 3 for yellow */
+
     // Start is called before the first frame update
     void Start()
     {
@@ -71,15 +74,31 @@ public class PlayerControl : MonoBehaviour
         }
         catAudio = GetComponent<AudioSource>();
         assignKeyCodes();
+        switch (cat)
+        {
+            case 0:
+                controllerIndex = CatIndex.whiteCatIndex;
+                break;
+            case 1:
+                controllerIndex = CatIndex.blueCatIndex;
+                break;
+            case 2:
+                controllerIndex = CatIndex.yellowCatIndex;
+                break;
+            case 3:
+                controllerIndex = CatIndex.greenCatIndex;
+                break;
+        }
     }
 
 
 
     private void FixedUpdate()
     {
-        if (controllerIndex <= InputManager.Devices.Count - 1)
+        if (controllerIndex != -1)
         {
-            joystick = InputManager.Devices[controllerIndex];
+            joystick = InputManager.Devices[controllerIndex %
+                                    InputManager.Devices.Count];
         }
         else
         {
