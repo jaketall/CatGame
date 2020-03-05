@@ -7,6 +7,7 @@ public class DogScript : MonoBehaviour
     private NavMeshAgent dog;
     public GameObject crown;
     private Vector3 dogHousePosition;
+    public static bool goGetEmBoy;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,21 +18,30 @@ public class DogScript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
-        foreach(GameObject player in players){
-            if (player.GetComponent<PlayerControl>().hasCrown)
+        if (goGetEmBoy)
+        {
+            GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+            foreach (GameObject player in players)
             {
-                dog.SetDestination(player.transform.position);
-                return;
+                if (player.GetComponent<PlayerControl>().hasCrown)
+                {
+                    dog.SetDestination(player.transform.position);
+                    return;
+                }
             }
         }
-        dog.SetDestination(dogHousePosition);
+        else
+        {
+            dog.SetDestination(dogHousePosition);
+        }
+
     }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             collision.gameObject.GetComponent<PlayerControl>().dropCrown(collision.gameObject);
+            goGetEmBoy = false;
         }
     }
 }
