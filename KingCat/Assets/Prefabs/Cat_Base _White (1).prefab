@@ -5352,6 +5352,13 @@ MonoBehaviour:
   swipe_str: Swipe1
   dashParticle: {fileID: 852246418}
   stunnedParticle: {fileID: 223422463}
+  controllerIndex: 0
+  up: 0
+  down: 0
+  right: 0
+  left: 0
+  dashKey: 0
+  swipeKey: 0
 --- !u!54 &852246415
 Rigidbody:
   m_ObjectHideFlags: 0

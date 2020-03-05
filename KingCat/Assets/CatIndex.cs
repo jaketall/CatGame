@@ -1,0 +1,22 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class CatIndex : MonoBehaviour
+{
+	public static int blueCatIndex = -1;
+	public static int whiteCatIndex = -1;
+	public static int yellowCatIndex = -1;
+	public static int greenCatIndex = -1;
+	// Start is called before the first frame update
+	void Start()
+    {
+		DontDestroyOnLoad(gameObject);
+	}
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
