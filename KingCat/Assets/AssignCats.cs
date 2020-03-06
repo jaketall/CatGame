@@ -27,6 +27,11 @@ public class AssignCats : MonoBehaviour
     public TextMeshProUGUI blueCatText;
     public TextMeshProUGUI yellowCatText;
     public TextMeshProUGUI whiteCatText;
+
+    public GameObject A;
+    public GameObject B;
+    public GameObject Y;
+    public GameObject X;
     // Start is called before the first frame update
     void Start()
     {
@@ -237,18 +242,28 @@ public class AssignCats : MonoBehaviour
         if (greenCat)
         {
             greenCatText.text = "Connected";
+            A.SetActive(false);
+
         }
         if (whiteCat)
         {
             whiteCatText.text = "Connected";
+            X.SetActive(false);
         }
         if (blueCat)
         {
             blueCatText.text = "Connected";
+            B.SetActive(false);
         }
         if (yellowCat)
         {
             yellowCatText.text = "Connected";
+            Y.SetActive(false);
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            SceneManager.LoadScene(0);
         }
 
 
