@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using InControl;
 
 public class GameManager : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class GameManager : MonoBehaviour
 
     public Text roundOverText;
     public Button mainMenuButton;
+    public GameObject pause;
 
 
 
@@ -35,7 +37,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(roundOver)
+        if (roundOver)
         {
             roundOverText.gameObject.SetActive(true);
             mainMenuButton.gameObject.SetActive(true);
@@ -44,6 +46,17 @@ public class GameManager : MonoBehaviour
         {
             roundOverText.gameObject.SetActive(false);
             mainMenuButton.gameObject.SetActive(false);
+        }
+
+        if (CatIndex.controllersConnected > InputManager.Devices.Count)
+        {
+            Time.timeScale = 0;
+            pause.SetActive(true);
+        }
+        else
+        {
+            pause.SetActive(false);
+            Time.timeScale = 1;
         }
     }
 
