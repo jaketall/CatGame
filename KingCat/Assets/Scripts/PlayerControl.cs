@@ -319,7 +319,7 @@ public class PlayerControl : MonoBehaviour
         if (hasCrown)
         {
             currentScore += Time.deltaTime;
-            if (currentScore >= 60.0f)
+            if (currentScore >= GameManager.maxScore)
             {
                 GameManager.EndRound();
             }

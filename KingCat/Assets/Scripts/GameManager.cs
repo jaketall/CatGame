@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     public static int greenCatScore;
     public static int redCatScore;
 
+    public static float maxScore = 45.0f;
+
     public Text roundOverText;
     public Button mainMenuButton;
 

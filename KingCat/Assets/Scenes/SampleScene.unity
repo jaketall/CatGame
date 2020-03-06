@@ -865,8 +865,6 @@ MonoBehaviour:
   cat: {fileID: 1804506132}
   scoreBar: {fileID: 1353928599}
   scoreText: {fileID: 705066766}
-  gameManager: {fileID: 1956585643}
-  maxScore: 60
 --- !u!1 &377773829 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 105536, guid: 957efc93c4488964582c89c0bf939bf0,
@@ -949,7 +947,6 @@ GameObject:
   - component: {fileID: 382816666}
   - component: {fileID: 382816665}
   - component: {fileID: 382816664}
-  - component: {fileID: 382816667}
   m_Layer: 5
   m_Name: Main Menu Button
   m_TagString: Untagged
@@ -1056,18 +1053,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 382816662}
   m_CullTransparentMesh: 0
---- !u!114 &382816667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 382816662}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad03351a508d26d429eaf93a338ecbaf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &398927014
 GameObject:
   m_ObjectHideFlags: 0
@@ -1716,8 +1701,6 @@ MonoBehaviour:
   cat: {fileID: 852246412}
   scoreBar: {fileID: 1961544686}
   scoreText: {fileID: 1374069190}
-  gameManager: {fileID: 1956585643}
-  maxScore: 60
 --- !u!224 &789840617
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2794,8 +2777,6 @@ MonoBehaviour:
   cat: {fileID: 1216339890}
   scoreBar: {fileID: 1781835463}
   scoreText: {fileID: 1475951756}
-  gameManager: {fileID: 1956585643}
-  maxScore: 60
 --- !u!114 &1403390374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8269,8 +8250,6 @@ MonoBehaviour:
   cat: {fileID: 8304700079921384765}
   scoreBar: {fileID: 308387449}
   scoreText: {fileID: 1852718785}
-  gameManager: {fileID: 1956585643}
-  maxScore: 60
 --- !u!1001 &1675639264
 PrefabInstance:
   m_ObjectHideFlags: 0
