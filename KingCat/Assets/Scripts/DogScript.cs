@@ -44,7 +44,8 @@ public class DogScript : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player") &&
-            collision.gameObject.GetComponent<PlayerControl>().hasCrown)
+            collision.gameObject.GetComponent<PlayerControl>().hasCrown
+            && goGetEmBoy)
         {
             collision.gameObject.GetComponent<PlayerControl>().dropCrown(collision.gameObject);
             goGetEmBoy = false;
