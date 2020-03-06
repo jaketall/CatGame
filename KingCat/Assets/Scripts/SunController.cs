@@ -13,7 +13,7 @@ public class SunController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        angle=0;
+        angle=Mathf.PI/4;
     }
 
     // Update is called once per frame
@@ -22,8 +22,8 @@ public class SunController : MonoBehaviour
         //angle needs to go from 0 -> 3.14
         //at a rate of numSecondsPerDay
         angle +=  Mathf.PI * Time.deltaTime / numSecondsPerDay;
-        if (angle > Mathf.PI)
-            angle = 0;
+        if (angle > 3*Mathf.PI/4)
+            angle = Mathf.PI/4;
         transform.position = new Vector3(
         Mathf.Cos(angle)*radius + center.transform.position.x,
         Mathf.Sin(angle)*radius + center.transform.position.y,
