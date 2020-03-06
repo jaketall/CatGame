@@ -60,7 +60,7 @@ public class SimplePlayerMovement : MonoBehaviour
 			joystick = InputManager.Devices[controllerIndex % InputManager.Devices.Count];
 			float horizontal = joystick.LeftStickX;
 			float vertical = joystick.LeftStickY;
-			Vector3 newPos = new Vector3(horizontal, 0, vertical);
+			Vector3 newPos = new Vector3(-horizontal, 0, -vertical);
 			if ((joystick != null) &&
 			 joystick.Action1.WasPressed)
 			{

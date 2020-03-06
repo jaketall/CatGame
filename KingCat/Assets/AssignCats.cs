@@ -40,6 +40,7 @@ public class AssignCats : MonoBehaviour
         //Player one
         if(numControllers > 0)
         {
+            CatIndex.controllersConnected = 1;
             playerOne = InputManager.Devices[0];
             if (playerOne.Action1.WasPressed)
             {
@@ -89,6 +90,7 @@ public class AssignCats : MonoBehaviour
         //Player two
         if(numControllers > 1)
         {
+            CatIndex.controllersConnected = 2;
             playerTwo = InputManager.Devices[1];
             if (playerTwo.Action1.WasPressed)
             {
@@ -136,6 +138,7 @@ public class AssignCats : MonoBehaviour
 
         if(numControllers > 2)
         {
+            CatIndex.controllersConnected = 3;
             playerThree = InputManager.Devices[2];
             //Player 3
             if (playerThree.Action1.WasPressed)
@@ -184,6 +187,7 @@ public class AssignCats : MonoBehaviour
 
         if(numControllers > 3)
         {
+            CatIndex.controllersConnected = 4;
             //Player 4
             playerFour = InputManager.Devices[3];
             if (playerFour.Action1.WasPressed)
