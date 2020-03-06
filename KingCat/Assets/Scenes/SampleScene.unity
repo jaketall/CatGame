@@ -1227,6 +1227,92 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8227703853620788956}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &635641129
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1435477554}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: b15950a4aacd903478a01ae7c21c3289,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: b15950a4aacd903478a01ae7c21c3289,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: b15950a4aacd903478a01ae7c21c3289,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: b15950a4aacd903478a01ae7c21c3289,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.49999997
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: b15950a4aacd903478a01ae7c21c3289,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.49999997
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: b15950a4aacd903478a01ae7c21c3289,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: b15950a4aacd903478a01ae7c21c3289,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: b15950a4aacd903478a01ae7c21c3289,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: b15950a4aacd903478a01ae7c21c3289,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: b15950a4aacd903478a01ae7c21c3289,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: b15950a4aacd903478a01ae7c21c3289,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: b15950a4aacd903478a01ae7c21c3289,
+        type: 3}
+      propertyPath: m_Name
+      value: speed
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: b15950a4aacd903478a01ae7c21c3289,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b15950a4aacd903478a01ae7c21c3289, type: 3}
+--- !u!4 &635641130 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: b15950a4aacd903478a01ae7c21c3289,
+    type: 3}
+  m_PrefabInstance: {fileID: 635641129}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &635641131 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: b15950a4aacd903478a01ae7c21c3289,
+    type: 3}
+  m_PrefabInstance: {fileID: 635641129}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &696019769
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1510,7 +1596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 200
-  numSecondsPerDay: 30
+  numSecondsPerDay: 60
   center: {fileID: 5980596847619507486}
 --- !u!1 &762259149
 GameObject:
@@ -2844,6 +2930,7 @@ Transform:
   - {fileID: 1925159772}
   - {fileID: 81027755}
   - {fileID: 563662307}
+  - {fileID: 635641130}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2866,7 +2953,7 @@ MonoBehaviour:
   maxPowerUpCount: 5
   areas:
   - name: Outside
-    minX: -156
+    minX: -140
     maxX: -43
     minZ: 128
     maxZ: 227
@@ -2899,22 +2986,23 @@ MonoBehaviour:
   speedBoostTintColor: {r: 0, g: 0, b: 0, a: 0}
   speedBoostSparkleColor: {r: 0.99765027, g: 1, b: 0, a: 0}
   speedBoostShellSize: 5
-  speedBoostPartSize: 10
+  speedBoostPart: {fileID: 635641131}
+  speedBoostPartSize: 3
   stunBoostLightColor: {r: 1, g: 0.07939433, b: 0, a: 0}
   stunBoostTintColor: {r: 0, g: 0, b: 0, a: 0}
   stunBoostSparkleColor: {r: 1, g: 0.4716981, b: 0.6120978, a: 0}
   stunBoostShellSize: 5
-  stunBoostPartSize: 10
+  stunBoostPartSize: 3
   laserLightColor: {r: 0, g: 1, b: 0, a: 0}
   laserTintColor: {r: 0, g: 0, b: 0, a: 0}
   laserSparkleColor: {r: 0, g: 1, b: 0.9701662, a: 0}
   laserShellSize: 5
-  laserPartSize: 10
+  laserPartSize: 3
   stunImmunityLightColor: {r: 0.018557072, g: 0, b: 1, a: 0}
   stunImmunityTintColor: {r: 0, g: 0, b: 0, a: 0}
   stunImmunitySparkleColor: {r: 0, g: 1, b: 0.9696944, a: 0}
   stunImmunityShellSize: 5
-  stunImmunityPartSize: 10
+  stunImmunityPartSize: 3
   bootsLightColor: {r: 0.41509432, g: 0.13345312, b: 0, a: 0}
   bootsTintColor: {r: 0, g: 0, b: 0, a: 0}
   bootsSparkleColor: {r: 0.6981132, g: 0.33405247, b: 0.10866857, a: 0}
@@ -2924,12 +3012,12 @@ MonoBehaviour:
   hairballBoostTintColor: {r: 0, g: 0, b: 0, a: 0}
   hairballBoostSparkleColor: {r: 0, g: 0, b: 0, a: 0}
   hairballBoostShellSize: 5
-  hairballBoostPartSize: 10
+  hairballBoostPartSize: 3
   whistleLightColor: {r: 0.3301887, g: 0.3270737, b: 0.3270737, a: 0}
   whistleTintColor: {r: 0, g: 0, b: 0, a: 0}
   whistleSparkleColor: {r: 1, g: 1, b: 1, a: 0}
   whistleShellSize: 5
-  whistlePartSize: 10
+  whistlePartSize: 3
 --- !u!1 &1475951754
 GameObject:
   m_ObjectHideFlags: 0

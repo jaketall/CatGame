@@ -30,6 +30,7 @@ public class PowerUpSpawner : MonoBehaviour
     public Color speedBoostTintColor;
     public Color speedBoostSparkleColor;
     public float speedBoostShellSize;
+    public GameObject speedBoostPart;
     public float speedBoostPartSize;
 
     public Color stunBoostLightColor;
@@ -70,7 +71,7 @@ public class PowerUpSpawner : MonoBehaviour
 
     private List<Func<Vector3, GameObject>> funcs;
 
-    GameObject spawnPowerUp(Vector3 position, float partSize, float shellSize, Color lightColor, Color tintColor, Color sparkleColor, string type)
+    GameObject spawnPowerUp(Vector3 position, GameObject part, float partSize, float shellSize, Color lightColor, Color tintColor, Color sparkleColor, string type)
     {
         powerUpCount++;
         GameObject powerUp = Instantiate(powerUpPrefab);
@@ -93,11 +94,13 @@ public class PowerUpSpawner : MonoBehaviour
 
             if(child.gameObject.name == "Icon")
             {
-                var sampleM = child.gameObject.GetComponent<Renderer>();
-                sampleM.material = Instantiate(sampleM.material);
-                sampleM.sharedMaterial.SetColor("_Color", sparkleColor);
+                //var sampleM = child.gameObject.GetComponent<Renderer>();
+                //sampleM.material = Instantiate(sampleM.material);
+                //sampleM.sharedMaterial.SetColor("_Color", sparkleColor);
+                //child.localScale = Vector3.one * partSize;
 
-                child.localScale = Vector3.one * partSize;
+                Destroy(child.gameObject);
+				//replace it after the loop
             }
             else if(child.gameObject.name == "Light Emitter")
             {
@@ -109,16 +112,27 @@ public class PowerUpSpawner : MonoBehaviour
             {
                 child.localScale = Vector3.one * shellSize;
 
-                var sampleM = child.gameObject.GetComponent<Renderer>();
-                sampleM.sharedMaterial = Instantiate(sampleM.sharedMaterial);
-                sampleM.sharedMaterial.SetColor("_TintColor", tintColor);
-                
+                var sampleM_tint = child.gameObject.GetComponent<Renderer>();
+                sampleM_tint.sharedMaterial = Instantiate(sampleM_tint.sharedMaterial);
+                sampleM_tint.sharedMaterial.SetColor("_TintColor", tintColor);
             }
             else if(child.gameObject.name == "Foggy Sphere")
             {
                 child.localScale = Vector3.one * shellSize*0.9f;
             }
         }
+
+		//Add a new "Icon" or "Part"
+		GameObject p = Instantiate(part);
+		p.gameObject.name = "Icon";
+		p.transform.position = position;
+		p.SetActive(true);
+		p.transform.SetParent(powerUp.transform);
+		var sampleM_part = p.GetComponentInChildren<Renderer>();
+		sampleM_part.material = Instantiate(sampleM_part.material);
+		sampleM_part.sharedMaterial.SetColor("_Color", sparkleColor);
+		p.transform.localScale = Vector3.one * partSize;
+
 
         powerUp.SetActive(true);
         return powerUp;
@@ -128,31 +142,31 @@ public class PowerUpSpawner : MonoBehaviour
     //make functions for other scripts to call
     GameObject spawnSpeedBoostPowerUp(Vector3 position)
     {
-        return spawnPowerUp(position, speedBoostPartSize, speedBoostShellSize, speedBoostLightColor, speedBoostTintColor, speedBoostSparkleColor, "speedBoost");
+        return spawnPowerUp(position, speedBoostPart, speedBoostPartSize, speedBoostShellSize, speedBoostLightColor, speedBoostTintColor, speedBoostSparkleColor, "speedBoost");
     }
     GameObject spawnStunBoostPowerUp(Vector3 position)
     {
-        return spawnPowerUp(position, stunBoostPartSize, stunBoostShellSize, stunBoostLightColor, stunBoostTintColor, stunBoostSparkleColor, "stunBoost");
+        return spawnPowerUp(position, speedBoostPart, stunBoostPartSize, stunBoostShellSize, stunBoostLightColor, stunBoostTintColor, stunBoostSparkleColor, "stunBoost");
     }
     GameObject spawnLaserPowerUp(Vector3 position)
     {
-        return spawnPowerUp(position, laserPartSize, laserShellSize, laserLightColor, laserTintColor, laserSparkleColor, "laserPointer");
+        return spawnPowerUp(position, speedBoostPart, laserPartSize, laserShellSize, laserLightColor, laserTintColor, laserSparkleColor, "laserPointer");
     }
     GameObject spawnStunImmunityPowerUp(Vector3 position)
     {
-        return spawnPowerUp(position, stunImmunityPartSize, stunImmunityShellSize, stunImmunityLightColor, stunImmunityTintColor, stunImmunitySparkleColor, "stunImmunity");
+        return spawnPowerUp(position, speedBoostPart, stunImmunityPartSize, stunImmunityShellSize, stunImmunityLightColor, stunImmunityTintColor, stunImmunitySparkleColor, "stunImmunity");
     }
     GameObject spawnBootsPowerUp(Vector3 position)
     {
-        return spawnPowerUp(position, bootsPartSize, bootsShellSize, bootsLightColor, bootsTintColor, bootsSparkleColor, "boots");
+        return spawnPowerUp(position, speedBoostPart, bootsPartSize, bootsShellSize, bootsLightColor, bootsTintColor, bootsSparkleColor, "boots");
     }
     GameObject spawnHairballBoostPowerUp(Vector3 position)
     {
-        return spawnPowerUp(position, hairballBoostPartSize, hairballBoostShellSize, hairballBoostLightColor, hairballBoostTintColor, hairballBoostSparkleColor,"hairballBoost");
+        return spawnPowerUp(position, speedBoostPart, hairballBoostPartSize, hairballBoostShellSize, hairballBoostLightColor, hairballBoostTintColor, hairballBoostSparkleColor,"hairballBoost");
     }
     GameObject spawnWhistlePowerUp(Vector3 position)
     {
-        return spawnPowerUp(position, whistlePartSize, whistleShellSize, whistleLightColor, whistleTintColor, whistleSparkleColor, "whistle");
+        return spawnPowerUp(position, speedBoostPart, whistlePartSize, whistleShellSize, whistleLightColor, whistleTintColor, whistleSparkleColor, "whistle");
     }
 
     GameObject spawnRandomPowerUp(Vector3 position)
