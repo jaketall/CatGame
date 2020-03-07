@@ -55,6 +55,12 @@ public class AssignCats : MonoBehaviour
                     greenCat = true;
                     playerOneAssigned = true;
                 }
+                else if(greenCat && CatIndex.greenCatIndex == 0 && playerOneAssigned)
+                {
+                    CatIndex.greenCatIndex = -1;
+                    greenCat = false;
+                    playerOneAssigned = false;
+                }
 
             }
             else if (playerOne.Action2.WasPressed)
@@ -65,6 +71,12 @@ public class AssignCats : MonoBehaviour
                     blueCat = true;
                     playerOneAssigned = true;
                 }
+                else if (blueCat && CatIndex.blueCatIndex == 0 && playerOneAssigned)
+                {
+                    CatIndex.blueCatIndex = -1;
+                    blueCat = false;
+                    playerOneAssigned = false;
+                }
             }
             else if (playerOne.Action4.WasPressed)
             {
@@ -73,6 +85,12 @@ public class AssignCats : MonoBehaviour
                     CatIndex.yellowCatIndex = 0;
                     yellowCat = true;
                     playerOneAssigned = true;
+                }
+                else if (yellowCat && CatIndex.yellowCatIndex == 0 && playerOneAssigned)
+                {
+                    CatIndex.yellowCatIndex = -1;
+                    yellowCat = false;
+                    playerOneAssigned = false;
                 }
             }
             else if (playerOne.Action3.WasPressed)
@@ -83,11 +101,17 @@ public class AssignCats : MonoBehaviour
                     whiteCat = true;
                     playerOneAssigned = true;
                 }
+                else if (whiteCat && CatIndex.whiteCatIndex == 0 && playerOneAssigned)
+                {
+                    CatIndex.whiteCatIndex = -1;
+                    whiteCat = false;
+                    playerOneAssigned = false;
+                }
             }
 
             if (playerOne.CommandWasPressed)
             {
-                SceneManager.LoadScene(0);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
 
@@ -105,6 +129,12 @@ public class AssignCats : MonoBehaviour
                     greenCat = true;
                     playerTwoAssigned = true;
                 }
+                else if (greenCat && CatIndex.greenCatIndex == 1 && playerTwoAssigned)
+                {
+                    CatIndex.greenCatIndex = -1;
+                    greenCat = false;
+                    playerTwoAssigned = false;
+                }
 
             }
             else if (playerTwo.Action2.WasPressed)
@@ -115,6 +145,12 @@ public class AssignCats : MonoBehaviour
                     blueCat = true;
                     playerTwoAssigned = true;
                 }
+                else if (blueCat && CatIndex.blueCatIndex == 1 && playerTwoAssigned)
+                {
+                    CatIndex.blueCatIndex = -1;
+                    blueCat = false;
+                    playerTwoAssigned = false;
+                }
             }
             else if (playerTwo.Action4.WasPressed)
             {
@@ -123,6 +159,12 @@ public class AssignCats : MonoBehaviour
                     CatIndex.yellowCatIndex = 1;
                     yellowCat = true;
                     playerTwoAssigned = true;
+                }
+                else if (yellowCat && CatIndex.yellowCatIndex == 1 && playerTwoAssigned)
+                {
+                    CatIndex.yellowCatIndex = -1;
+                    yellowCat = false;
+                    playerTwoAssigned = false;
                 }
             }
             else if (playerTwo.Action3.WasPressed)
@@ -133,11 +175,17 @@ public class AssignCats : MonoBehaviour
                     whiteCat = true;
                     playerTwoAssigned = true;
                 }
+                else if (whiteCat && CatIndex.whiteCatIndex == 1 && playerTwoAssigned)
+                {
+                    CatIndex.whiteCatIndex = -1;
+                    whiteCat = false;
+                    playerTwoAssigned = false;
+                }
             }
 
             if (playerTwo.CommandWasPressed)
             {
-                SceneManager.LoadScene(0);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
 
@@ -154,7 +202,12 @@ public class AssignCats : MonoBehaviour
                     greenCat = true;
                     playerThreeAssigned = true;
                 }
-
+                else if (greenCat && CatIndex.greenCatIndex == 2 && playerThreeAssigned)
+                {
+                    CatIndex.greenCatIndex = -1;
+                    greenCat = false;
+                    playerThreeAssigned = false;
+                }
             }
             else if (playerThree.Action2.WasPressed)
             {
@@ -163,6 +216,12 @@ public class AssignCats : MonoBehaviour
                     CatIndex.blueCatIndex = 2;
                     blueCat = true;
                     playerThreeAssigned = true;
+                }
+                else if (blueCat && CatIndex.blueCatIndex == 2 && playerThreeAssigned)
+                {
+                    CatIndex.blueCatIndex = -1;
+                    blueCat = false;
+                    playerThreeAssigned = false;
                 }
             }
             else if (playerThree.Action4.WasPressed)
@@ -173,6 +232,12 @@ public class AssignCats : MonoBehaviour
                     yellowCat = true;
                     playerThreeAssigned = true;
                 }
+                else if (yellowCat && CatIndex.yellowCatIndex == 2 && playerThreeAssigned)
+                {
+                    CatIndex.yellowCatIndex = -1;
+                    yellowCat = false;
+                    playerThreeAssigned = false;
+                }
             }
             else if (playerThree.Action3.WasPressed)
             {
@@ -182,11 +247,17 @@ public class AssignCats : MonoBehaviour
                     whiteCat = true;
                     playerThreeAssigned = true;
                 }
+                else if (whiteCat && CatIndex.whiteCatIndex == 2 && playerThreeAssigned)
+                {
+                    CatIndex.whiteCatIndex = -1;
+                    whiteCat = false;
+                    playerThreeAssigned = false;
+                }
             }
 
             if (playerThree.CommandWasPressed)
             {
-                SceneManager.LoadScene(0);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
 
@@ -203,6 +274,12 @@ public class AssignCats : MonoBehaviour
                     greenCat = true;
                     playerFourAssigned = true;
                 }
+                else if (greenCat && CatIndex.greenCatIndex == 3 && playerFourAssigned)
+                {
+                    CatIndex.greenCatIndex = -1;
+                    greenCat = false;
+                    playerFourAssigned = false;
+                }
 
             }
             else if (playerFour.Action2.WasPressed)
@@ -213,6 +290,12 @@ public class AssignCats : MonoBehaviour
                     blueCat = true;
                     playerFourAssigned = true;
                 }
+                else if (blueCat && CatIndex.blueCatIndex == 3 && playerFourAssigned)
+                {
+                    CatIndex.blueCatIndex = -1;
+                    blueCat = false;
+                    playerFourAssigned = false;
+                }
             }
             else if (playerFour.Action4.WasPressed)
             {
@@ -221,6 +304,12 @@ public class AssignCats : MonoBehaviour
                     CatIndex.yellowCatIndex = 3;
                     yellowCat = true;
                     playerFourAssigned = true;
+                }
+                else if (yellowCat && CatIndex.yellowCatIndex == 3 && playerFourAssigned)
+                {
+                    CatIndex.yellowCatIndex = -1;
+                    yellowCat = false;
+                    playerFourAssigned = false;
                 }
             }
             else if (playerFour.Action3.WasPressed)
@@ -231,10 +320,16 @@ public class AssignCats : MonoBehaviour
                     whiteCat = true;
                     playerFourAssigned = true;
                 }
+                else if (whiteCat && CatIndex.whiteCatIndex == 3 && playerFourAssigned)
+                {
+                    CatIndex.whiteCatIndex = -1;
+                    whiteCat = false;
+                    playerFourAssigned = false;
+                }
             }
             if (playerFour.CommandWasPressed)
             {
-                SceneManager.LoadScene(0);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
 
@@ -243,27 +338,49 @@ public class AssignCats : MonoBehaviour
         {
             greenCatText.text = "Connected";
             A.SetActive(false);
-
         }
+        else
+        {
+            greenCatText.text = "Press";
+            A.SetActive(true);
+        }
+
         if (whiteCat)
         {
             whiteCatText.text = "Connected";
             X.SetActive(false);
         }
+        else
+        {
+            whiteCatText.text = "Press";
+            X.SetActive(true);
+        }
+
         if (blueCat)
         {
             blueCatText.text = "Connected";
             B.SetActive(false);
         }
+        else
+        {
+            blueCatText.text = "Press";
+            B.SetActive(true);
+        }
+
         if (yellowCat)
         {
             yellowCatText.text = "Connected";
             Y.SetActive(false);
         }
+        else
+        {
+            yellowCatText.text = "Press";
+            Y.SetActive(true);
+        }
 
         if (Input.GetMouseButtonDown(0))
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
 
