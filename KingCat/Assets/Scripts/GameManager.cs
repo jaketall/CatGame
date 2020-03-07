@@ -63,7 +63,8 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 1;
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) ||
+            InputManager.ActiveDevice.CommandWasPressed)
         {
             if (isPaused)
             {

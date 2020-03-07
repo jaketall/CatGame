@@ -28,12 +28,16 @@ public class SimplePlayerMovement : MonoBehaviour
 	public ParticleSystem stunnedParticle;
 
 	private Rigidbody rb;
+    Vector3 originalPos;
+    Quaternion originalRot;
 	// Start is called before the first frame update
 	void Start()
     {
 		rb = GetComponent<Rigidbody>();
 		catAnim = GetComponent<Animator>();
 		catAudio = GetComponent<AudioSource>();
+        originalPos = transform.position;
+        originalRot = transform.rotation;
 	}
 
     // Update is called once per frame
@@ -113,6 +117,11 @@ public class SimplePlayerMovement : MonoBehaviour
 		else
 		{
 			rb.isKinematic = true;
+            catAnim.SetBool(runHash, false);
+            if (!transform.position.Equals(originalPos))
+                rb.MovePosition(originalPos);
+            if(!transform.rotation.Equals(originalRot))
+                rb.MoveRotation(originalRot);
 		}
     }
 
