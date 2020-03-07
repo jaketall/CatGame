@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public static bool gameOver;
     public static int roundNumber;
     public static bool roundOver;
+    public static bool isPaused;
 
     public static int blueCatScore;
     public static int yellowCatScore;
@@ -22,6 +23,7 @@ public class GameManager : MonoBehaviour
     public Text roundOverText;
     public Button mainMenuButton;
     public GameObject pause;
+    public GameObject pauseMenuUI;
 
 
 
@@ -29,6 +31,8 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         roundOver = false;
+        isPaused = false;
+        pauseMenuUI.gameObject.SetActive(false);
         roundOverText.gameObject.SetActive(false);
         mainMenuButton.gameObject.SetActive(false);
         mainMenuButton.onClick.AddListener(RestartGame);
@@ -58,17 +62,44 @@ public class GameManager : MonoBehaviour
             pause.SetActive(false);
             Time.timeScale = 1;
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (isPaused)
+            {
+                Resume();
+            }
+            else
+            {
+                Pause();
+            }
+        }
     }
 
     public static void EndRound()
     {
         roundOver = true;
         Time.timeScale = 0;
+        Debug.Log("timescale set to 0");
     }
 
     public static void RestartGame()
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    void Resume()
+    {
+        pauseMenuUI.SetActive(false);
+        Time.timeScale = 1f;
+        GameManager.isPaused = false;
+    }
+
+    void Pause()
+    {
+        pauseMenuUI.SetActive(true);
+        Time.timeScale = 0f;
+        GameManager.isPaused = true;
     }
 }
