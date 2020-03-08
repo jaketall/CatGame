@@ -59,14 +59,17 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            pause.SetActive(false);
-            Time.timeScale = 1;
+            if (!GameManager.isPaused)
+            {
+                pause.SetActive(false);
+                Time.timeScale = 1;
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.Escape) ||
             InputManager.ActiveDevice.CommandWasPressed)
         {
-            if (isPaused)
+            if (GameManager.isPaused)
             {
                 Resume();
             }
@@ -81,7 +84,6 @@ public class GameManager : MonoBehaviour
     {
         roundOver = true;
         Time.timeScale = 0;
-        Debug.Log("timescale set to 0");
     }
 
     public static void RestartGame()
@@ -90,17 +92,18 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    void Resume()
+    public void Resume()
     {
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameManager.isPaused = false;
     }
 
-    void Pause()
+    public void Pause()
     {
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameManager.isPaused = true;
     }
+
 }

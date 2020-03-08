@@ -42,6 +42,7 @@ public class AssignCats : MonoBehaviour
     void Update()
     {
         int numControllers = InputManager.Devices.Count;
+        Debug.Log("Num controllers " + numControllers);
         //Player one
         if(numControllers > 0)
         {

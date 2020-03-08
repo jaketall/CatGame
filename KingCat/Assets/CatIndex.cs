@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class CatIndex : MonoBehaviour
 {
-	public static int blueCatIndex = -1;
-	public static int whiteCatIndex = -1;
-	public static int yellowCatIndex = -1;
-	public static int greenCatIndex = -1;
+    public static int blueCatIndex = -1;
+    public static int whiteCatIndex = -1;
+    public static int yellowCatIndex = -1;
+    public static int greenCatIndex = -1;
     public static int controllersConnected = 0;
 	// Start is called before the first frame update
 	void Start()
     {
-		DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject);
 	}
 
     // Update is called once per frame
