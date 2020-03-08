@@ -321,6 +321,7 @@ public class PlayerControl : MonoBehaviour
             currentScore += Time.deltaTime;
             if (currentScore >= GameManager.maxScore)
             {
+                dropCrown(gameObject);
                 GameManager.EndRound();
             }
         }

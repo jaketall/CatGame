@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public static int roundNumber;
     public static bool roundOver;
     public static bool isPaused;
+    public static int level = 1;
 
     public static int blueCatScore;
     public static int yellowCatScore;
@@ -24,12 +25,24 @@ public class GameManager : MonoBehaviour
     public Button mainMenuButton;
     public GameObject pause;
     public GameObject pauseMenuUI;
-
-
-
+    
+    // levels
+    public GameObject upstairs;
+    public List<GameObject> moveWithLevel;
+    public Camera cam;
+    private ZoomHandler zhScript;
+    
     // Start is called before the first frame update
     void Start()
     {
+        zhScript = (ZoomHandler) cam.GetComponent<ZoomHandler>();
+        if (level == 1)
+        {
+            upstairs.SetActive(false);
+        } else if (level == 2)
+        {
+            levelTwo();
+        }
         roundOver = false;
         isPaused = false;
         pauseMenuUI.gameObject.SetActive(false);
@@ -46,6 +59,9 @@ public class GameManager : MonoBehaviour
         {
             roundOverText.gameObject.SetActive(true);
             mainMenuButton.gameObject.SetActive(true);
+            if (level == 1) {
+                level = 2;
+            }
         }
         else
         {
@@ -80,6 +96,18 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void levelTwo()
+    {
+        for (int i = 0; i < moveWithLevel.Capacity; i++)
+        {
+            Vector3 pos = moveWithLevel[i].transform.position;
+            pos.y = pos.y + 100.8f;
+            moveWithLevel[i].transform.position = pos;
+        }
+        zhScript.minHeight += 150f;
+        zhScript.maxHeight += 100f;
+        upstairs.SetActive(true);
+    }
     public static void EndRound()
     {
         roundOver = true;
