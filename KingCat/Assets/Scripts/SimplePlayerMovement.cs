@@ -43,6 +43,7 @@ public class SimplePlayerMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        
 		switch (cat)
 		{
 			case 0:
@@ -58,7 +59,8 @@ public class SimplePlayerMovement : MonoBehaviour
 				controllerIndex = CatIndex.greenCatIndex;
 				break;
 		}
-		if(controllerIndex != -1)
+        Debug.Log("cat number: " + cat + "controller index " + controllerIndex);
+        if (controllerIndex != -1)
 		{
 			rb.isKinematic = false;
 			joystick = InputManager.Devices[controllerIndex % InputManager.Devices.Count];

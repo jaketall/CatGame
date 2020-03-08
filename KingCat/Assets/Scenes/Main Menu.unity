@@ -2513,7 +2513,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logDebugInfo: 1
   invertYAxis: 0
-  useFixedUpdate: 0
+  useFixedUpdate: 1
   dontDestroyOnLoad: 1
   suspendInBackground: 0
   enableICade: 0
