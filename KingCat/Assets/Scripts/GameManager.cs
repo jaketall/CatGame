@@ -24,9 +24,11 @@ public class GameManager : MonoBehaviour
     public Button mainMenuButton;
     public GameObject pause;
     public GameObject pauseMenuUI;
-
-
-
+    
+    public GameObject upstairs;
+    public List<GameObject> moveWithLevel;
+    public Camera cam; 
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -46,6 +48,7 @@ public class GameManager : MonoBehaviour
         {
             roundOverText.gameObject.SetActive(true);
             mainMenuButton.gameObject.SetActive(true);
+           // levelTwo();
         }
         else
         {
@@ -80,6 +83,20 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void levelTwo()
+    {
+        for (int i = 0; i < moveWithLevel.Capacity; i++)
+        {
+            Vector3 pos = moveWithLevel[i].transform.position;
+            pos.y = pos.y + 100.8f;
+            moveWithLevel[i].transform.position = pos;
+        }
+
+        ZoomHandler zhScript = (ZoomHandler) cam.GetComponent<ZoomHandler>();
+        zhScript.minHeight += 100f;
+        zhScript.maxHeight += 100f;
+        upstairs.SetActive(true);
+    }
     public static void EndRound()
     {
         roundOver = true;
