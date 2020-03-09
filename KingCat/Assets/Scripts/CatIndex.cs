@@ -12,6 +12,11 @@ public class CatIndex : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
     {
+        blueCatIndex = -1;
+        whiteCatIndex = -1;
+        yellowCatIndex = -1;
+        greenCatIndex = -1;
+        controllersConnected = 0;
         DontDestroyOnLoad(gameObject);
 	}
 
