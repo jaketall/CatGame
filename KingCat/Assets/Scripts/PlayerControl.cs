@@ -32,8 +32,12 @@ public class PlayerControl : MonoBehaviour
     public bool isDashing;
     public bool isStunned;
     public bool isSwiping;
+    public bool isBalling;
     public float dashForce;
 
+    public GameObject hairBall;
+    public float throwForce = 10f;
+    
     private AudioSource catAudio;
     public AudioClip dashSound;
     public AudioClip stunSound;
@@ -43,6 +47,7 @@ public class PlayerControl : MonoBehaviour
     public string axis_h;
     public string dash_str;
     public string swipe_str;
+    public string ball_str;
     public ParticleSystem dashParticle;
     public ParticleSystem stunnedParticle;
     public InputDevice joystick;
@@ -55,6 +60,7 @@ public class PlayerControl : MonoBehaviour
     public KeyCode left;
     public KeyCode dashKey;
     public KeyCode swipeKey;
+    public KeyCode ballKey;
 
     public int cat;
     /* 0 for white, 1 for green, 2 for blue, 3 for yellow */
@@ -172,6 +178,15 @@ public class PlayerControl : MonoBehaviour
                 StartCoroutine(Swipe());
             }
         }
+        else if (Input.GetKeyDown(ballKey)  || ((joystick != null) &&
+                                   joystick.Action3.WasPressed))
+        {
+            if (!isBalling && !isStunned)
+            {
+                isBalling = true;
+                StartCoroutine(Ball());
+            }
+        }
         else if (!newPos.Equals(Vector3.zero))
         {
             // run
@@ -192,10 +207,16 @@ public class PlayerControl : MonoBehaviour
         UpdateCurrentScore();
 
     }
+    
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("powerup"))
         {
+            Destroy(other.gameObject);
+        }
+        if (other.gameObject.CompareTag("HairBall"))
+        {
+            this.gameObject.GetComponent<PlayerControl>().setStun(powers.stunBoost, powers.stunBoostPercent);
             Destroy(other.gameObject);
         }
     }
@@ -265,6 +286,20 @@ public class PlayerControl : MonoBehaviour
         }
 
         return false;
+    }
+    
+    IEnumerator Ball()
+    {
+        yield return new WaitForSeconds(0.1f);
+        Debug.Log("HairBall");
+        
+        GameObject hBall = Instantiate(hairBall, transform.position+(transform.forward*2), transform.rotation);
+        hBall.GetComponent<MeshCollider>().isTrigger = false;
+        Rigidbody rb = hBall.GetComponent<Rigidbody>();
+        rb.AddForce(transform.forward * throwForce, ForceMode.VelocityChange);
+        yield return new WaitForSeconds(1f);
+        hBall.GetComponent<MeshCollider>().isTrigger = true;
+        isBalling = false;
     }
 
     IEnumerator Swipe()
@@ -337,6 +372,7 @@ public class PlayerControl : MonoBehaviour
                 right = KeyCode.D;
                 dashKey = KeyCode.Q;
                 swipeKey = KeyCode.E;
+                ballKey = KeyCode.X;
                 break;
             case 1:
                 up = KeyCode.T;

@@ -10675,7 +10675,10 @@ MonoBehaviour:
   isDashing: 0
   isStunned: 0
   isSwiping: 0
+  isBalling: 0
   dashForce: 500
+  hairBall: {fileID: 100000, guid: 35483354210b51844a7110a01c7b4f3a, type: 3}
+  throwForce: 10
   dashSound: {fileID: 8300000, guid: d46323e22e74e46baa241cbf48c85671, type: 3}
   stunSound: {fileID: 8300000, guid: 462f62217d7a04598b0a53d331b0a229, type: 3}
   swipeSound: {fileID: 8300000, guid: fe0b1f9aeb45b41b089175aeeabd5d95, type: 3}
@@ -10683,17 +10686,17 @@ MonoBehaviour:
   axis_h: Horizontal_2
   dash_str: Dash3
   swipe_str: Swipe3
+  ball_str: 
   dashParticle: {fileID: 2692081659286411374}
   stunnedParticle: {fileID: 47781755}
   controllerIndex: 2
-  player: {fileID: 0}
-  distance: 0
   up: 0
   down: 0
   right: 0
   left: 0
   dashKey: 0
   swipeKey: 0
+  ballKey: 0
   cat: 2
 --- !u!114 &1804506138
 MonoBehaviour:

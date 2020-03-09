@@ -9,6 +9,7 @@ TagManager:
   - Player1Bar
   - Player2Bar
   - DogHouse
+  - HairBall
   layers:
   - Default
   - TransparentFX
