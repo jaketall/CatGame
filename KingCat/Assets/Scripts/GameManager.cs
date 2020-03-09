@@ -38,11 +38,24 @@ public class GameManager : MonoBehaviour
         zhScript = (ZoomHandler) cam.GetComponent<ZoomHandler>();
         if (level == 1)
         {
-            upstairs.SetActive(false);
+            levelOne();
         } else if (level == 2)
         {
             levelTwo();
+        } else if (level == 3)
+        {
+            levelOne();
+        } else if (level == 4)
+        {
+            levelTwo();
         }
+        else if (level == 5) 
+        {
+            levelOne();
+        }
+
+        level++;
+        
         roundOver = false;
         isPaused = false;
         pauseMenuUI.gameObject.SetActive(false);
@@ -59,9 +72,11 @@ public class GameManager : MonoBehaviour
         {
             roundOverText.gameObject.SetActive(true);
             mainMenuButton.gameObject.SetActive(true);
-            if (level == 1) {
-                level = 2;
+            if (level == 6)
+            {
+                // todo game over!!
             }
+ 
         }
         else
         {
@@ -96,18 +111,27 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private float catLevelChange = 100.8f;
+    private float camLevelChangeMin = 160f;
+    private float camLevelChangeMax = 300f;
+    public void levelOne()
+    {
+        upstairs.SetActive(false);
+    }
+    
     public void levelTwo()
     {
         for (int i = 0; i < moveWithLevel.Capacity; i++)
         {
             Vector3 pos = moveWithLevel[i].transform.position;
-            pos.y = pos.y + 100.8f;
+            pos.y = pos.y + catLevelChange;
             moveWithLevel[i].transform.position = pos;
         }
-        zhScript.minHeight += 150f;
-        zhScript.maxHeight += 100f;
+        zhScript.minHeight += camLevelChangeMin;
+        zhScript.maxHeight += camLevelChangeMax;
         upstairs.SetActive(true);
     }
+    
     public static void EndRound()
     {
         roundOver = true;

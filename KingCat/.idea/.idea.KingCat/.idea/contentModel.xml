@@ -752,6 +752,7 @@
           <e p="SimplePlayerMovement.cs" t="Include" />
           <e p="SoccerBallScript.cs" t="Include" />
           <e p="SunController.cs" t="Include" />
+          <e p="SwipeScript.cs" t="Include" />
           <e p="ZoomHandler.cs" t="Include" />
         </e>
         <e p="Standard Assets" t="Include">
@@ -993,7 +994,6 @@
             </e>
           </e>
         </e>
-        <e p="SwipeScript.cs" t="Include" />
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
             <e p="LiberationSans - OFL.txt" t="Include" />
