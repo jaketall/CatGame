@@ -5315,8 +5315,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0.37, z: 0}
+  m_Radius: 0.5576134
+  m_Center: {x: 0.057613373, y: 0.36999997, z: 0}
 --- !u!114 &6842866400355432102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5343,9 +5343,9 @@ MonoBehaviour:
   isStunned: 0
   isSwiping: 0
   dashForce: 500
-  dashSound: {fileID: 8300000, guid: 1d85a75233a1548daaca4d64dca62a6c, type: 3}
-  stunSound: {fileID: 8300000, guid: c786940c81a1b4121bb4d57126a60444, type: 3}
-  swipeSound: {fileID: 8300000, guid: 462f62217d7a04598b0a53d331b0a229, type: 3}
+  dashSound: {fileID: 8300000, guid: d46323e22e74e46baa241cbf48c85671, type: 3}
+  stunSound: {fileID: 8300000, guid: 462f62217d7a04598b0a53d331b0a229, type: 3}
+  swipeSound: {fileID: 8300000, guid: fe0b1f9aeb45b41b089175aeeabd5d95, type: 3}
   axis_v: Vertical
   axis_h: Horizontal
   dash_str: Dash1
@@ -5353,12 +5353,15 @@ MonoBehaviour:
   dashParticle: {fileID: 852246418}
   stunnedParticle: {fileID: 223422463}
   controllerIndex: 0
+  player: {fileID: 0}
+  distance: 0
   up: 0
   down: 0
   right: 0
   left: 0
   dashKey: 0
   swipeKey: 0
+  cat: 0
 --- !u!54 &852246415
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10121,7 +10124,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 1.0512848
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0

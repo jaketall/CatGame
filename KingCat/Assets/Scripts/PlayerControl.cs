@@ -169,7 +169,6 @@ public class PlayerControl : MonoBehaviour
                 catAnim.SetBool(swipeHash, true);
                 catAudio.PlayOneShot(swipeSound, 1.0f);
                 isSwiping = true;
-                Debug.Log("Swipe Attack");
                 StartCoroutine(Swipe());
             }
         }
@@ -222,7 +221,7 @@ public class PlayerControl : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if ((isDashing && isLookingAt(collision.gameObject)) || (isSwiping && isLookingAt(collision.gameObject)))
+            if ((isDashing && isLookingAt(collision.gameObject)) || (isSwiping))
             {
                 /*InputDevice controller = collision.gameObject.GetComponent<PlayerControl>().joystick;
                 if (controller != null)
@@ -270,7 +269,7 @@ public class PlayerControl : MonoBehaviour
 
     IEnumerator Swipe()
     {
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.1f);
         isSwiping = false;
     }
 

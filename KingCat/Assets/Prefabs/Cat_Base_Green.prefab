@@ -1440,9 +1440,9 @@ MonoBehaviour:
   isStunned: 0
   isSwiping: 0
   dashForce: 500
-  dashSound: {fileID: 8300000, guid: 1d85a75233a1548daaca4d64dca62a6c, type: 3}
-  stunSound: {fileID: 8300000, guid: c786940c81a1b4121bb4d57126a60444, type: 3}
-  swipeSound: {fileID: 8300000, guid: 462f62217d7a04598b0a53d331b0a229, type: 3}
+  dashSound: {fileID: 8300000, guid: d46323e22e74e46baa241cbf48c85671, type: 3}
+  stunSound: {fileID: 8300000, guid: 462f62217d7a04598b0a53d331b0a229, type: 3}
+  swipeSound: {fileID: 8300000, guid: fe0b1f9aeb45b41b089175aeeabd5d95, type: 3}
   axis_v: Vertical_3
   axis_h: Horizontal_3
   dash_str: Dash4
@@ -1450,12 +1450,15 @@ MonoBehaviour:
   dashParticle: {fileID: 8492356914969161693}
   stunnedParticle: {fileID: 8492356914936955452}
   controllerIndex: 3
+  player: {fileID: 0}
+  distance: 0
   up: 0
   down: 0
   right: 0
   left: 0
   dashKey: 0
   swipeKey: 0
+  cat: 3
 --- !u!198 &8492356914969161693
 ParticleSystem:
   m_ObjectHideFlags: 0
