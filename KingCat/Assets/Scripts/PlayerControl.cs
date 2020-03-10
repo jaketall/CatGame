@@ -290,16 +290,17 @@ public class PlayerControl : MonoBehaviour
     
     IEnumerator Ball()
     {
-        yield return new WaitForSeconds(0.1f);
-        Debug.Log("HairBall");
         
+        Debug.Log("HairBall");
         GameObject hBall = Instantiate(hairBall, transform.position+(transform.forward*2), transform.rotation);
         hBall.GetComponent<MeshCollider>().isTrigger = false;
         Rigidbody rb = hBall.GetComponent<Rigidbody>();
         rb.AddForce(transform.forward * throwForce, ForceMode.VelocityChange);
         yield return new WaitForSeconds(1f);
         hBall.GetComponent<MeshCollider>().isTrigger = true;
+        yield return new WaitForSeconds(3f);
         isBalling = false;
+        
     }
 
     IEnumerator Swipe()
@@ -385,6 +386,7 @@ public class PlayerControl : MonoBehaviour
                 right = KeyCode.H;
                 dashKey = KeyCode.R;
                 swipeKey = KeyCode.Y;
+                ballKey = KeyCode.B;
                 break;
             case 2:
                 up = KeyCode.I;
@@ -393,6 +395,7 @@ public class PlayerControl : MonoBehaviour
                 right = KeyCode.L;
                 dashKey = KeyCode.U;
                 swipeKey = KeyCode.O;
+                ballKey = KeyCode.P;
                 break;
             case 3:
                 up = KeyCode.UpArrow;
@@ -401,6 +404,7 @@ public class PlayerControl : MonoBehaviour
                 right = KeyCode.RightArrow;
                 dashKey = KeyCode.RightCommand;
                 swipeKey = KeyCode.RightShift;
+                ballKey = KeyCode.RightAlt;
                 break;
             default:
                 up = KeyCode.W;
@@ -409,6 +413,7 @@ public class PlayerControl : MonoBehaviour
                 right = KeyCode.D;
                 dashKey = KeyCode.Q;
                 swipeKey = KeyCode.E;
+                ballKey = KeyCode.X;
                 break;
         }
     }
