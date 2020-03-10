@@ -63,7 +63,7 @@ public class PlayerControl : MonoBehaviour
     public KeyCode ballKey;
 
     public int cat;
-    /* 0 for white, 1 for green, 2 for blue, 3 for yellow */
+    /* 0 for white, 1 for blue, 2 for yellow, 3 for green */
 
     // Start is called before the first frame update
     void Start()
@@ -359,7 +359,7 @@ public class PlayerControl : MonoBehaviour
                 if (currentScore >= GameManager.maxScore)
                 {
                     dropCrown(gameObject);
-                    GameManager.EndRound();
+                    GameManager.EndRound(cat);
                 }
             }
         }

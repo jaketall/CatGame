@@ -5,6 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    private void Start()
+    {
+        //Make sure whenever a new game could be started, scores are zeroed
+        GameManager.blueCatScore = 0;
+        GameManager.yellowCatScore = 0;
+        GameManager.whiteCatScore = 0;
+        GameManager.greenCatScore = 0;
+
+
+    }
+
     public void PlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
