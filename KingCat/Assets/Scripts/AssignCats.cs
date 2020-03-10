@@ -39,10 +39,9 @@ public class AssignCats : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         int numControllers = InputManager.Devices.Count;
-        Debug.Log("Num controllers " + numControllers);
         //Player one
         if(numControllers > 0)
         {
