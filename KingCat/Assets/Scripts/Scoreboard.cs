@@ -33,6 +33,7 @@ public class Scoreboard : MonoBehaviour
             {
                 whiteCrown2.gameObject.SetActive(true);
                 whiteWinCrown.gameObject.SetActive(true);
+                GameManager.roundNumber = 1;
             }
         }
 
@@ -43,6 +44,7 @@ public class Scoreboard : MonoBehaviour
             {
                 blueCrown2.gameObject.SetActive(true);
                 blueWinCrown.gameObject.SetActive(true);
+                GameManager.roundNumber = 1;
             }
         }
 
@@ -53,6 +55,7 @@ public class Scoreboard : MonoBehaviour
             {
                 yellowCrown2.gameObject.SetActive(true);
                 yellowWinCrown.gameObject.SetActive(true);
+                GameManager.roundNumber = 1;
             }
         }
 
@@ -63,6 +66,7 @@ public class Scoreboard : MonoBehaviour
             {
                 greenCrown2.gameObject.SetActive(true);
                 greenWinCrown.gameObject.SetActive(true);
+                GameManager.roundNumber = 1;
             }
         }
     }
