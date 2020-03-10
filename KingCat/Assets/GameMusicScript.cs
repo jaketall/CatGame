@@ -4,11 +4,19 @@ using UnityEngine;
 
 public class GameMusicScript : MonoBehaviour
 {
-    
+    static GameMusicScript instance;
     // Start is called before the first frame update
     void Start()
     {
-        DontDestroyOnLoad(gameObject);
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        } 
+        else if(instance != this)
+        {
+            Destroy(gameObject);
+        }
         
     }
 

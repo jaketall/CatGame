@@ -34,6 +34,7 @@ public class Scoreboard : MonoBehaviour
                 whiteCrown2.gameObject.SetActive(true);
                 whiteWinCrown.gameObject.SetActive(true);
                 GameManager.roundNumber = 1;
+                GameManager.gameOver = true;
             }
         }
 
@@ -45,6 +46,7 @@ public class Scoreboard : MonoBehaviour
                 blueCrown2.gameObject.SetActive(true);
                 blueWinCrown.gameObject.SetActive(true);
                 GameManager.roundNumber = 1;
+                GameManager.gameOver = true;
             }
         }
 
@@ -56,6 +58,7 @@ public class Scoreboard : MonoBehaviour
                 yellowCrown2.gameObject.SetActive(true);
                 yellowWinCrown.gameObject.SetActive(true);
                 GameManager.roundNumber = 1;
+                GameManager.gameOver = true;
             }
         }
 
@@ -67,6 +70,7 @@ public class Scoreboard : MonoBehaviour
                 greenCrown2.gameObject.SetActive(true);
                 greenWinCrown.gameObject.SetActive(true);
                 GameManager.roundNumber = 1;
+                GameManager.gameOver = true;
             }
         }
     }
@@ -79,11 +83,14 @@ public class Scoreboard : MonoBehaviour
 
     public void NextButton()
     {
-        /*if(GameManager.gameOver)
+        if(GameManager.gameOver)
         {
-            SceneManager.SetActiveScene(GAMEOVER_SCENE_INDEX);
-        } */
-
-        SceneManager.LoadScene(2);
+            SceneManager.LoadScene(4);
+        }
+        else
+        {
+            SceneManager.LoadScene(2);
+        }
+        
     }
 }
