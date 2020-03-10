@@ -76,8 +76,15 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         roundNumberText.GetComponent<Text>().text = "Round " + roundNumber;
+            //TODO: hardcoded white, blue, yellow, green as done below
+            //TODO: Also this code definitely deserves to NOT be called every frame
+            moveWithLevel[0].gameObject.GetComponent<PlayerControl>().roundsWon = whiteCatScore;
+            moveWithLevel[1].gameObject.GetComponent<PlayerControl>().roundsWon = blueCatScore;
+            moveWithLevel[2].gameObject.GetComponent<PlayerControl>().roundsWon = yellowCatScore;
+            moveWithLevel[3].gameObject.GetComponent<PlayerControl>().roundsWon = greenCatScore;
         if(roundOver)
         {
+
             roundOverText.gameObject.SetActive(true);
             mainMenuButton.gameObject.SetActive(true);
             mainMenuButton.Select();

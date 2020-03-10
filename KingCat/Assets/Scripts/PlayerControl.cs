@@ -7,6 +7,7 @@ using InControl;
 
 public class PlayerControl : MonoBehaviour
 {
+    public float winHandicap;
     public float xClamp;
     public float yClamp;
     public float thrust;
@@ -138,9 +139,9 @@ public class PlayerControl : MonoBehaviour
         }
         Vector3 newPos;
         if (powers.speedBoost)
-            newPos = new Vector3(horizontal_input, 0, vertical_input) * thrust * (1 + powers.speedBoostPercent / 100);
+            newPos = new Vector3(horizontal_input, 0, vertical_input) * thrust *(1-winHandicap*roundsWon)* (1 + powers.speedBoostPercent / 100);
         else
-            newPos = new Vector3(horizontal_input, 0, vertical_input) * thrust;
+            newPos = new Vector3(horizontal_input, 0, vertical_input) * thrust *(1-winHandicap*roundsWon);
 
         if (Input.GetKeyDown(KeyCode.Return))
         {
