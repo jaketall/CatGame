@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+
+
     private void Start()
     {
         //Make sure whenever a new game could be started, scores are zeroed
@@ -12,8 +14,7 @@ public class MainMenu : MonoBehaviour
         GameManager.yellowCatScore = 0;
         GameManager.whiteCatScore = 0;
         GameManager.greenCatScore = 0;
-
-
+        GameManager.gameOver = false;
     }
 
     public void PlayGame()
