@@ -101,7 +101,7 @@ public class PlayerControl : MonoBehaviour
 
 
     private void FixedUpdate()
-    {
+    { 
         if (controllerIndex != -1)
         {
             joystick = InputManager.Devices[controllerIndex %
@@ -136,6 +136,20 @@ public class PlayerControl : MonoBehaviour
         {
             horizontal_input = joystick.LeftStickX;
             vertical_input = joystick.LeftStickY;
+        }
+        if ((joystick != null) && joystick.CommandWasPressed)
+        {
+            GameObject gameman = GameObject.Find("Game Manager");
+            if (GameManager.isPaused)
+            {
+                gameman.GetComponent<GameManager>().Resume();
+                GameManager.isPaused = false;
+            }
+            else
+            {
+                gameman.GetComponent<GameManager>().Pause();
+                GameManager.isPaused = true;
+            }
         }
         Vector3 newPos;
         if (powers.speedBoost)

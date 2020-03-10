@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     public static int greenCatScore;
     public static int whiteCatScore;
 
-    public static float maxScore = 5.0f;
+    public static float maxScore = 45.0f;
 
     public Text roundOverText;
     public GameObject roundNumberText;
@@ -99,7 +99,22 @@ public class GameManager : MonoBehaviour
             roundOverText.gameObject.SetActive(false);
             mainMenuButton.gameObject.SetActive(false);
         }
-        if (CatIndex.controllersConnected > InputManager.Devices.Count)
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (!roundOver)
+            {
+                if (isPaused)
+                {
+                    Resume();
+                }
+                else
+                {
+                    Pause();
+                }
+            }
+
+        }
+        else if (CatIndex.controllersConnected > InputManager.Devices.Count)
         {
             Time.timeScale = 0;
             pause.SetActive(true);
@@ -113,22 +128,7 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape) ||
-            InputManager.ActiveDevice.CommandWasPressed)
-        {
-            if(!roundOver)
-            {
-                if (GameManager.isPaused)
-                {
-                    Resume();
-                }
-                else
-                {
-                    Pause();
-                }
-            }
 
-        }
     }
 
     private float catLevelChange = 100.8f;
