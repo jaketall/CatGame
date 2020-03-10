@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using InControl;
-
+using UnityEngine.AI;
 public class GameManager : MonoBehaviour
 {
 
@@ -29,8 +29,10 @@ public class GameManager : MonoBehaviour
     // levels
     public GameObject upstairs;
     public List<GameObject> moveWithLevel;
+    public GameObject dog;
     public Camera cam;
     private ZoomHandler zhScript;
+    
     
     // Start is called before the first frame update
     void Start()
@@ -62,12 +64,20 @@ public class GameManager : MonoBehaviour
         roundOverText.gameObject.SetActive(false);
         mainMenuButton.gameObject.SetActive(false);
         mainMenuButton.onClick.AddListener(RestartGame);
+        mainMenuButton.Select();
+        
     }
 
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            level = 2;
+            RestartGame();
+            
+        }
         if(roundOver)
         {
             roundOverText.gameObject.SetActive(true);
@@ -130,6 +140,7 @@ public class GameManager : MonoBehaviour
         zhScript.minHeight += camLevelChangeMin;
         zhScript.maxHeight += camLevelChangeMax;
         upstairs.SetActive(true);
+        dog.SetActive(true);
     }
     
     public static void EndRound()

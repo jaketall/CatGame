@@ -149,9 +149,9 @@ MonoBehaviour:
   isStunned: 0
   isSwiping: 0
   dashForce: 500
-  dashSound: {fileID: 8300000, guid: 1d85a75233a1548daaca4d64dca62a6c, type: 3}
-  stunSound: {fileID: 8300000, guid: c786940c81a1b4121bb4d57126a60444, type: 3}
-  swipeSound: {fileID: 8300000, guid: 462f62217d7a04598b0a53d331b0a229, type: 3}
+  dashSound: {fileID: 8300000, guid: d46323e22e74e46baa241cbf48c85671, type: 3}
+  stunSound: {fileID: 8300000, guid: 462f62217d7a04598b0a53d331b0a229, type: 3}
+  swipeSound: {fileID: 8300000, guid: fe0b1f9aeb45b41b089175aeeabd5d95, type: 3}
   dashParticle: {fileID: 119545439}
   stunnedParticle: {fileID: 1619070136}
 --- !u!1 &134292796
@@ -419,9 +419,9 @@ MonoBehaviour:
   isStunned: 0
   isSwiping: 0
   dashForce: 500
-  dashSound: {fileID: 8300000, guid: 1d85a75233a1548daaca4d64dca62a6c, type: 3}
-  stunSound: {fileID: 8300000, guid: c786940c81a1b4121bb4d57126a60444, type: 3}
-  swipeSound: {fileID: 8300000, guid: 462f62217d7a04598b0a53d331b0a229, type: 3}
+  dashSound: {fileID: 8300000, guid: d46323e22e74e46baa241cbf48c85671, type: 3}
+  stunSound: {fileID: 8300000, guid: 462f62217d7a04598b0a53d331b0a229, type: 3}
+  swipeSound: {fileID: 8300000, guid: fe0b1f9aeb45b41b089175aeeabd5d95, type: 3}
   dashParticle: {fileID: 550752673}
   stunnedParticle: {fileID: 135068311}
 --- !u!1 &618999222
@@ -976,9 +976,9 @@ MonoBehaviour:
   isStunned: 0
   isSwiping: 0
   dashForce: 500
-  dashSound: {fileID: 8300000, guid: 1d85a75233a1548daaca4d64dca62a6c, type: 3}
-  stunSound: {fileID: 8300000, guid: c786940c81a1b4121bb4d57126a60444, type: 3}
-  swipeSound: {fileID: 8300000, guid: 462f62217d7a04598b0a53d331b0a229, type: 3}
+  dashSound: {fileID: 8300000, guid: d46323e22e74e46baa241cbf48c85671, type: 3}
+  stunSound: {fileID: 8300000, guid: 462f62217d7a04598b0a53d331b0a229, type: 3}
+  swipeSound: {fileID: 8300000, guid: fe0b1f9aeb45b41b089175aeeabd5d95, type: 3}
   dashParticle: {fileID: 1020520834}
   stunnedParticle: {fileID: 905041965}
 --- !u!1001 &1035741746
@@ -2353,9 +2353,9 @@ MonoBehaviour:
   isStunned: 0
   isSwiping: 0
   dashForce: 500
-  dashSound: {fileID: 8300000, guid: 1d85a75233a1548daaca4d64dca62a6c, type: 3}
-  stunSound: {fileID: 8300000, guid: c786940c81a1b4121bb4d57126a60444, type: 3}
-  swipeSound: {fileID: 8300000, guid: 462f62217d7a04598b0a53d331b0a229, type: 3}
+  dashSound: {fileID: 8300000, guid: d46323e22e74e46baa241cbf48c85671, type: 3}
+  stunSound: {fileID: 8300000, guid: 462f62217d7a04598b0a53d331b0a229, type: 3}
+  swipeSound: {fileID: 8300000, guid: fe0b1f9aeb45b41b089175aeeabd5d95, type: 3}
   dashParticle: {fileID: 1709372133}
   stunnedParticle: {fileID: 1341454642}
 --- !u!1 &1854709721

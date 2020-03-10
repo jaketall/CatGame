@@ -38,7 +38,7 @@ public class PlayerControl : MonoBehaviour
     public GameObject hairBall;
     public float throwForce = 10f;
     
-    private AudioSource catAudio;
+    public AudioSource catAudio;
     public AudioClip dashSound;
     public AudioClip stunSound;
     public AudioClip swipeSound;
@@ -330,7 +330,7 @@ public class PlayerControl : MonoBehaviour
         Debug.Log("drop crown called. has crown" + player.GetComponent<PlayerControl>().hasCrown);
         if (player.GetComponent<PlayerControl>().hasCrown)
         {
-
+            
             // set delay so player can't pick the crown right back up
             crown.GetComponent<Rigidbody>().isKinematic = false;
             crown.GetComponent<Rigidbody>().detectCollisions = true;
@@ -350,15 +350,19 @@ public class PlayerControl : MonoBehaviour
 
     public void UpdateCurrentScore()
     {
-        if (hasCrown)
+        if(!GameManager.roundOver)
         {
-            currentScore += Time.deltaTime;
-            if (currentScore >= GameManager.maxScore)
+            if (hasCrown)
             {
-                dropCrown(gameObject);
-                GameManager.EndRound();
+                currentScore += Time.deltaTime;
+                if (currentScore >= GameManager.maxScore)
+                {
+                    dropCrown(gameObject);
+                    GameManager.EndRound();
+                }
             }
         }
+
     }
 
     private void assignKeyCodes()

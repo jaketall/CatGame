@@ -47,6 +47,7 @@ public class CollectMe : MonoBehaviour
             if (closestPlayer.GetComponent<PowerController>().powers.whistle)
             {
                 DogScript.goGetEmBoy = true;
+                closestPlayer.GetComponent<PowerController>().powers.whistle = false;
             }
             spawner.powerUpCount--;
             Destroy(this.gameObject);
