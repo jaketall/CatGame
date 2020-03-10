@@ -4185,6 +4185,7 @@ MonoBehaviour:
   timeBetweenSpawns: 3
   powerUpCount: 1
   maxPowerUpCount: 5
+  powerUpYPosition: 5
   areas:
   - name: Backyard
     minX: -89
@@ -10281,8 +10282,10 @@ MonoBehaviour:
   - {fileID: 1216339890}
   - {fileID: 8304700079921384765}
   - {fileID: 1548610417}
+  - {fileID: 963194225}
   dog: {fileID: 520395330}
   cam: {fileID: 963194227}
+  spawner: {fileID: 1435477553}
 --- !u!1 &1961544684
 GameObject:
   m_ObjectHideFlags: 0
@@ -16417,7 +16420,7 @@ PrefabInstance:
     - target: {fileID: 8934136840246036103, guid: 34e09710d2e1d4adeb8c7c0c2e78f939,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8934136840246036103, guid: 34e09710d2e1d4adeb8c7c0c2e78f939,
         type: 3}

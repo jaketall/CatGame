@@ -65,6 +65,7 @@
             </e>
           </e>
         </e>
+        <e p="HairBallSelfDestruct.cs" t="Include" />
         <e p="InControl" t="Include">
           <e p="Editor" t="Include">
             <e p="EditorTextures.cs" t="Include" />

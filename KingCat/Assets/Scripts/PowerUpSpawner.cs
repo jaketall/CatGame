@@ -14,6 +14,7 @@ public class PowerUpSpawner : MonoBehaviour
 
     public int powerUpCount = 0;
     public int maxPowerUpCount;
+    public int powerUpYPosition = 5;
     
     [Serializable]
     public class Area
@@ -214,7 +215,7 @@ public class PowerUpSpawner : MonoBehaviour
             while(true)
             {
                 position.x = UnityEngine.Random.Range(targetArea.minX, targetArea.maxX);
-                position.y = 5;
+                position.y = powerUpYPosition;
                 position.z = UnityEngine.Random.Range(targetArea.minZ, targetArea.maxZ);
 
                 nearbyObjects = Physics.OverlapSphere(position, 10); //probably shouldn't harcode this radius...

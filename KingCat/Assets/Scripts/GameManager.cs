@@ -31,13 +31,15 @@ public class GameManager : MonoBehaviour
     public List<GameObject> moveWithLevel;
     public GameObject dog;
     public Camera cam;
+    public GameObject spawner;
     private ZoomHandler zhScript;
-    
+    private PowerUpSpawner puSpawnScript;
     
     // Start is called before the first frame update
     void Start()
     {
         zhScript = (ZoomHandler) cam.GetComponent<ZoomHandler>();
+        puSpawnScript = spawner.GetComponent<PowerUpSpawner>();
         if (level == 1)
         {
             levelOne();
@@ -122,8 +124,8 @@ public class GameManager : MonoBehaviour
     }
 
     private float catLevelChange = 100.8f;
-    private float camLevelChangeMin = 160f;
-    private float camLevelChangeMax = 300f;
+    private float camLevelChangeMin = 300;
+    private float camLevelChangeMax = 600;
     public void levelOne()
     {
         upstairs.SetActive(false);
@@ -137,8 +139,9 @@ public class GameManager : MonoBehaviour
             pos.y = pos.y + catLevelChange;
             moveWithLevel[i].transform.position = pos;
         }
-        zhScript.minHeight += camLevelChangeMin;
-        zhScript.maxHeight += camLevelChangeMax;
+        zhScript.minHeight = camLevelChangeMin;
+        zhScript.maxHeight = camLevelChangeMax;
+        puSpawnScript.powerUpYPosition += 100;
         upstairs.SetActive(true);
         dog.SetActive(true);
     }
