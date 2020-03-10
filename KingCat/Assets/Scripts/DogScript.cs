@@ -56,6 +56,7 @@ public class DogScript : MonoBehaviour
         }
         else
         {
+            dog.isStopped = false;
             dog.SetDestination(dogHousePosition);
             if (dog.remainingDistance < 2)
             {

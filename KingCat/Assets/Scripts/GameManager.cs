@@ -19,13 +19,14 @@ public class GameManager : MonoBehaviour
     public static int greenCatScore;
     public static int whiteCatScore;
 
-    public static float maxScore = 45.0f;
+    public static float maxScore = 5.0f;
 
     public Text roundOverText;
     public GameObject roundNumberText;
     public Button mainMenuButton;
     public GameObject pause;
     public GameObject pauseMenuUI;
+    public Button resumeButton;
     
     // levels
     public GameObject upstairs;
@@ -67,7 +68,6 @@ public class GameManager : MonoBehaviour
         roundOverText.gameObject.SetActive(false);
         mainMenuButton.gameObject.SetActive(false);
         mainMenuButton.onClick.AddListener(RestartGame);
-        mainMenuButton.Select();
         
     }
 
@@ -76,16 +76,11 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         roundNumberText.GetComponent<Text>().text = "Round " + roundNumber;
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            level = 2;
-            RestartGame();
-            
-        }
         if(roundOver)
         {
             roundOverText.gameObject.SetActive(true);
             mainMenuButton.gameObject.SetActive(true);
+            mainMenuButton.Select();
             if (level == 6)
             {
                 // todo game over!!
@@ -114,14 +109,18 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape) ||
             InputManager.ActiveDevice.CommandWasPressed)
         {
-            if (GameManager.isPaused)
+            if(!roundOver)
             {
-                Resume();
+                if (GameManager.isPaused)
+                {
+                    Resume();
+                }
+                else
+                {
+                    Pause();
+                }
             }
-            else
-            {
-                Pause();
-            }
+
         }
     }
 
@@ -184,6 +183,7 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1;
         //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
         SceneManager.LoadScene(3);
     }
 
@@ -197,6 +197,7 @@ public class GameManager : MonoBehaviour
     public void Pause()
     {
         pauseMenuUI.SetActive(true);
+        resumeButton.Select();
         Time.timeScale = 0f;
         GameManager.isPaused = true;
     }

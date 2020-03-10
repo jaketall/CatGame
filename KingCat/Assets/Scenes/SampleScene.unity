@@ -1566,6 +1566,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &443557983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9483,7 +9494,7 @@ MonoBehaviour:
   moveRepeatDelayDuration: 0.1
   forceModuleActive: 0
   allowMouseInput: 1
-  focusOnMouseHover: 0
+  focusOnMouseHover: 1
   allowTouchInput: 1
 --- !u!1 &1658763331
 GameObject:
@@ -10276,6 +10287,7 @@ MonoBehaviour:
   mainMenuButton: {fileID: 382816664}
   pause: {fileID: 1750307315}
   pauseMenuUI: {fileID: 1349680156}
+  resumeButton: {fileID: 443557982}
   upstairs: {fileID: 603027555}
   moveWithLevel:
   - {fileID: 852246412}
