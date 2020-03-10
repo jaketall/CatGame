@@ -79,8 +79,6 @@ public class DogScript : MonoBehaviour
         {
             collision.gameObject.GetComponent<PlayerControl>().dropCrown(collision.gameObject);
             collision.gameObject.GetComponent<PlayerControl>().setStun(false, 0);
-            collision.gameObject.GetComponent<PlayerControl>().catAudio.PlayOneShot(
-                    collision.gameObject.GetComponent<PlayerControl>().stunSound);
             goGetEmBoy = false;
         }
     }

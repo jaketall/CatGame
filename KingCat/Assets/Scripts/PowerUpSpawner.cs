@@ -9,6 +9,7 @@ public class PowerUpSpawner : MonoBehaviour
     public string tagToFollow;
     private GameObject[] targets;
 
+    private bool whistleSpawnedThisRound=false;
     public float timeBetweenSpawns;
     private float timeToSpawn=0;
 
@@ -64,6 +65,7 @@ public class PowerUpSpawner : MonoBehaviour
     public Color whistleTintColor;
     public Color whistleSparkleColor;
     public float whistleShellSize;
+    public GameObject whistlePart;
 
     private List<Func<Vector3, GameObject>> funcs;
 
@@ -71,7 +73,6 @@ public class PowerUpSpawner : MonoBehaviour
     {
         powerUpCount++;
         GameObject powerUp = Instantiate(powerUpPrefab);
-		targets = GameObject.FindGameObjectsWithTag(tagToFollow);
         var collectMe = powerUp.AddComponent<CollectMe>();
         collectMe.targets=targets;
         collectMe.type=type;
@@ -128,7 +129,7 @@ public class PowerUpSpawner : MonoBehaviour
 		var sampleM_part = p.GetComponentInChildren<Renderer>();
 		sampleM_part.material = Instantiate(sampleM_part.material);
 		sampleM_part.sharedMaterial.SetColor("_Color", sparkleColor);
-		//p.transform.localScale = Vector3.one * partSize;
+        p.transform.localScale *= 1.5f;
 
 
         powerUp.SetActive(true);
@@ -163,7 +164,7 @@ public class PowerUpSpawner : MonoBehaviour
     }
     GameObject spawnWhistlePowerUp(Vector3 position)
     {
-        return spawnPowerUp(position, speedBoostPart, whistleShellSize, whistleLightColor, whistleTintColor, whistleSparkleColor, "whistle");
+        return spawnPowerUp(position, whistlePart, whistleShellSize, whistleLightColor, whistleTintColor, whistleSparkleColor, "whistle");
     }
 
     GameObject spawnRandomPowerUp(Vector3 position)
@@ -174,6 +175,7 @@ public class PowerUpSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+		targets = GameObject.FindGameObjectsWithTag(tagToFollow);
         //float start = -50;
         //spawnSpeedBoostPowerUp(new Vector3(start, 5, 0));
         //start += 5;
@@ -196,12 +198,16 @@ public class PowerUpSpawner : MonoBehaviour
         //funcs.Add(spawnLaserPowerUp);
         //funcs.Add(spawnBootsPowerUp);
         //funcs.Add(spawnHairballBoostPowerUp);
-        funcs.Add(spawnWhistlePowerUp);
+        
+        
+        //funcs.Add(spawnWhistlePowerUp);
+
     }
 
     // Update is called once per frame
     void Update()
     {
+
         if(powerUpCount >= maxPowerUpCount)
             return;
 
@@ -226,8 +232,29 @@ public class PowerUpSpawner : MonoBehaviour
                     break;
             }
 
-            spawnRandomPowerUp(position);
-            timeToSpawn = 0;
+            if(!whistleSpawnedThisRound)
+            {
+                for(int i=0;i<targets.Length;i++)
+                {
+                    if(targets[i].GetComponent<PlayerControl>().currentScore > GameManager.maxScore / 2)
+                    {
+                        spawnWhistlePowerUp(position);
+                        whistleSpawnedThisRound = true;
+                        break;
+                    }
+                }
+
+                if(!whistleSpawnedThisRound) //still didn't?
+                {
+                    spawnRandomPowerUp(position);
+                    timeToSpawn = 0;
+                }
+            }
+            else
+            {
+                spawnRandomPowerUp(position);
+                timeToSpawn = 0;
+            }
         }
     }
 }

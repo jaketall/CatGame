@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 47781757}
   - component: {fileID: 47781755}
   - component: {fileID: 47781756}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Yellow Cat Stunned Particle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4820,7 +4820,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920318093}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tail_05_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4851,7 +4851,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920301865}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: R_F_Clavicle_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4882,7 +4882,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920242083}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spline_04_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4914,7 +4914,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920279259}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: R_F_Ankle_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4945,7 +4945,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920308571}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: L_F_Knee_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4976,7 +4976,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920231233}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: R_F_Toe_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5006,7 +5006,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920329053}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: L_B_Ankle2_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5037,7 +5037,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920214589}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: R_B_clavicle_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5068,7 +5068,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920232151}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: L_F_Ball_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5099,7 +5099,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920316789}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: R_B_Toe_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5129,7 +5129,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920321177}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: L_F_Hip_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5160,7 +5160,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920272527}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tail_04_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5191,7 +5191,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920329295}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: R_B_Ankle1_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5223,7 +5223,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2692081660920266371}
   - component: {fileID: 2692081660923118723}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cat_mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5339,7 +5339,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920225053}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spline_02_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5370,7 +5370,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920235737}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tail_06_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5400,7 +5400,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920258847}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spline_03_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5433,7 +5433,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920234759}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: L_B_Ball_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5464,7 +5464,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920213975}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: L_F_Clavicle_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5495,7 +5495,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920330345}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pelvis_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5528,7 +5528,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920310499}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: R_F_Knee_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5559,7 +5559,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920237705}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: L_Ear_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5589,7 +5589,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920329215}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tail_03_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5620,7 +5620,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920209111}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: L_F_Toe_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5650,7 +5650,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920302427}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: L_F_Ankle_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5681,7 +5681,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920305561}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: L_B_Toe_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5711,7 +5711,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920317567}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tail_01_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5742,7 +5742,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920209745}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: R_B_Knee_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5773,7 +5773,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920209749}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: R_F_Hip_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5804,7 +5804,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920222749}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: R_F_Ankle2_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5836,7 +5836,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920321917}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: L_B_Hip_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5875,7 +5875,7 @@ GameObject:
   - component: {fileID: 2692081659286411372}
   - component: {fileID: 1804506138}
   - component: {fileID: 9154906668062916133}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cat_Base _Yellow
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -10662,6 +10662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96826d4f2c0ca4e63b02cb6ea2434f6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  winHandicap: 0
   xClamp: 0
   yClamp: 0
   thrust: 1
@@ -10679,6 +10680,7 @@ MonoBehaviour:
   dashForce: 500
   hairBall: {fileID: 100000, guid: 35483354210b51844a7110a01c7b4f3a, type: 3}
   throwForce: 10
+  catAudio: {fileID: 0}
   dashSound: {fileID: 8300000, guid: d46323e22e74e46baa241cbf48c85671, type: 3}
   stunSound: {fileID: 8300000, guid: 462f62217d7a04598b0a53d331b0a229, type: 3}
   swipeSound: {fileID: 8300000, guid: fe0b1f9aeb45b41b089175aeeabd5d95, type: 3}
@@ -10826,7 +10828,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920318689}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: L_B_Ankle1_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10857,7 +10859,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920327695}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: R_F_Ball_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10888,7 +10890,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920329131}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: L_B_clavicle_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10919,7 +10921,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920303391}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: L_B_Knee_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10950,7 +10952,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920210019}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tail_02_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10981,7 +10983,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920239287}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: R_B_Ankle2_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11012,7 +11014,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920306105}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: R_Ear_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11042,7 +11044,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920217285}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: R_B_Ball_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11073,7 +11075,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920232645}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: R_B_Hip_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11104,7 +11106,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920220535}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: root_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11136,7 +11138,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2692081660920280741}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: L_F_Ankle2_J
   m_TagString: Untagged
   m_Icon: {fileID: 0}

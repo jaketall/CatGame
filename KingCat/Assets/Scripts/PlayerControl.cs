@@ -7,6 +7,7 @@ using InControl;
 
 public class PlayerControl : MonoBehaviour
 {
+    public float winHandicap;
     public float xClamp;
     public float yClamp;
     public float thrust;
@@ -100,7 +101,7 @@ public class PlayerControl : MonoBehaviour
 
 
     private void FixedUpdate()
-    {
+    { 
         if (controllerIndex != -1)
         {
             joystick = InputManager.Devices[controllerIndex %
@@ -136,11 +137,25 @@ public class PlayerControl : MonoBehaviour
             horizontal_input = joystick.LeftStickX;
             vertical_input = joystick.LeftStickY;
         }
+        /*if ((joystick != null) && joystick.CommandWasPressed)
+        {
+            GameObject gameman = GameObject.Find("Game Manager");
+            if (GameManager.isPaused)
+            {
+                gameman.GetComponent<GameManager>().Resume();
+                GameManager.isPaused = false;
+            }
+            else
+            {
+                gameman.GetComponent<GameManager>().Pause();
+                GameManager.isPaused = true;
+            }
+        }*/
         Vector3 newPos;
         if (powers.speedBoost)
-            newPos = new Vector3(horizontal_input, 0, vertical_input) * thrust * (1 + powers.speedBoostPercent / 100);
+            newPos = new Vector3(horizontal_input, 0, vertical_input) * thrust *(1-winHandicap*roundsWon)* (1 + powers.speedBoostPercent / 100);
         else
-            newPos = new Vector3(horizontal_input, 0, vertical_input) * thrust;
+            newPos = new Vector3(horizontal_input, 0, vertical_input) * thrust *(1-winHandicap*roundsWon);
 
         if (Input.GetKeyDown(KeyCode.Return))
         {
@@ -233,8 +248,9 @@ public class PlayerControl : MonoBehaviour
 
         anim.speed = 1; //set to default
         if (extraStun)
-            anim.speed *= (1 - extraStunPercent / 100);
-
+            anim.speed = (1 - extraStunPercent / 100);
+        Debug.Log("Animation speed " + anim.speed);
+        catAudio.PlayOneShot(stunSound, 0.4f);
         stunnedParticle.Play();
         dropCrown(this.gameObject);
     }
@@ -242,12 +258,11 @@ public class PlayerControl : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if ((isDashing && isLookingAt(collision.gameObject)) || (isSwiping))
+            if ((isDashing && isLookingAt(collision.gameObject)))
             {
                 /*InputDevice controller = collision.gameObject.GetComponent<PlayerControl>().joystick;
                 if (controller != null)
                     controller.Vibrate(100f);*/
-                catAudio.PlayOneShot(stunSound, 1.0f);
                 collision.gameObject.GetComponent<PlayerControl>().setStun(powers.stunBoost, powers.stunBoostPercent);
                 //collision.gameObject.GetComponent<Animator>().SetTrigger(
                 //    wasHitHash);
@@ -305,7 +320,18 @@ public class PlayerControl : MonoBehaviour
 
     IEnumerator Swipe()
     {
-        yield return new WaitForSeconds(0.1f);
+        
+        int layerMask = 1 << 8;
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, layerMask))
+        {
+            if (hit.distance < 10)
+            {
+                hit.transform.gameObject.GetComponent<PlayerControl>().setStun(powers.stunBoost, powers.stunBoostPercent);
+                Debug.Log("HIT!");
+            }
+        }
+        yield return new WaitForSeconds(0.5f);
         isSwiping = false;
     }
 

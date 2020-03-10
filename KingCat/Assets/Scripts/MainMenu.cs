@@ -15,6 +15,7 @@ public class MainMenu : MonoBehaviour
         GameManager.whiteCatScore = 0;
         GameManager.greenCatScore = 0;
         GameManager.gameOver = false;
+        GameManager.level = 1;
     }
 
     public void PlayGame()

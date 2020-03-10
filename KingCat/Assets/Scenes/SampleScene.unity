@@ -2553,6 +2553,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 789840615}
   m_CullTransparentMesh: 0
+--- !u!1001 &790806407
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1072563901}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 4b3c9be926a092eab81255ca09c713b3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.7400055
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4b3c9be926a092eab81255ca09c713b3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -15.97
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4b3c9be926a092eab81255ca09c713b3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.71
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4b3c9be926a092eab81255ca09c713b3,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.33478737
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4b3c9be926a092eab81255ca09c713b3,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.40005246
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4b3c9be926a092eab81255ca09c713b3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.025633916
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4b3c9be926a092eab81255ca09c713b3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.85277104
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4b3c9be926a092eab81255ca09c713b3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4b3c9be926a092eab81255ca09c713b3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 146.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4b3c9be926a092eab81255ca09c713b3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -236.913
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4b3c9be926a092eab81255ca09c713b3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -201.91501
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 4b3c9be926a092eab81255ca09c713b3,
+        type: 3}
+      propertyPath: m_Name
+      value: Whistle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4b3c9be926a092eab81255ca09c713b3, type: 3}
 --- !u!1001 &806699107
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2642,6 +2711,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: f13288f135ddf8027ae63801c5724fea,
     type: 3}
   m_PrefabInstance: {fileID: 806699107}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &824782044 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 4b3c9be926a092eab81255ca09c713b3,
+    type: 3}
+  m_PrefabInstance: {fileID: 790806407}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &839910038
 PrefabInstance:
@@ -3064,6 +3139,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1058647012}
   m_CullTransparentMesh: 0
+--- !u!1 &1072563900
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1072563901}
+  m_Layer: 0
+  m_Name: WhistleTemplate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1072563901
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072563900}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 80.56, y: 10.96, z: -2.45}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 824782044}
+  m_Father: {fileID: 1435477554}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1075654505
 GameObject:
   m_ObjectHideFlags: 0
@@ -4176,6 +4282,7 @@ Transform:
   - {fileID: 1155070473}
   - {fileID: 1224556228}
   - {fileID: 1075654506}
+  - {fileID: 1072563901}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4194,7 +4301,7 @@ MonoBehaviour:
   powerUpPrefab: {fileID: 81027756}
   tagToFollow: Player
   timeBetweenSpawns: 3
-  powerUpCount: 1
+  powerUpCount: 0
   maxPowerUpCount: 5
   powerUpYPosition: 5
   areas:
@@ -4231,34 +4338,35 @@ MonoBehaviour:
   speedBoostLightColor: {r: 0.92370236, g: 1, b: 0, a: 0}
   speedBoostTintColor: {r: 0, g: 0, b: 0, a: 0}
   speedBoostSparkleColor: {r: 1, g: 0.97164285, b: 0, a: 0}
-  speedBoostShellSize: 10
+  speedBoostShellSize: 14
   speedBoostPart: {fileID: 1155070472}
   stunBoostLightColor: {r: 1, g: 0, b: 0, a: 0}
   stunBoostTintColor: {r: 0, g: 0, b: 0, a: 0}
   stunBoostSparkleColor: {r: 1, g: 0, b: 0, a: 0}
-  stunBoostShellSize: 10
+  stunBoostShellSize: 14
   stunBoostPart: {fileID: 1075654505}
   laserLightColor: {r: 0, g: 1, b: 0.102321625, a: 0}
   laserTintColor: {r: 0, g: 0, b: 0, a: 0}
   laserSparkleColor: {r: 0, g: 1, b: 1, a: 0}
-  laserShellSize: 10
+  laserShellSize: 14
   stunImmunityLightColor: {r: 0, g: 0.076538086, b: 1, a: 0}
   stunImmunityTintColor: {r: 0, g: 0, b: 0, a: 0}
   stunImmunitySparkleColor: {r: 0, g: 0.5756109, b: 1, a: 0}
-  stunImmunityShellSize: 10
+  stunImmunityShellSize: 14
   stunImmunityPart: {fileID: 1224556227}
   bootsLightColor: {r: 0.4339623, g: 0.13316458, b: 0.110537566, a: 0}
   bootsTintColor: {r: 0, g: 0, b: 0, a: 0}
   bootsSparkleColor: {r: 0.3679245, g: 0.22183156, b: 0.16140084, a: 0}
-  bootsShellSize: 10
+  bootsShellSize: 14
   hairballBoostLightColor: {r: 1, g: 0, b: 0.8433223, a: 0}
   hairballBoostTintColor: {r: 0, g: 0, b: 0, a: 0}
   hairballBoostSparkleColor: {r: 1, g: 1, b: 1, a: 0}
-  hairballBoostShellSize: 10
+  hairballBoostShellSize: 14
   whistleLightColor: {r: 0.5, g: 0.5, b: 0.5, a: 0}
   whistleTintColor: {r: 0, g: 0, b: 0, a: 0}
   whistleSparkleColor: {r: 1, g: 1, b: 1, a: 0}
-  whistleShellSize: 10
+  whistleShellSize: 14
+  whistlePart: {fileID: 1072563900}
 --- !u!1 &1475951754
 GameObject:
   m_ObjectHideFlags: 0
@@ -15406,6 +15514,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1804506138, guid: 27487ec56aec04262abf768281fca487, type: 3}
+      propertyPath: powerPercents.stunBoostPercent
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 2692081659286411372, guid: 27487ec56aec04262abf768281fca487,
         type: 3}
       propertyPath: crown
@@ -15416,6 +15528,11 @@ PrefabInstance:
       propertyPath: hairBall
       value: 
       objectReference: {fileID: 100000, guid: 35483354210b51844a7110a01c7b4f3a, type: 3}
+    - target: {fileID: 2692081659286411372, guid: 27487ec56aec04262abf768281fca487,
+        type: 3}
+      propertyPath: winHandicap
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 2692081659286411373, guid: 27487ec56aec04262abf768281fca487,
         type: 3}
       propertyPath: m_IsTrigger
@@ -15480,6 +15597,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9154906668062916133, guid: 27487ec56aec04262abf768281fca487,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27487ec56aec04262abf768281fca487, type: 3}
@@ -15575,6 +15697,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 852246420, guid: dfba076753abb4d70b80b2d2f1a0c05a, type: 3}
+      propertyPath: powerPercents.stunBoostPercent
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 505910491141051400, guid: dfba076753abb4d70b80b2d2f1a0c05a,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6842866399194925927, guid: dfba076753abb4d70b80b2d2f1a0c05a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15649,6 +15780,11 @@ PrefabInstance:
         type: 3}
       propertyPath: ball_str
       value: Ball1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842866400355432102, guid: dfba076753abb4d70b80b2d2f1a0c05a,
+        type: 3}
+      propertyPath: winHandicap
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6842866400355432103, guid: dfba076753abb4d70b80b2d2f1a0c05a,
         type: 3}
@@ -15827,6 +15963,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1216339898, guid: 2b8adb22479be49b8a161d4ea0b73f29, type: 3}
+      propertyPath: powerPercents.stunBoostPercent
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445679313569786145, guid: 2b8adb22479be49b8a161d4ea0b73f29,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8304700078963578215, guid: 2b8adb22479be49b8a161d4ea0b73f29,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15902,6 +16047,11 @@ PrefabInstance:
       propertyPath: hairBall
       value: 
       objectReference: {fileID: 100000, guid: 35483354210b51844a7110a01c7b4f3a, type: 3}
+    - target: {fileID: 8304700079537059446, guid: 2b8adb22479be49b8a161d4ea0b73f29,
+        type: 3}
+      propertyPath: winHandicap
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b8adb22479be49b8a161d4ea0b73f29, type: 3}
 --- !u!1 &8304700079921384765 stripped
@@ -15932,6 +16082,11 @@ PrefabInstance:
       propertyPath: hairBall
       value: 
       objectReference: {fileID: 100000, guid: 35483354210b51844a7110a01c7b4f3a, type: 3}
+    - target: {fileID: 475922672586884626, guid: 205a5d1506c474b21875cf4df8322892,
+        type: 3}
+      propertyPath: winHandicap
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 475922673157990863, guid: 205a5d1506c474b21875cf4df8322892,
         type: 3}
       propertyPath: m_Name
@@ -15991,6 +16146,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4487865501504723269, guid: 205a5d1506c474b21875cf4df8322892,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8492356914969161694, guid: 205a5d1506c474b21875cf4df8322892,
+        type: 3}
+      propertyPath: powerPercents.stunBoostPercent
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 205a5d1506c474b21875cf4df8322892, type: 3}
@@ -16124,6 +16289,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2892468570919392495, guid: 34e09710d2e1d4adeb8c7c0c2e78f939,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 162.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2892468570919392495, guid: 34e09710d2e1d4adeb8c7c0c2e78f939,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -284.6
       objectReference: {fileID: 0}
     - target: {fileID: 3000576291026588094, guid: 34e09710d2e1d4adeb8c7c0c2e78f939,
         type: 3}

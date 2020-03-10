@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     public static int greenCatScore;
     public static int whiteCatScore;
 
-    public static float maxScore = 5.0f;
+    public static float maxScore = 30.0f;
 
     public Text roundOverText;
     public GameObject roundNumberText;
@@ -76,8 +76,15 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         roundNumberText.GetComponent<Text>().text = "Round " + roundNumber;
+            //TODO: hardcoded white, blue, yellow, green as done below
+            //TODO: Also this code definitely deserves to NOT be called every frame
+            moveWithLevel[0].gameObject.GetComponent<PlayerControl>().roundsWon = whiteCatScore;
+            moveWithLevel[1].gameObject.GetComponent<PlayerControl>().roundsWon = blueCatScore;
+            moveWithLevel[2].gameObject.GetComponent<PlayerControl>().roundsWon = yellowCatScore;
+            moveWithLevel[3].gameObject.GetComponent<PlayerControl>().roundsWon = greenCatScore;
         if(roundOver)
         {
+
             roundOverText.gameObject.SetActive(true);
             mainMenuButton.gameObject.SetActive(true);
             mainMenuButton.Select();
@@ -92,7 +99,22 @@ public class GameManager : MonoBehaviour
             roundOverText.gameObject.SetActive(false);
             mainMenuButton.gameObject.SetActive(false);
         }
-        if (CatIndex.controllersConnected > InputManager.Devices.Count)
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (!roundOver)
+            {
+                if (isPaused)
+                {
+                    Resume();
+                }
+                else
+                {
+                    Pause();
+                }
+            }
+
+        }
+        else if (CatIndex.controllersConnected > InputManager.Devices.Count)
         {
             Time.timeScale = 0;
             pause.SetActive(true);
@@ -106,22 +128,7 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape) ||
-            InputManager.ActiveDevice.CommandWasPressed)
-        {
-            if(!roundOver)
-            {
-                if (GameManager.isPaused)
-                {
-                    Resume();
-                }
-                else
-                {
-                    Pause();
-                }
-            }
 
-        }
     }
 
     private float catLevelChange = 100.8f;
