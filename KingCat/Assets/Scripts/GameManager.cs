@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 {
 
     public static bool gameOver;
-    public static int roundNumber;
+    public static int roundNumber = 1;
     public static bool roundOver;
     public static bool isPaused;
     public static int level = 1;
@@ -17,11 +17,12 @@ public class GameManager : MonoBehaviour
     public static int blueCatScore;
     public static int yellowCatScore;
     public static int greenCatScore;
-    public static int redCatScore;
+    public static int whiteCatScore;
 
     public static float maxScore = 45.0f;
 
     public Text roundOverText;
+    public GameObject roundNumberText;
     public Button mainMenuButton;
     public GameObject pause;
     public GameObject pauseMenuUI;
@@ -74,6 +75,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        roundNumberText.GetComponent<Text>().text = "Round " + roundNumber;
         if (Input.GetKeyDown(KeyCode.P))
         {
             level = 2;
@@ -102,7 +104,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            if (!GameManager.isPaused)
+            if (!GameManager.isPaused && !GameManager.roundOver)
             {
                 pause.SetActive(false);
                 Time.timeScale = 1;
@@ -146,16 +148,43 @@ public class GameManager : MonoBehaviour
         dog.SetActive(true);
     }
     
-    public static void EndRound()
+    public static void EndRound(int catIdx)
     {
         roundOver = true;
         Time.timeScale = 0;
+        //ROUND NUMBER IS INCREMENTED IN THE SCOREBOARD SCRIPT SO THAT IT IS 
+        //NOT SHOWN WHEN GAME FREEZES AT CONCLUSION OF A ROUND
+
+        /* 0 for white, 1 for blue, 2 for yellow, 3 for green */
+        if (catIdx == 0)
+        {
+            whiteCatScore++;
+            Debug.Log("white cat score " + whiteCatScore);
+        }
+        else if (catIdx == 1)
+        {
+            blueCatScore++;
+            Debug.Log("blue cat score " + blueCatScore);
+        }
+        else if (catIdx == 2)
+        {
+            yellowCatScore++;
+            Debug.Log("yellow cat score " + yellowCatScore);
+        }
+        else if(catIdx == 3)
+        {
+            greenCatScore++;
+            Debug.Log("green cat score " + greenCatScore);
+        }
+        
+        
     }
 
     public static void RestartGame()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(3);
     }
 
     public void Resume()
