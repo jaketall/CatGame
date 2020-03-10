@@ -1450,7 +1450,7 @@ MonoBehaviour:
   axis_h: Horizontal_3
   dash_str: Dash4
   swipe_str: Swipe4
-  ball_str: Ball4
+  ball_str: 
   dashParticle: {fileID: 8492356914969161693}
   stunnedParticle: {fileID: 8492356914936955452}
   controllerIndex: 3
