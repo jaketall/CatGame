@@ -129,7 +129,7 @@ public class PowerUpSpawner : MonoBehaviour
 		var sampleM_part = p.GetComponentInChildren<Renderer>();
 		sampleM_part.material = Instantiate(sampleM_part.material);
 		sampleM_part.sharedMaterial.SetColor("_Color", sparkleColor);
-		//p.transform.localScale = Vector3.one * partSize;
+        p.transform.localScale *= 1.5f;
 
 
         powerUp.SetActive(true);

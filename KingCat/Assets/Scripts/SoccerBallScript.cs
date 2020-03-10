@@ -38,8 +38,6 @@ public class SoccerBallScript : MonoBehaviour
             if(rb.velocity.magnitude > 50 && !player.GetComponent<PlayerControl>().isDashing)
             {
                 player.GetComponent<PlayerControl>().setStun(false, 0);
-                player.GetComponent<PlayerControl>().catAudio.PlayOneShot(
-                    player.GetComponent<PlayerControl>().stunSound);
                 player.GetComponent<PlayerControl>().dropCrown(player);
             }
                 

@@ -4301,7 +4301,7 @@ MonoBehaviour:
   powerUpPrefab: {fileID: 81027756}
   tagToFollow: Player
   timeBetweenSpawns: 3
-  powerUpCount: 1
+  powerUpCount: 0
   maxPowerUpCount: 5
   powerUpYPosition: 5
   areas:
@@ -4338,34 +4338,34 @@ MonoBehaviour:
   speedBoostLightColor: {r: 0.92370236, g: 1, b: 0, a: 0}
   speedBoostTintColor: {r: 0, g: 0, b: 0, a: 0}
   speedBoostSparkleColor: {r: 1, g: 0.97164285, b: 0, a: 0}
-  speedBoostShellSize: 10
+  speedBoostShellSize: 14
   speedBoostPart: {fileID: 1155070472}
   stunBoostLightColor: {r: 1, g: 0, b: 0, a: 0}
   stunBoostTintColor: {r: 0, g: 0, b: 0, a: 0}
   stunBoostSparkleColor: {r: 1, g: 0, b: 0, a: 0}
-  stunBoostShellSize: 10
+  stunBoostShellSize: 14
   stunBoostPart: {fileID: 1075654505}
   laserLightColor: {r: 0, g: 1, b: 0.102321625, a: 0}
   laserTintColor: {r: 0, g: 0, b: 0, a: 0}
   laserSparkleColor: {r: 0, g: 1, b: 1, a: 0}
-  laserShellSize: 10
+  laserShellSize: 14
   stunImmunityLightColor: {r: 0, g: 0.076538086, b: 1, a: 0}
   stunImmunityTintColor: {r: 0, g: 0, b: 0, a: 0}
   stunImmunitySparkleColor: {r: 0, g: 0.5756109, b: 1, a: 0}
-  stunImmunityShellSize: 10
+  stunImmunityShellSize: 14
   stunImmunityPart: {fileID: 1224556227}
   bootsLightColor: {r: 0.4339623, g: 0.13316458, b: 0.110537566, a: 0}
   bootsTintColor: {r: 0, g: 0, b: 0, a: 0}
   bootsSparkleColor: {r: 0.3679245, g: 0.22183156, b: 0.16140084, a: 0}
-  bootsShellSize: 10
+  bootsShellSize: 14
   hairballBoostLightColor: {r: 1, g: 0, b: 0.8433223, a: 0}
   hairballBoostTintColor: {r: 0, g: 0, b: 0, a: 0}
   hairballBoostSparkleColor: {r: 1, g: 1, b: 1, a: 0}
-  hairballBoostShellSize: 10
+  hairballBoostShellSize: 14
   whistleLightColor: {r: 0.5, g: 0.5, b: 0.5, a: 0}
   whistleTintColor: {r: 0, g: 0, b: 0, a: 0}
   whistleSparkleColor: {r: 1, g: 1, b: 1, a: 0}
-  whistleShellSize: 10
+  whistleShellSize: 14
   whistlePart: {fileID: 1072563900}
 --- !u!1 &1475951754
 GameObject:
@@ -15514,6 +15514,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1804506138, guid: 27487ec56aec04262abf768281fca487, type: 3}
+      propertyPath: powerPercents.stunBoostPercent
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 2692081659286411372, guid: 27487ec56aec04262abf768281fca487,
         type: 3}
       propertyPath: crown
@@ -15593,6 +15597,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9154906668062916133, guid: 27487ec56aec04262abf768281fca487,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27487ec56aec04262abf768281fca487, type: 3}
@@ -15688,6 +15697,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 852246420, guid: dfba076753abb4d70b80b2d2f1a0c05a, type: 3}
+      propertyPath: powerPercents.stunBoostPercent
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 505910491141051400, guid: dfba076753abb4d70b80b2d2f1a0c05a,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6842866399194925927, guid: dfba076753abb4d70b80b2d2f1a0c05a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15945,6 +15963,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1216339898, guid: 2b8adb22479be49b8a161d4ea0b73f29, type: 3}
+      propertyPath: powerPercents.stunBoostPercent
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445679313569786145, guid: 2b8adb22479be49b8a161d4ea0b73f29,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8304700078963578215, guid: 2b8adb22479be49b8a161d4ea0b73f29,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16119,6 +16146,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4487865501504723269, guid: 205a5d1506c474b21875cf4df8322892,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8492356914969161694, guid: 205a5d1506c474b21875cf4df8322892,
+        type: 3}
+      propertyPath: powerPercents.stunBoostPercent
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 205a5d1506c474b21875cf4df8322892, type: 3}
@@ -16571,7 +16608,7 @@ PrefabInstance:
     - target: {fileID: 8934136840246036103, guid: 34e09710d2e1d4adeb8c7c0c2e78f939,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8934136840246036103, guid: 34e09710d2e1d4adeb8c7c0c2e78f939,
         type: 3}
