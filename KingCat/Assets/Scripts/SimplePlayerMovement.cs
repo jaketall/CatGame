@@ -6,6 +6,7 @@ using InControl;
 public class SimplePlayerMovement : MonoBehaviour
 {
 	public int cat;
+    private bool ready;
 	private int controllerIndex;
 	private InputDevice joystick;
 	private Animator catAnim;
@@ -18,13 +19,17 @@ public class SimplePlayerMovement : MonoBehaviour
 	public bool isStunned;
 	public bool isSwiping;
 	public float dashForce;
+    public float throwForce = 10f;
 
-	private AudioSource catAudio;
+    private AudioSource catAudio;
 	public AudioClip dashSound;
 	public AudioClip stunSound;
 	public AudioClip swipeSound;
 
-	public ParticleSystem dashParticle;
+    public GameObject hairBall;
+    public bool isBalling;
+
+    public ParticleSystem dashParticle;
 	public ParticleSystem stunnedParticle;
 
 	private Rigidbody rb;
@@ -48,19 +53,22 @@ public class SimplePlayerMovement : MonoBehaviour
 		{
 			case 0:
 				controllerIndex = CatIndex.whiteCatIndex;
+                ready = AssignCats.whiteCatisReady;
 				break;
 			case 1:
 				controllerIndex = CatIndex.blueCatIndex;
-				break;
+                ready = AssignCats.blueCatisReady;
+                break;
 			case 2:
 				controllerIndex = CatIndex.yellowCatIndex;
-				break;
+                ready = AssignCats.yellowCatisReady;
+                break;
 			case 3:
 				controllerIndex = CatIndex.greenCatIndex;
-				break;
+                ready = AssignCats.greenCatisReady;
+                break;
 		}
-        Debug.Log("cat number: " + cat + "controller index " + controllerIndex);
-        if (controllerIndex != -1)
+        if (controllerIndex != -1 && !ready)
 		{
 			rb.isKinematic = false;
 			joystick = InputManager.Devices[controllerIndex % InputManager.Devices.Count];
@@ -98,7 +106,16 @@ public class SimplePlayerMovement : MonoBehaviour
 					StartCoroutine(Swipe());
 				}
 			}
-			else if (!newPos.Equals(Vector3.zero))
+            else if (((joystick != null) &&
+                           joystick.Action3.WasPressed))
+            {
+                if (!isBalling && !isStunned)
+                {
+                    isBalling = true;
+                    StartCoroutine(Ball());
+                }
+            }
+            else if (!newPos.Equals(Vector3.zero))
 			{
 				// run
 				if (!isDashing && !isStunned)
@@ -136,8 +153,30 @@ public class SimplePlayerMovement : MonoBehaviour
 		isDashing = false;
 
 	}
+    IEnumerator Ball()
+    {
 
-	private bool isLookingAt(GameObject player)
+        GameObject hBall = Instantiate(hairBall, transform.position + (transform.forward * 2), transform.rotation);
+        hBall.GetComponent<MeshCollider>().isTrigger = false;
+        Rigidbody rigb = hBall.GetComponent<Rigidbody>();
+        rigb.AddForce(transform.forward * throwForce, ForceMode.VelocityChange);
+        yield return new WaitForSeconds(1f);
+        hBall.GetComponent<MeshCollider>().isTrigger = true;
+        yield return new WaitForSeconds(3f);
+        isBalling = false;
+
+    }
+    public void setStun(bool extraStun, float extraStunPercent)
+    {
+        Animator anim = this.gameObject.GetComponent<Animator>();
+        anim.SetTrigger(wasHitHash);
+        anim.speed = 1; //set to default
+        if (extraStun)
+            anim.speed = (1 - extraStunPercent / 100);
+        catAudio.PlayOneShot(stunSound, 0.4f);
+        stunnedParticle.Play();
+    }
+    private bool isLookingAt(GameObject player)
 	{
 		RaycastHit hit;
 		if (Physics.SphereCast(new Ray(transform.position, transform.TransformDirection(Vector3.forward)), 2f, out hit))
@@ -174,10 +213,8 @@ public class SimplePlayerMovement : MonoBehaviour
 		{
 			if ((isDashing && isLookingAt(collision.gameObject)) || (isSwiping && isLookingAt(collision.gameObject)))
 			{
-				catAudio.PlayOneShot(stunSound, 1.0f);
-				collision.gameObject.GetComponent<Animator>().SetTrigger(
-				    wasHitHash);
-				collision.gameObject.GetComponent<PlayerControl>().stunnedParticle.Play();
+		
+				collision.gameObject.GetComponent<SimplePlayerMovement>().setStun(false, 0);
 			}
 		}
 	}
@@ -186,4 +223,12 @@ public class SimplePlayerMovement : MonoBehaviour
 		yield return new WaitForSeconds(0.3f);
 		isSwiping = false;
 	}
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("HairBall"))
+        {
+            this.gameObject.GetComponent<SimplePlayerMovement>().setStun(false, 0);
+            Destroy(other.gameObject);
+        }
+    }
 }

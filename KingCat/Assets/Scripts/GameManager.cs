@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     public static int greenCatScore;
     public static int whiteCatScore;
 
-    public static float maxScore = 30.0f;
+    public static float maxScore = 45.0f;
 
     public Text roundOverText;
     public GameObject roundNumberText;
@@ -99,7 +99,7 @@ public class GameManager : MonoBehaviour
             roundOverText.gameObject.SetActive(false);
             mainMenuButton.gameObject.SetActive(false);
         }
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) || InputManager.ActiveDevice.CommandWasPressed)
         {
             if (!roundOver)
             {
