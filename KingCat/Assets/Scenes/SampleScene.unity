@@ -16152,6 +16152,21 @@ PrefabInstance:
       propertyPath: m_Volume
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8492356914969161693, guid: 205a5d1506c474b21875cf4df8322892,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.10342214
+      objectReference: {fileID: 0}
+    - target: {fileID: 8492356914969161693, guid: 205a5d1506c474b21875cf4df8322892,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.99215686
+      objectReference: {fileID: 0}
+    - target: {fileID: 8492356914969161693, guid: 205a5d1506c474b21875cf4df8322892,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.07843137
+      objectReference: {fileID: 0}
     - target: {fileID: 8492356914969161694, guid: 205a5d1506c474b21875cf4df8322892,
         type: 3}
       propertyPath: powerPercents.stunBoostPercent
