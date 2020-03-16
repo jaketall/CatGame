@@ -35,6 +35,7 @@ public class PlayerControl : MonoBehaviour
     public bool isSwiping;
     public bool isBalling;
     public float dashForce;
+    public float swipeDistance = 15f;
 
     public GameObject hairBall;
     public float throwForce = 10f;
@@ -320,15 +321,13 @@ public class PlayerControl : MonoBehaviour
 
     IEnumerator Swipe()
     {
-        
         int layerMask = 1 << 8;
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, layerMask))
         {
-            if (hit.distance < 10)
+            if (hit.distance < swipeDistance)
             {
                 hit.transform.gameObject.GetComponent<PlayerControl>().setStun(powers.stunBoost, powers.stunBoostPercent);
-                Debug.Log("HIT!");
             }
         }
         yield return new WaitForSeconds(0.5f);
