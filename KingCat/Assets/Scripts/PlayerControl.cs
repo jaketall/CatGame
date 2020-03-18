@@ -203,7 +203,7 @@ public class PlayerControl : MonoBehaviour
                 StartCoroutine(Ball());
             }
         }
-        else if (!newPos.Equals(Vector3.zero))
+        else if (!newPos.Equals(Vector3.zero) && CountDown.gameStarted)
         {
             // run
             if (!isDashing && !isStunned)
