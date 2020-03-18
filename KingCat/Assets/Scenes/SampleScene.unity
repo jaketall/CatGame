@@ -10407,6 +10407,8 @@ MonoBehaviour:
   dog: {fileID: 520395330}
   cam: {fileID: 963194227}
   spawner: {fileID: 1435477553}
+  secondFloorSpawnCenter: {x: -150, y: 100, z: 50}
+  startRadius: 20
 --- !u!1 &1961544684
 GameObject:
   m_ObjectHideFlags: 0
@@ -16623,7 +16625,7 @@ PrefabInstance:
     - target: {fileID: 8934136840246036103, guid: 34e09710d2e1d4adeb8c7c0c2e78f939,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8934136840246036103, guid: 34e09710d2e1d4adeb8c7c0c2e78f939,
         type: 3}

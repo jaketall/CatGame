@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     public static int greenCatScore;
     public static int whiteCatScore;
 
-    public static float maxScore = 45.0f;
+    public static float maxScore = 45;
 
     public Text roundOverText;
     public GameObject roundNumberText;
@@ -34,9 +34,10 @@ public class GameManager : MonoBehaviour
     public GameObject dog;
     public Camera cam;
     public GameObject spawner;
+    public Vector3 secondFloorSpawnCenter;
+    public float startRadius;
     private ZoomHandler zhScript;
     private PowerUpSpawner puSpawnScript;
-    
     // Start is called before the first frame update
     void Start()
     {
@@ -141,11 +142,35 @@ public class GameManager : MonoBehaviour
     
     public void levelTwo()
     {
+        float startAngle = UnityEngine.Random.Range(0, 360) * Mathf.Deg2Rad;
+        float catAngle = 0;
         for (int i = 0; i < moveWithLevel.Capacity; i++)
         {
-            Vector3 pos = moveWithLevel[i].transform.position;
-            pos.y = pos.y + catLevelChange;
-            moveWithLevel[i].transform.position = pos;
+            if(moveWithLevel[i].gameObject.name.Equals("Crown"))
+            {
+                moveWithLevel[i].transform.position = new Vector3(
+                    secondFloorSpawnCenter.x,
+                    moveWithLevel[i].transform.position.y + catLevelChange,
+                    secondFloorSpawnCenter.z
+                    );
+                Debug.Log("Crown moved\n");
+            }
+            else if(moveWithLevel[i].gameObject.tag.Equals("Player"))
+            {
+                Debug.Log("Cat moved\n");
+                moveWithLevel[i].transform.position = new Vector3(
+                    secondFloorSpawnCenter.x + startRadius * Mathf.Cos(startAngle + catAngle),
+                    secondFloorSpawnCenter.y,
+                    secondFloorSpawnCenter.z + startRadius * Mathf.Sin(startAngle + catAngle)
+                );
+                catAngle += Mathf.PI/2;
+            }
+            else
+            {
+                Vector3 pos = moveWithLevel[i].transform.position;
+                pos.y = pos.y + catLevelChange;
+                moveWithLevel[i].transform.position = pos;
+            }
         }
         zhScript.minHeight = camLevelChangeMin;
         zhScript.maxHeight = camLevelChangeMax;
